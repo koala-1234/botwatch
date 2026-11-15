@@ -1,7 +1,7 @@
 (() => {
   const PAGES_BASE = "https://koala-1234.github.io/botwatch";
-  const STAGE_LABEL = { 1: "1 그록봇 판정", 2: "2 제보 3명+", 3: "3 확인 중" };
-  const STAGE_COLOR = { 1: "#990000", 2: "#666600", 3: "#555555" };
+  const STAGE_LABEL = { 1: "1 그록봇 판정", 2: "2 제보 5명+", 3: "3 제보 3~4명", 4: "4 제보 2명", 5: "5 제보 1명" };
+  const STAGE_COLOR = { 1: "#990000", 2: "#884400", 3: "#666600", 4: "#555555", 5: "#777777" };
   const SORT_LABEL = { i: "#", handle: "아이디", stage: "단계", appeal: "이의 점수", date: "등록일", updated: "업데이트 날짜" };
 
   const statusEl = document.getElementById("status");
@@ -62,10 +62,13 @@
     if (kind === "le2") {
       return `${lead} added와 stage_changed 중에서 stage가 1 또는 2인 계정만 반영하고, removed는 빼. ${skip}`;
     }
+    if (kind === "le3") {
+      return `${lead} added와 stage_changed 중에서 stage가 1, 2 또는 3인 계정만 반영하고, removed는 빼. ${skip}`;
+    }
     if (kind === "report") {
       return `이 아이디들 skhy@mail.grokbot.com 으로 제목 [봇제보] 붙여서 보내줘`;
     }
-    return `${lead} added·removed·stage_changed를 모두 반영하고, ${skip}`;
+    return `${lead} added·removed·stage_changed·refreshed를 모두 반영하고, ${skip}`;
   }
 
   function rowsFromTable() {

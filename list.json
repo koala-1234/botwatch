@@ -905,6 +905,20 @@
     "updated": "2026-11-15"
   },
   {
+    "handle": "LaboNft",
+    "id": "",
+    "stage": 5,
+    "base_stage": 5,
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "source": "메일 제보",
+    "reason": "",
+    "evidence_url": "",
+    "detection_count": 0,
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15"
+  },
+  {
     "handle": "liqibear",
     "id": "2035342421362679808",
     "stage": 1,

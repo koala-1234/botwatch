@@ -7,8 +7,11 @@ X 봇 의심 계정 커뮤니티 제보 목록. 텍스트 전용 정적 페이�
 - 오늘 델타 예: https://koala-1234.github.io/botwatch/updates/YYYY-MM-DD.json , https://koala-1234.github.io/botwatch/updates/YYYY-MM-DD.txt
 - 1단계만(그록봇 판정, 근거 2개 이상): https://koala-1234.github.io/botwatch/stage1.txt
 - 1~2단계(차단 권장): https://koala-1234.github.io/botwatch/le2.txt
+- 1~3단계: https://koala-1234.github.io/botwatch/le3.txt
 - 2단계만(제보 3명 이상): https://koala-1234.github.io/botwatch/stage2.txt
-- 3단계만(확인 중): https://koala-1234.github.io/botwatch/stage3.txt
+- 3단계만(제보 3~4명): https://koala-1234.github.io/botwatch/stage3.txt
+- 4단계만(제보 2명): https://koala-1234.github.io/botwatch/stage4.txt
+- 5단계만(제보 1명, 확인 중): https://koala-1234.github.io/botwatch/stage5.txt
 - 전부(상세): https://koala-1234.github.io/botwatch/list.json
 - 전부(한 줄): https://koala-1234.github.io/botwatch/list.txt
 - 사람 확인(차단 대상 아님): https://koala-1234.github.io/botwatch/human.txt

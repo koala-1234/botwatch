@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="X 봇 의심 계정 커뮤니티 제보 목록. 1단계는 그록봇이 근거 2개 이상으로 판정, 2단계는 제보 3명 이상, 3단계는 제보 접수(확인 중)입니다. 사람으로 확인된 계정은 따로 적어둡니다.">
+  <meta name="description" content="X 봇 의심 계정 커뮤니티 제보 목록. 1단계는 그록봇이 근거 2개 이상으로 판정, 2단계는 제보 5명 이상, 3단계는 3~4명, 4단계는 2명, 5단계는 1명입니다. 사람으로 확인된 계정은 따로 적어둡니다.">
   <title>봇워치 — X 봇 제보 목록</title>
-  <link rel="stylesheet" href="./styles.css?v=20261115162651">
+  <link rel="stylesheet" href="./styles.css?v=20261115163741">
 </head>
 <body bgcolor="#ffffff" text="#000000" link="#0000EE" vlink="#551A8B" alink="#FF0000">
 
@@ -20,6 +20,7 @@
     <p><b>가져가는 법</b> (제일 중요)</p>
     <p>
       <a href="./le2.txt">le2.txt</a> = 차단 권장 (1~2단계) &nbsp;|&nbsp;
+      <a href="./le3.txt">le3.txt</a> = 1~3단계 &nbsp;|&nbsp;
       <a href="./stage1.txt">stage1.txt</a> = 그록봇 판정만 &nbsp;|&nbsp;
       <a href="./list.json">list.json</a> = 전체 &nbsp;|&nbsp;
       <a href="./human.txt">human.txt</a> = 사람이니 건너뛰기 &nbsp;|&nbsp;
@@ -31,12 +32,12 @@
   <li>
     <p><b>신고하는 법</b></p>
     <p>제보: <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D">skhy@mail.grokbot.com</a>, 제목 <code>[봇제보]</code>, 본문은 아이디만 (한 줄에 하나).</p>
-    <p>이의: 제목 <code>[이의제기] @handle</code>. 서로 다른 제보자 3명 → 2단계. 이의 1점마다 한 단계 완화, 3점 이상이면 잠금.</p>
+    <p>이의: 제목 <code>[이의제기] @handle</code>. 서로 다른 제보자 5명 → 2단계, 3~4명 → 3단계, 2명 → 4단계, 1명 → 5단계. 이의 1점마다 한 단계 완화, 3점 이상이면 잠금.</p>
   </li>
 </ol>
 <!--BOTWATCH_HOWTO_END-->
 <p>등록된 제보와 그록봇 판정을 단계별로 모은 참고용 목록입니다. 숫자가 작을수록 확실합니다. 차단은 근거를 확인한 뒤 각자 결정하세요. 사람으로 확인된 계정은 봇 목록에 넣지 않습니다. 이 표는 자바스크립트 없이도 보입니다.</p>
-<p>1단계 그록봇 판정 = 그록봇이 근거 2개 이상으로 판정, 차단 권장 &nbsp;|&nbsp; 2단계 제보 3명 이상 = 차단 권장 &nbsp;|&nbsp; 3단계 확인 중 = 제보 1~2명 &nbsp;|&nbsp; 이의 1점마다 한 단계 완화, 3점이면 보류/제외 &nbsp;|&nbsp; 사람 확인 = 차단 대상 아님</p>
+<p>1단계 그록봇 판정 = 그록봇이 근거 2개 이상으로 판정, 차단 권장 &nbsp;|&nbsp; 2단계 제보 5명 이상 = 차단 권장 &nbsp;|&nbsp; 3단계 제보 3~4명 &nbsp;|&nbsp; 4단계 제보 2명 &nbsp;|&nbsp; 5단계 제보 1명 = 확인 중 &nbsp;|&nbsp; 이의 1점마다 한 단계 완화, 3점이면 보류/제외 &nbsp;|&nbsp; 사람 확인 = 차단 대상 아님</p>
 
 <p id="tabs">
   <button type="button" data-tab="bot" aria-selected="true">봇 목록</button>
@@ -45,7 +46,7 @@
 </p>
 
 <p id="status"><!--BOTWATCH_STATUS_START-->
-표시 77건 / 전체 77건
+표시 78건 / 전체 78건
 <!--BOTWATCH_STATUS_END--></p>
 
 <div id="bot-panel">
@@ -55,6 +56,8 @@
       <button type="button" data-stage="1" aria-pressed="false">1단계</button>
       <button type="button" data-stage="2" aria-pressed="false">2단계</button>
       <button type="button" data-stage="3" aria-pressed="false">3단계</button>
+      <button type="button" data-stage="4" aria-pressed="false">4단계</button>
+      <button type="button" data-stage="5" aria-pressed="false">5단계</button>
     </span>
     &nbsp;
     <label>검색 <input id="search" type="text" size="18" autocomplete="off"></label>
@@ -455,240 +458,248 @@
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="liqibear" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+    <tr bgcolor="#f0f0f0" data-handle="LaboNft" data-stage="5" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
       <td align="right">48</td>
+      <td><a href="https://x.com/LaboNft">@LaboNft</a></td>
+      <td><font color="#777777">5 제보 1명</font></td>
+      <td align="right">0</td>
+      <td>2026-11-15</td>
+      <td>2026-11-15</td>
+    </tr>
+    <tr data-handle="liqibear" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">49</td>
       <td><a href="https://x.com/liqibear">@liqibear</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="Lorenhilhklhlhk" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">49</td>
+    <tr bgcolor="#f0f0f0" data-handle="Lorenhilhklhlhk" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">50</td>
       <td><a href="https://x.com/Lorenhilhklhlhk">@Lorenhilhklhlhk</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="Lovergunghab" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">50</td>
+    <tr data-handle="Lovergunghab" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">51</td>
       <td><a href="https://x.com/Lovergunghab">@Lovergunghab</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="Luceyeon" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">51</td>
+    <tr bgcolor="#f0f0f0" data-handle="Luceyeon" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">52</td>
       <td><a href="https://x.com/Luceyeon">@Luceyeon</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="mitro64659" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">52</td>
+    <tr data-handle="mitro64659" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">53</td>
       <td><a href="https://x.com/mitro64659">@mitro64659</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="OVGNFT" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">53</td>
+    <tr bgcolor="#f0f0f0" data-handle="OVGNFT" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">54</td>
       <td><a href="https://x.com/OVGNFT">@OVGNFT</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="pauline_hq" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">54</td>
+    <tr data-handle="pauline_hq" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">55</td>
       <td><a href="https://x.com/pauline_hq">@pauline_hq</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="pfhggghh" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">55</td>
+    <tr bgcolor="#f0f0f0" data-handle="pfhggghh" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">56</td>
       <td><a href="https://x.com/pfhggghh">@pfhggghh</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="pulsescale_io" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">56</td>
+    <tr data-handle="pulsescale_io" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">57</td>
       <td><a href="https://x.com/pulsescale_io">@pulsescale_io</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="Quantview_trade" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">57</td>
+    <tr bgcolor="#f0f0f0" data-handle="Quantview_trade" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">58</td>
       <td><a href="https://x.com/Quantview_trade">@Quantview_trade</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="sdfgwexx" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">58</td>
+    <tr data-handle="sdfgwexx" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">59</td>
       <td><a href="https://x.com/sdfgwexx">@sdfgwexx</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="sdiklke" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">59</td>
+    <tr bgcolor="#f0f0f0" data-handle="sdiklke" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">60</td>
       <td><a href="https://x.com/sdiklke">@sdiklke</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="Shahed_web" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">60</td>
+    <tr data-handle="Shahed_web" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">61</td>
       <td><a href="https://x.com/Shahed_web">@Shahed_web</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="shaisidw" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">61</td>
+    <tr bgcolor="#f0f0f0" data-handle="shaisidw" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">62</td>
       <td><a href="https://x.com/shaisidw">@shaisidw</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="shuaishuai0401" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">62</td>
+    <tr data-handle="shuaishuai0401" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">63</td>
       <td><a href="https://x.com/shuaishuai0401">@shuaishuai0401</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="sio72136136555" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">63</td>
+    <tr bgcolor="#f0f0f0" data-handle="sio72136136555" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">64</td>
       <td><a href="https://x.com/sio72136136555">@sio72136136555</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="SlowRoamer" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">64</td>
+    <tr data-handle="SlowRoamer" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">65</td>
       <td><a href="https://x.com/SlowRoamer">@SlowRoamer</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="So_p_histicated" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">65</td>
+    <tr bgcolor="#f0f0f0" data-handle="So_p_histicated" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">66</td>
       <td><a href="https://x.com/So_p_histicated">@So_p_histicated</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="SoHeeSanctuary" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">66</td>
+    <tr data-handle="SoHeeSanctuary" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">67</td>
       <td><a href="https://x.com/SoHeeSanctuary">@SoHeeSanctuary</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="Sonisaurabh9" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">67</td>
+    <tr bgcolor="#f0f0f0" data-handle="Sonisaurabh9" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">68</td>
       <td><a href="https://x.com/Sonisaurabh9">@Sonisaurabh9</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="soorjinwoo" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">68</td>
+    <tr data-handle="soorjinwoo" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">69</td>
       <td><a href="https://x.com/soorjinwoo">@soorjinwoo</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="soykarovargas" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">69</td>
+    <tr bgcolor="#f0f0f0" data-handle="soykarovargas" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">70</td>
       <td><a href="https://x.com/soykarovargas">@soykarovargas</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="Spicenet_kr" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">70</td>
+    <tr data-handle="Spicenet_kr" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">71</td>
       <td><a href="https://x.com/Spicenet_kr">@Spicenet_kr</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="TechHyung" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">71</td>
+    <tr bgcolor="#f0f0f0" data-handle="TechHyung" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">72</td>
       <td><a href="https://x.com/TechHyung">@TechHyung</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="TickerMelody" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">72</td>
+    <tr data-handle="TickerMelody" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">73</td>
       <td><a href="https://x.com/TickerMelody">@TickerMelody</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="tradearenalive" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">73</td>
+    <tr bgcolor="#f0f0f0" data-handle="tradearenalive" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">74</td>
       <td><a href="https://x.com/tradearenalive">@tradearenalive</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="V_0ivid" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">74</td>
+    <tr data-handle="V_0ivid" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">75</td>
       <td><a href="https://x.com/V_0ivid">@V_0ivid</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="W_uyin" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">75</td>
+    <tr bgcolor="#f0f0f0" data-handle="W_uyin" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">76</td>
       <td><a href="https://x.com/W_uyin">@W_uyin</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr bgcolor="#f0f0f0" data-handle="Zhao_x_BNB" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">76</td>
+    <tr data-handle="Zhao_x_BNB" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">77</td>
       <td><a href="https://x.com/Zhao_x_BNB">@Zhao_x_BNB</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
       <td>2026-11-15</td>
       <td>2026-11-15</td>
     </tr>
-    <tr data-handle="Zorvanel" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
-      <td align="right">77</td>
+    <tr bgcolor="#f0f0f0" data-handle="Zorvanel" data-stage="1" data-appeal="0" data-first="2026-11-15" data-updated="2026-11-15">
+      <td align="right">78</td>
       <td><a href="https://x.com/Zorvanel">@Zorvanel</a></td>
       <td><font color="#990000">1 그록봇 판정</font></td>
       <td align="right">0</td>
@@ -736,7 +747,7 @@
   <p>날짜별로 추가·삭제·단계 변경과 사람 확인 목록 변화가 있습니다. 다른 그록봇은 <code>updates/index.json</code>을 읽고, 마지막에 처리한 날짜 이후의 파일만 가져가면 됩니다.</p>
   <ul id="update-log">
 <!--BOTWATCH_LOG_START-->
-    <li><b>2026-11-15</b> — 추가 77 · 삭제 0 · 단계변경 0 · 재탐지 0 · 사람 확인 +3 / −0 · 이의변경 0 — <a href="./updates/2026-11-15.json">json</a>, <a href="./updates/2026-11-15.txt">txt</a></li>
+    <li><b>2026-11-15</b> — 추가 78 · 삭제 0 · 단계변경 0 · 재탐지 0 · 사람 확인 +3 / −0 · 이의변경 0 — <a href="./updates/2026-11-15.json">json</a>, <a href="./updates/2026-11-15.txt">txt</a></li>
 <!--BOTWATCH_LOG_END-->
   </ul>
 </details>
@@ -761,7 +772,7 @@
 <details>
   <summary>이의 제기</summary>
   <p>잘못 올라갔다고 생각하면 같은 주소로 이의를 보내 주세요. 제목은 <code>[이의제기] @handle</code>입니다. 미리 등록된 제보자가 보내면, 서로 다른 사람 한 명당 이의 점수가 1점 오릅니다. 같은 사람이 같은 계정을 여러 번 보내도 1점입니다.</p>
-  <p>1점마다 단계가 한 칸 내려갑니다. 1단계(그록봇 판정) → 2단계(제보 3명+) → 3단계(확인 중) → 목록에서 빠집니다. 이의 점수가 3점 이상이 되면 목록에서 빼고 ‘보류/제외’로 잠급니다. 다시 올리려면 운영자가 ledger에서 <code>manual_override</code>를 켜고 단계를 직접 정해야 합니다.</p>
+  <p>1점마다 단계가 한 칸 내려갑니다. 1단계(그록봇 판정) → 2단계(제보 5명+) → 3단계(제보 3~4명) → 4단계(제보 2명) → 5단계(제보 1명) → 목록에서 빠집니다. 이의 점수가 3점 이상이 되면 목록에서 빼고 ‘보류/제외’로 잠급니다. 다시 올리려면 운영자가 ledger에서 <code>manual_override</code>를 켜고 단계를 직접 정해야 합니다.</p>
   <pre id="appeal-template">제목: [이의제기] @handle
 
 계정: @handle
@@ -776,13 +787,16 @@
 
 <details>
   <summary>다른 그록봇용</summary>
-  <p>매일 바뀐 것만 보려면 <code>updates/index.json</code>을 읽고, 마지막으로 처리한 날짜 이후의 <code>updates/YYYY-MM-DD.json</code>만 가져가세요. 차단을 권장하는 계정은 1단계와 2단계입니다(<code>le2.txt</code>). 어떤 경우든 <code>human.txt</code>와 델타의 <code>human_added</code>에 있는 아이디는 건너뛰세요. 이미 있던 계정이 다시 탐지되면 <code>refreshed</code>나 <code>stage_changed</code>에 있고, 업데이트 날짜가 그날로 바뀝니다. 이의로 단계가 바뀌거나 빠진 계정은 <code>appeal_changed</code>와 <code>removed</code>(이유 <code>locked</code> 또는 <code>excluded</code>)에 있습니다.</p>
+  <p>매일 바뀐 것만 보려면 <code>updates/index.json</code>을 읽고, 마지막으로 처리한 날짜 이후의 <code>updates/YYYY-MM-DD.json</code>만 가져가세요. 차단을 권장하는 계정은 1단계와 2단계입니다(<code>le2.txt</code>). 1~3단계는 <code>le3.txt</code>입니다. 어떤 경우든 <code>human.txt</code>와 델타의 <code>human_added</code>에 있는 아이디는 건너뛰세요. 이미 있던 계정이 다시 탐지되면 <code>refreshed</code>나 <code>stage_changed</code>에 있고, 업데이트 날짜가 그날로 바뀝니다. 이의로 단계가 바뀌거나 빠진 계정은 <code>appeal_changed</code>와 <code>removed</code>(이유 <code>locked</code> 또는 <code>excluded</code>)에 있습니다.</p>
   <ul>
     <li><a href="./updates/index.json" data-file-url="updates/index.json">https://koala-1234.github.io/botwatch/updates/index.json</a> — 날짜 목록(최신순)과 <code>latest</code></li>
     <li><a href="./stage1.txt" data-file-url="stage1.txt">https://koala-1234.github.io/botwatch/stage1.txt</a> — 1단계만 (그록봇 판정, 근거 2개 이상)</li>
     <li><a href="./le2.txt" data-file-url="le2.txt">https://koala-1234.github.io/botwatch/le2.txt</a> — 1~2단계 (차단 권장)</li>
+    <li><a href="./le3.txt" data-file-url="le3.txt">https://koala-1234.github.io/botwatch/le3.txt</a> — 1~3단계</li>
     <li><a href="./stage2.txt" data-file-url="stage2.txt">https://koala-1234.github.io/botwatch/stage2.txt</a> — 2단계만 (제보 3명 이상)</li>
-    <li><a href="./stage3.txt" data-file-url="stage3.txt">https://koala-1234.github.io/botwatch/stage3.txt</a> — 3단계만 (확인 중)</li>
+    <li><a href="./stage3.txt" data-file-url="stage3.txt">https://koala-1234.github.io/botwatch/stage3.txt</a> — 3단계만 (제보 3~4명)</li>
+    <li><a href="./stage4.txt" data-file-url="stage4.txt">https://koala-1234.github.io/botwatch/stage4.txt</a> — 4단계만 (제보 2명)</li>
+    <li><a href="./stage5.txt" data-file-url="stage5.txt">https://koala-1234.github.io/botwatch/stage5.txt</a> — 5단계만 (제보 1명, 확인 중)</li>
     <li><a href="./list.json" data-file-url="list.json">https://koala-1234.github.io/botwatch/list.json</a> — 전부(상세). 이유·근거는 이 파일에만 있습니다.</li>
     <li><a href="./list.txt" data-file-url="list.txt">https://koala-1234.github.io/botwatch/list.txt</a> — 전부(한 줄). <code>handle|stage|reason|evidence_url|updated</code></li>
     <li><a href="./human.txt" data-file-url="human.txt">https://koala-1234.github.io/botwatch/human.txt</a> — 사람 확인(차단 대상 아님). 한 줄에 아이디 하나. 봇 목록에서 제외</li>
@@ -793,6 +807,9 @@
   <p><b>1~2단계 (차단 권장)</b></p>
   <pre id="routine-le2" data-routine="le2">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added와 stage_changed 중에서 stage가 1 또는 2인 계정만 반영하고, removed는 빼. human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre>
   <p><button type="button" data-copy="#routine-le2">루틴 문장 복사</button></p>
+  <p><b>1~3단계</b></p>
+  <pre id="routine-le3" data-routine="le3">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added와 stage_changed 중에서 stage가 1, 2 또는 3인 계정만 반영하고, removed는 빼. human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre>
+  <p><button type="button" data-copy="#routine-le3">루틴 문장 복사</button></p>
   <p><b>전부</b></p>
   <pre id="routine-all" data-routine="all">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added·removed·stage_changed·refreshed를 모두 반영하고, human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre>
   <p><button type="button" data-copy="#routine-all">루틴 문장 복사</button></p>
@@ -801,6 +818,6 @@
 <hr>
 <p>운영 <a href="https://x.com/dorytossy">@dorytossy</a> · 제보 <a href="mailto:skhy@mail.grokbot.com">skhy@mail.grokbot.com</a></p>
 
-<script src="./app.js?v=20261115162651"></script>
+<script src="./app.js?v=20261115163741"></script>
 </body>
 </html>
