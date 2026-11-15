@@ -1,8 +1,8 @@
 (() => {
   const PAGES_BASE = "https://koala-1234.github.io/botwatch";
-  const STAGE_LABEL = { 1: "1 그록봇 판정", 2: "2 제보 5명+", 3: "3 제보 3~4명", 4: "4 제보 2명", 5: "5 제보 1명" };
+  const STAGE_LABEL = { 1: "1단계", 2: "2단계", 3: "3단계", 4: "4단계", 5: "5단계" };
   const STAGE_COLOR = { 1: "#990000", 2: "#884400", 3: "#666600", 4: "#555555", 5: "#777777" };
-  const SORT_LABEL = { i: "#", handle: "아이디", stage: "단계", appeal: "이의 점수", date: "등록일", updated: "업데이트 날짜" };
+  const SORT_LABEL = { i: "#", handle: "아이디", stage: "단계", score: "점수", appeal: "이의 점수", date: "등록일", updated: "업데이트 날짜" };
 
   const statusEl = document.getElementById("status");
   const searchEl = document.getElementById("search");
@@ -12,6 +12,10 @@
   const botPanel = document.getElementById("bot-panel");
   const humanPanel = document.getElementById("human-panel");
   const humanBody = document.getElementById("human-body");
+  const falseposPanel = document.getElementById("falsepos-panel");
+  const mixedPanel = document.getElementById("mixed-panel");
+  const falseposBody = document.getElementById("falsepos-body");
+  const mixedBody = document.getElementById("mixed-body");
   const bodyEl = document.getElementById("sheet-body");
   const headBtns = [...document.querySelectorAll("thead [data-sort]")];
 
@@ -76,6 +80,7 @@
     return [...bodyEl.querySelectorAll("tr[data-handle]")].map((tr, i) => ({
       handle: tr.getAttribute("data-handle") || "",
       stage: Number(tr.getAttribute("data-stage")) || 0,
+      score: Number(tr.getAttribute("data-score")) || 0,
       appeal_score: Number(tr.getAttribute("data-appeal")) || 0,
       first_reported: tr.getAttribute("data-first") || "",
       updated: tr.getAttribute("data-updated") || "",
@@ -103,6 +108,9 @@
     } else if (key === "stage") {
       av = Number(a.stage) || 0;
       bv = Number(b.stage) || 0;
+    } else if (key === "score") {
+      av = Number(a.score != null ? a.score : (a.stage ? 6 - Number(a.stage) : 0)) || 0;
+      bv = Number(b.score != null ? b.score : (b.stage ? 6 - Number(b.stage) : 0)) || 0;
     } else if (key === "updated") {
       av = a.updated || "";
       bv = b.updated || "";
@@ -144,7 +152,7 @@
   function paint() {
     if (!bodyEl || !enhanced) return;
     if (!filtered.length) {
-      bodyEl.innerHTML = `<tr><td colspan="6">해당하는 계정이 없습니다.</td></tr>`;
+      bodyEl.innerHTML = `<tr><td colspan="7">해당하는 계정이 없습니다.</td></tr>`;
       return;
     }
     let html = "";
@@ -163,12 +171,14 @@
     const stageCell = color
       ? `<font color="${color}">${escapeHtml(label)}</font>`
       : escapeHtml(label);
-    const score = Number(item.appeal_score) || 0;
-    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-stage="${stage}" data-appeal="${score}" data-first="${first}" data-updated="${updated}">
+    const points = Number(item.score != null ? item.score : (stage ? 6 - stage : 0)) || 0;
+    const appeal = Number(item.appeal_score) || 0;
+    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-stage="${stage}" data-score="${points}" data-appeal="${appeal}" data-first="${first}" data-updated="${updated}">
       <td align="right">${i + 1}</td>
       <td><a href="https://x.com/${encodeURIComponent(handle)}">@${escapeHtml(handle)}</a></td>
       <td>${stageCell}</td>
-      <td align="right">${score}</td>
+      <td align="right">${points}</td>
+      <td align="right">${appeal}</td>
       <td>${first}</td>
       <td>${updated}</td>
     </tr>`;
@@ -206,8 +216,16 @@
     tabBtns.forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === tab)));
     if (botPanel) botPanel.hidden = tab !== "bot";
     if (humanPanel) humanPanel.hidden = tab !== "human";
+    if (falseposPanel) falseposPanel.hidden = tab !== "falsepos";
+    if (mixedPanel) mixedPanel.hidden = tab !== "mixed";
     if (tab === "human") {
       if (statusEl) statusEl.textContent = `사람 확인 ${humans.length}명 (차단 대상 아님)`;
+    } else if (tab === "falsepos") {
+      const n = falseposBody ? falseposBody.querySelectorAll("tr[data-handle]").length : 0;
+      if (statusEl) statusEl.textContent = `오탐 ${n}건`;
+    } else if (tab === "mixed") {
+      const n = mixedBody ? mixedBody.querySelectorAll("tr[data-handle]").length : 0;
+      if (statusEl) statusEl.textContent = `혼합 계정 ${n}건`;
     } else {
       apply();
     }
@@ -244,7 +262,7 @@
     log.innerHTML = days
       .map((d) => {
         const date = String(d.date || "");
-        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 재탐지 ${d.refreshed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
+        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 재탐지 ${d.refreshed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 혼합 +${d.mixed_added || 0} / −${d.mixed_removed || 0} · 오탐 +${d.falsepos_added || 0} / −${d.falsepos_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
         return `<li><b>${escapeHtml(date)}</b> — ${counts} — <a href="./updates/${encodeURIComponent(date)}.json">json</a>, <a href="./updates/${encodeURIComponent(date)}.txt">txt</a></li>`;
       })
       .join("");
@@ -275,6 +293,7 @@
   tabBtns.forEach((btn) => {
     btn.addEventListener("click", () => setTab(btn.dataset.tab || "bot"));
   });
+  setTab("bot");
 
   if (searchEl) {
     searchEl.addEventListener("input", () => {

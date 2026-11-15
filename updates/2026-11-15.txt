@@ -78,5 +78,7 @@
 + Zhao_x_BNB 1
 + Zorvanel 1
 H+ DanCoinInvestor
-H+ tiger18272
 H+ unjeon_auto
+M+ tiger18272
+F+ DanCoinInvestor 사람 확인
+F+ unjeon_auto 사람 확인

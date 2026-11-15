@@ -24,3 +24,10 @@ pre {
   font-size: 14px;
   white-space: pre-wrap;
 }
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#sheet { min-width: 36em; }

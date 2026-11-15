@@ -10,8 +10,12 @@
       "removed": 0,
       "stage_changed": 0,
       "refreshed": 0,
-      "human_added": 3,
+      "human_added": 2,
       "human_removed": 0,
+      "mixed_added": 1,
+      "mixed_removed": 0,
+      "falsepos_added": 2,
+      "falsepos_removed": 0,
       "appeal_changed": 0
     }
   ]
