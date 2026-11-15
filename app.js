@@ -23,8 +23,8 @@
   let query = "";
   let dateFilter = "all";
   let updateIndex = { dates: [], days: [] };
-  let sortKey = "stage";
-  let sortDir = "asc";
+  let sortKey = "updated";
+  let sortDir = "desc";
   let tab = "bot";
   let enhanced = false;
 
@@ -241,7 +241,7 @@
     log.innerHTML = days
       .map((d) => {
         const date = String(d.date || "");
-        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
+        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 재탐지 ${d.refreshed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
         return `<li><b>${escapeHtml(date)}</b> — ${counts} — <a href="./updates/${encodeURIComponent(date)}.json">json</a>, <a href="./updates/${encodeURIComponent(date)}.txt">txt</a></li>`;
       })
       .join("");

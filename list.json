@@ -1,5 +1,36 @@
 [
   {
+    "handle": "0xALTF4",
+    "id": "1658490282005127172",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+    "reason": "KR post replied with English LLM platitude: 'day 6 recaps keep you accountable, keep going'; burst cadence: 25 English replies in 4 minutes, median gap 10s, 23 gaps under 15s, across many unrelated threads; templated English one-liners aimed at Korean and other accounts",
+    "evidence_url": "https://x.com/i/status/2121229132831080834",
+    "detection_count": 1,
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "KR post replied with English LLM platitude: 'day 6 recaps keep you accountable, keep going'",
+      "burst cadence: 25 English replies in 4 minutes, median gap 10s, 23 gaps under 15s, across many unrelated threads",
+      "templated English one-liners aimed at Korean and other accounts"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121229132831080834",
+      "https://x.com/i/status/2121194220476043698",
+      "https://x.com/i/status/2121840972833165579",
+      "https://x.com/i/status/2121840922107183339",
+      "https://x.com/i/status/2121840881888116761",
+      "https://x.com/i/status/2121840824493179374"
+    ],
+    "found_under": {
+      "host": "NathanYJLee",
+      "post_url": "https://x.com/i/status/2120916267712623079"
+    }
+  },
+  {
     "handle": "0xbenz95",
     "id": "1507418628706033671",
     "stage": 1,
@@ -9,6 +40,7 @@
     "source": "그록봇 판정(차단으로 X리스트 추가 불가)",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -22,8 +54,40 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "0xVioletorg",
+    "id": "2062556336227835904",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+    "reason": "KR post replied with English LLM-ish line: 'that vertical spike is exactly why the editing headaches are worth it'; new+huge: 163-day-old account, 19,465 posts (~119/day); templated English engagement replies ('Gm fren', 'gnight legend', 'hits different') every ~1–2 minutes across many threads",
+    "evidence_url": "https://x.com/i/status/2120949746982629846",
+    "detection_count": 1,
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "KR post replied with English LLM-ish line: 'that vertical spike is exactly why the editing headaches are worth it'",
+      "new+huge: 163-day-old account, 19,465 posts (~119/day)",
+      "templated English engagement replies ('Gm fren', 'gnight legend', 'hits different') every ~1–2 minutes across many threads"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2120949746982629846",
+      "https://x.com/i/status/2121493657987490033",
+      "https://x.com/i/status/2121493052623630558",
+      "https://x.com/i/status/2121492634485309951",
+      "https://x.com/i/status/2121492044090577156",
+      "https://x.com/i/status/2121491371726950566"
+    ],
+    "found_under": {
+      "host": "NathanYJLee",
+      "post_url": "https://x.com/i/status/2120916267712623079"
+    }
   },
   {
     "handle": "1111kivin",
@@ -35,6 +99,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "hollow+huge: empty bio, 46,653 posts in 143 days (~326/day); burst cadence: 25 posts in 2.15h, gaps as short as 1–8s; mass short replies across many unrelated threads",
     "evidence_url": "https://x.com/i/status/2121862773001027719",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -52,6 +117,38 @@
     ]
   },
   {
+    "handle": "A_Dev46",
+    "id": "2077044220259663872",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+    "reason": "new+huge: 123-day-old account, 91,023 posts (~740/day); burst cadence: 25 posts in 0.32h, median gap 24s, many 3–16s gaps; templated engagement: rapid RT plus canned greetings (good morning, religious chants) across many threads",
+    "evidence_url": "https://x.com/i/status/2121701619985437137",
+    "detection_count": 1,
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+huge: 123-day-old account, 91,023 posts (~740/day)",
+      "burst cadence: 25 posts in 0.32h, median gap 24s, many 3–16s gaps",
+      "templated engagement: rapid RT plus canned greetings (good morning, religious chants) across many threads"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121701619985437137",
+      "https://x.com/i/status/2121855506851782692",
+      "https://x.com/i/status/2121855408730173836",
+      "https://x.com/i/status/2121855394175967502",
+      "https://x.com/i/status/2121855280762028107",
+      "https://x.com/i/status/2121855248914694376",
+      "https://x.com/i/status/2121855134783402185"
+    ],
+    "found_under": {
+      "host": "lucifer5670",
+      "post_url": "https://x.com/i/status/2121415623326757340"
+    }
+  },
+  {
     "handle": "afterwork2604",
     "id": "2030233275881660416",
     "stage": 1,
@@ -61,6 +158,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -74,6 +172,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -87,6 +186,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -100,6 +200,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
     "evidence_url": "https://x.com/i/status/2120019446014390483",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -124,6 +225,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -137,6 +239,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -150,6 +253,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
     "evidence_url": "https://x.com/i/status/2120382570546463132",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -174,8 +278,41 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "billyfscd",
+    "id": "2093298276259037184",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+    "reason": "self-admitted AI: bio says 'AI執事のビリーでございます' (AI butler Billy); burst cadence: 25 literary replies in 0.51h, median gap 60s (20 gaps of 20–90s); templated LLM copy in Japanese/Korean/Spanish across many unrelated threads, including a Korean platitude on NathanYJLee's post; new+huge: 78-day-old account, 8,277 posts (~106/day)",
+    "evidence_url": "https://x.com/i/status/2121118616888467687",
+    "detection_count": 1,
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "self-admitted AI: bio says 'AI執事のビリーでございます' (AI butler Billy)",
+      "burst cadence: 25 literary replies in 0.51h, median gap 60s (20 gaps of 20–90s)",
+      "templated LLM copy in Japanese/Korean/Spanish across many unrelated threads, including a Korean platitude on NathanYJLee's post",
+      "new+huge: 78-day-old account, 8,277 posts (~106/day)"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121118616888467687",
+      "https://x.com/i/status/2121864720848503119",
+      "https://x.com/i/status/2121864473812336928",
+      "https://x.com/i/status/2121864234552508564",
+      "https://x.com/i/status/2121864044839870972",
+      "https://x.com/i/status/2121863736562679965"
+    ],
+    "found_under": {
+      "host": "NathanYJLee",
+      "post_url": "https://x.com/i/status/2120916267712623079"
+    }
   },
   {
     "handle": "BitWolf84",
@@ -187,6 +324,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -200,6 +338,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
     "evidence_url": "https://x.com/i/status/2120017923603567027",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -224,6 +363,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -237,6 +377,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -250,6 +391,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -263,8 +405,40 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "CihunSol",
+    "id": "1517800574137339904",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+    "reason": "KR post replied with English LLM platitude plus a fake personal anecdote: 'Spot on about Jensen’s handshake deals; I’ve seen similar informal pacts crumble...'; burst cadence: 25 English replies in 2.01h, median gap 41s, 22 gaps of 20–90s; extreme template: many replies start with 'Spot on,' then invent 'we've been tracking/running into the same...' stories on unrelated topics",
+    "evidence_url": "https://x.com/i/status/2121683407138914534",
+    "detection_count": 1,
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "KR post replied with English LLM platitude plus a fake personal anecdote: 'Spot on about Jensen’s handshake deals; I’ve seen similar informal pacts crumble...'",
+      "burst cadence: 25 English replies in 2.01h, median gap 41s, 22 gaps of 20–90s",
+      "extreme template: many replies start with 'Spot on,' then invent 'we've been tracking/running into the same...' stories on unrelated topics"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121683407138914534",
+      "https://x.com/i/status/2121716750769385841",
+      "https://x.com/i/status/2121716580618993816",
+      "https://x.com/i/status/2121716388394144074",
+      "https://x.com/i/status/2121716172668207266",
+      "https://x.com/i/status/2121716024529637757"
+    ],
+    "found_under": {
+      "host": "dons_korea",
+      "post_url": "https://x.com/i/status/2121615434256699487"
+    }
   },
   {
     "handle": "cleaner_then_u",
@@ -276,6 +450,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "hollow+huge: 180 followers vs 25,155 posts, following 4,356; burst cadence: 25 posts in 0.4h, many 3–12s gaps; almost entirely rapid-fire retweets (20/25 RTs in the sample)",
     "evidence_url": "https://x.com/i/status/2121857140772270483",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -302,6 +477,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "new+high volume: 41-day-old account, 5,485 posts (~134/day), AI/부업 promo bio; burst cadence: many 4–14s RT+reply pairs; templated engagement: repeated 팔로워 달성 축하 comments and 리포스트 버스 participation",
     "evidence_url": "https://x.com/i/status/2121791540888735886",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -330,8 +506,73 @@
     "source": "그록봇 판정(차단으로 X리스트 추가 불가)",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "Crypto_KR_J",
+    "id": "2058854940181929984",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+    "reason": "new+huge: 173-day-old account, 51,841 posts (~300/day); bio includes 'AI썰'; burst cadence: 25 posts in 0.78h, median gap 12s, 13 gaps under 15s, RT-then-short-reply pattern; templated AI-style short fiction posted as a two-part thread at the exact same second (07:00:01)",
+    "evidence_url": "https://x.com/i/status/2121497542982803587",
+    "detection_count": 1,
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+huge: 173-day-old account, 51,841 posts (~300/day); bio includes 'AI썰'",
+      "burst cadence: 25 posts in 0.78h, median gap 12s, 13 gaps under 15s, RT-then-short-reply pattern",
+      "templated AI-style short fiction posted as a two-part thread at the exact same second (07:00:01)"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121497542982803587",
+      "https://x.com/i/status/2121863526948147661",
+      "https://x.com/i/status/2121863463396057329",
+      "https://x.com/i/status/2121863446862192924",
+      "https://x.com/i/status/2121863395188330975",
+      "https://x.com/i/status/2121863308072677733",
+      "https://x.com/i/status/2121863279723368484"
+    ],
+    "found_under": {
+      "host": "ohmahahm",
+      "post_url": "https://x.com/i/status/2121453561708167614"
+    }
+  },
+  {
+    "handle": "cryptomontage02",
+    "id": "1872343027769036800",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+    "reason": "KR posts replied with textbook English LLM platitudes: 'That's a really interesting point about the potential impact of chip restrictions... It's definitely something to keep an eye on' and 'This is an interesting development from Tesla. I'm curious to see how...'; burst cadence: 25 English replies in 1.18h, median gap 47s, 13 gaps of 20–90s; templated 'Gm fam / Good morning brother' engagement replies across many threads; 43,496 posts",
+    "evidence_url": "https://x.com/i/status/2121470359484645514",
+    "detection_count": 1,
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "KR posts replied with textbook English LLM platitudes: 'That's a really interesting point about the potential impact of chip restrictions... It's definitely something to keep an eye on' and 'This is an interesting development from Tesla. I'm curious to see how...'",
+      "burst cadence: 25 English replies in 1.18h, median gap 47s, 13 gaps of 20–90s",
+      "templated 'Gm fam / Good morning brother' engagement replies across many threads; 43,496 posts"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121470359484645514",
+      "https://x.com/i/status/2121470274692653364",
+      "https://x.com/i/status/2121865594244932015",
+      "https://x.com/i/status/2121865519695269910",
+      "https://x.com/i/status/2121865076621906288",
+      "https://x.com/i/status/2121864823722135660",
+      "https://x.com/i/status/2121862483447361664"
+    ],
+    "found_under": {
+      "host": "GONOGO_Korea",
+      "post_url": "https://x.com/i/status/2121175150599270601"
+    }
   },
   {
     "handle": "daikichiiiiiiii",
@@ -343,6 +584,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "new+huge: 157-day-old account, 34,446 posts (~219/day); burst cadence: 25 posts in 2.2h, gaps of 3–13s; templated engagement: RT then immediate short reply across many threads",
     "evidence_url": "https://x.com/i/status/2121863288665616855",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -369,6 +611,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -382,6 +625,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -395,6 +639,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -408,6 +653,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
     "evidence_url": "https://x.com/i/status/2120383203043418473",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -432,6 +678,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -445,6 +692,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "new+huge: 117-day-old account, 46,095 posts (~394/day); templated AI-like fiction mill: Korean/Japanese short stories with the same age+setting+conflict formula; burst cadence: engagement RT+short replies with many 3–26s gaps",
     "evidence_url": "https://x.com/i/status/2121811882529198348",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -471,6 +719,7 @@
     "source": "그록봇 판정(차단으로 X리스트 추가 불가)",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -484,6 +733,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -497,6 +747,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -510,6 +761,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -523,6 +775,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -536,6 +789,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "new+huge: 228-day-old account, 124,629 posts (~547/day); burst cadence: 25 posts in 1.3h, many gaps of 4–11s; templated engagement: RT then a short canned reply across many threads (대단하다 ㄷㄷㄷ, 행복한 일요일 되세요)",
     "evidence_url": "https://x.com/i/status/2121851188983545952",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -562,6 +816,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -575,6 +830,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -588,6 +844,7 @@
     "source": "그록봇 판정(차단으로 X리스트 추가 불가)",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -601,6 +858,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -614,6 +872,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -627,6 +886,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -640,6 +900,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -653,6 +914,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -666,6 +928,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -679,6 +942,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "new+huge: 61-day-old account, 20,422 posts (~335/day); burst cadence: 25 posts in 0.96h, median gap 9s, 14 gaps under 15s; templated engagement replies (화이팅, 가즈아) plus high-volume fortune-telling content",
     "evidence_url": "https://x.com/i/status/2121846407980322880",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -705,6 +969,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -718,6 +983,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -731,6 +997,7 @@
     "source": "그록봇 판정(차단으로 X리스트 추가 불가)",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -744,6 +1011,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -757,6 +1025,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -770,6 +1039,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -783,6 +1053,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -796,6 +1067,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -809,6 +1081,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -822,6 +1095,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -835,6 +1109,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -848,6 +1123,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -861,6 +1137,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -874,6 +1151,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -887,6 +1165,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
     "evidence_url": "https://x.com/i/status/2120015350876246077",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -911,6 +1190,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -924,6 +1204,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -937,6 +1218,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -950,6 +1232,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -963,6 +1246,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -976,6 +1260,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "new+huge: 34-day-old account, 22,263 posts (~655/day); burst cadence: 24 posts in 0.3h, many gaps of 4–18s; templated engagement: RT a post then immediate short reply to the same author, repeated across many unrelated threads",
     "evidence_url": "https://x.com/i/status/2121862871693086902",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -1002,6 +1287,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "new+huge: 272-day-old account, 24,860 posts (~91/day); burst cadence: self-retweeted 13 of its own all-caps posts in ~40s (gaps of 2–3s); templated crypto shill: repeated ALL-CAPS crash/FOMO predictions (ETH THREE DIGITS, BTC $42K, BIG SHORT)",
     "evidence_url": "https://x.com/i/status/2121836648128446677",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -1028,6 +1314,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -1041,6 +1328,7 @@
     "source": "그록봇 판정(팔로워/팔로잉 스캔)",
     "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
     "evidence_url": "https://x.com/i/status/2120386222594068661",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15",
     "signals": [
@@ -1065,6 +1353,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -1078,6 +1367,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   },
@@ -1091,6 +1381,7 @@
     "source": "그록봇 판정",
     "reason": "",
     "evidence_url": "",
+    "detection_count": 1,
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
   }

@@ -6,9 +6,10 @@
   "days": [
     {
       "date": "2026-11-15",
-      "added": 70,
+      "added": 77,
       "removed": 0,
       "stage_changed": 0,
+      "refreshed": 0,
       "human_added": 3,
       "human_removed": 0,
       "appeal_changed": 0

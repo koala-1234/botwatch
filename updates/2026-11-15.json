@@ -2,6 +2,16 @@
   "date": "2026-11-15",
   "added": [
     {
+      "handle": "0xALTF4",
+      "id": "1658490282005127172",
+      "stage": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+      "first_reported": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    {
       "handle": "0xbenz95",
       "id": "1507418628706033671",
       "stage": 1,
@@ -18,11 +28,31 @@
       "updated": "2026-11-15"
     },
     {
+      "handle": "0xVioletorg",
+      "id": "2062556336227835904",
+      "stage": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+      "first_reported": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    {
       "handle": "1111kivin",
       "id": "2069727760273354752",
       "stage": 1,
       "appeal_score": 0,
       "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+      "first_reported": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    {
+      "handle": "A_Dev46",
+      "id": "2077044220259663872",
+      "stage": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
       "first_reported": "2026-11-15",
       "updated": "2026-11-15"
     },
@@ -93,6 +123,16 @@
       "updated": "2026-11-15"
     },
     {
+      "handle": "billyfscd",
+      "id": "2093298276259037184",
+      "stage": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+      "first_reported": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    {
       "handle": "BitWolf84",
       "id": "1482593236690829312",
       "stage": 1,
@@ -142,6 +182,16 @@
       "updated": "2026-11-15"
     },
     {
+      "handle": "CihunSol",
+      "id": "1517800574137339904",
+      "stage": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+      "first_reported": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    {
       "handle": "cleaner_then_u",
       "id": "2031938402237710336",
       "stage": 1,
@@ -164,6 +214,26 @@
       "id": "1847108776677216256",
       "stage": 1,
       "source": "그록봇 판정(차단으로 X리스트 추가 불가)",
+      "first_reported": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    {
+      "handle": "Crypto_KR_J",
+      "id": "2058854940181929984",
+      "stage": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
+      "first_reported": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    {
+      "handle": "cryptomontage02",
+      "id": "1872343027769036800",
+      "stage": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "source": "그록봇 판정(대형 팔로워 댓글 스캔)",
       "first_reported": "2026-11-15",
       "updated": "2026-11-15"
     },
@@ -579,6 +649,7 @@
   ],
   "removed": [],
   "stage_changed": [],
+  "refreshed": [],
   "human_added": [
     {
       "handle": "DanCoinInvestor",

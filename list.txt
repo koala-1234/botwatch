@@ -1,6 +1,9 @@
+0xALTF4|1|KR post replied with English LLM platitude: 'day 6 recaps keep you accountable, keep going'; burst cadence: 25 English replies in 4 minutes, median gap 10s, 23 gaps under 15s, across many unrelated threads; templated English one-liners aimed at Korean and other accounts|https://x.com/i/status/2121229132831080834|2026-11-15
 0xbenz95|1|||2026-11-15
 0xfrigg|1|||2026-11-15
+0xVioletorg|1|KR post replied with English LLM-ish line: 'that vertical spike is exactly why the editing headaches are worth it'; new+huge: 163-day-old account, 19,465 posts (~119/day); templated English engagement replies ('Gm fren', 'gnight legend', 'hits different') every ~1–2 minutes across many threads|https://x.com/i/status/2120949746982629846|2026-11-15
 1111kivin|1|hollow+huge: empty bio, 46,653 posts in 143 days (~326/day); burst cadence: 25 posts in 2.15h, gaps as short as 1–8s; mass short replies across many unrelated threads|https://x.com/i/status/2121862773001027719|2026-11-15
+A_Dev46|1|new+huge: 123-day-old account, 91,023 posts (~740/day); burst cadence: 25 posts in 0.32h, median gap 24s, many 3–16s gaps; templated engagement: rapid RT plus canned greetings (good morning, religious chants) across many threads|https://x.com/i/status/2121701619985437137|2026-11-15
 afterwork2604|1|||2026-11-15
 AhRinAurora|1|||2026-11-15
 alxmoist|1|||2026-11-15
@@ -9,15 +12,19 @@ animus_aeternal|1|||2026-11-15
 aprilrives|1|||2026-11-15
 Au_7ra|1|handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user|https://x.com/i/status/2120382570546463132|2026-11-15
 AutumnWind_s|1|||2026-11-15
+billyfscd|1|self-admitted AI: bio says 'AI執事のビリーでございます' (AI butler Billy); burst cadence: 25 literary replies in 0.51h, median gap 60s (20 gaps of 20–90s); templated LLM copy in Japanese/Korean/Spanish across many unrelated threads, including a Korean platitude on NathanYJLee's post; new+huge: 78-day-old account, 8,277 posts (~106/day)|https://x.com/i/status/2121118616888467687|2026-11-15
 BitWolf84|1|||2026-11-15
 Br_illian_t|1|handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user|https://x.com/i/status/2120017923603567027|2026-11-15
 bricexeth|1|||2026-11-15
 Bufenge7|1|||2026-11-15
 C_angmang|1|||2026-11-15
 ChaeWonCanvas|1|||2026-11-15
+CihunSol|1|KR post replied with English LLM platitude plus a fake personal anecdote: 'Spot on about Jensen’s handshake deals; I’ve seen similar informal pacts crumble...'; burst cadence: 25 English replies in 2.01h, median gap 41s, 22 gaps of 20–90s; extreme template: many replies start with 'Spot on,' then invent 'we've been tracking/running into the same...' stories on unrelated topics|https://x.com/i/status/2121683407138914534|2026-11-15
 cleaner_then_u|1|hollow+huge: 180 followers vs 25,155 posts, following 4,356; burst cadence: 25 posts in 0.4h, many 3–12s gaps; almost entirely rapid-fire retweets (20/25 RTs in the sample)|https://x.com/i/status/2121857140772270483|2026-11-15
 cleanup2eok|1|new+high volume: 41-day-old account, 5,485 posts (~134/day), AI/부업 promo bio; burst cadence: many 4–14s RT+reply pairs; templated engagement: repeated 팔로워 달성 축하 comments and 리포스트 버스 participation|https://x.com/i/status/2121791540888735886|2026-11-15
 Coin_Scoop|1|||2026-11-15
+Crypto_KR_J|1|new+huge: 173-day-old account, 51,841 posts (~300/day); bio includes 'AI썰'; burst cadence: 25 posts in 0.78h, median gap 12s, 13 gaps under 15s, RT-then-short-reply pattern; templated AI-style short fiction posted as a two-part thread at the exact same second (07:00:01)|https://x.com/i/status/2121497542982803587|2026-11-15
+cryptomontage02|1|KR posts replied with textbook English LLM platitudes: 'That's a really interesting point about the potential impact of chip restrictions... It's definitely something to keep an eye on' and 'This is an interesting development from Tesla. I'm curious to see how...'; burst cadence: 25 English replies in 1.18h, median gap 47s, 13 gaps of 20–90s; templated 'Gm fam / Good morning brother' engagement replies across many threads; 43,496 posts|https://x.com/i/status/2121470359484645514|2026-11-15
 daikichiiiiiiii|1|new+huge: 157-day-old account, 34,446 posts (~219/day); burst cadence: 25 posts in 2.2h, gaps of 3–13s; templated engagement: RT then immediate short reply across many threads|https://x.com/i/status/2121863288665616855|2026-11-15
 Doaitts|1|||2026-11-15
 DriftLog_|1|||2026-11-15
