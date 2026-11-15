@@ -24,6 +24,8 @@
   let filtered = [];
   let stageFilter = "all";
   let query = "";
+  let dateFilter = "all";
+  let updateIndex = { dates: [], days: [] };
   let sortKey = "handle";
   let sortDir = "asc";
   let tab = "bot";
@@ -55,17 +57,18 @@
   }
 
   function routineText(base, kind) {
-    const skip = `같은 주소의 ${base}/human.txt 에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.`;
+    const lead = `매일 ${base}/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와.`;
+    const skip = `human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.`;
     if (kind === "stage3") {
-      return `매일 아침 ${base}/stage3.txt 을 읽고, 한 줄에 하나인 아이디 중에서 이전에 알려준 적 없는 계정만 알려줘. ${skip}`;
+      return `${lead} added와 stage_changed 중에서 stage가 3인 계정만 반영하고, removed는 빼. ${skip}`;
     }
     if (kind === "ge2") {
-      return `매일 아침 ${base}/ge2.txt 을 읽고, 한 줄에 하나인 아이디 중에서 이전에 알려준 적 없는 계정만 알려줘. 이 파일은 2단계 이상(주의·위험)이다. ${skip}`;
+      return `${lead} added와 stage_changed 중에서 stage가 2 이상인 계정만 반영하고, removed는 빼. ${skip}`;
     }
     if (kind === "report") {
       return `이 아이디들 skhy@mail.grokbot.com 으로 제목 [봇제보] 붙여서 보내줘`;
     }
-    return `매일 아침 ${base}/list.json 을 읽고, 새로 올라온 계정만 단계와 함께 알려줘. ${skip}`;
+    return `${lead} added·removed·stage_changed를 모두 반영하고, ${skip}`;
   }
 
   function cmp(a, b, key) {
@@ -79,6 +82,9 @@
     } else if (key === "stage") {
       av = Number(a.stage) || 0;
       bv = Number(b.stage) || 0;
+    } else if (key === "updated") {
+      av = a.updated || "";
+      bv = b.updated || "";
     } else {
       av = a.first_reported || "";
       bv = b.first_reported || "";
@@ -94,6 +100,7 @@
       const handle = String(item.handle || "").replace(/^@/, "");
       if (humanSet.has(handle.toLowerCase())) return false;
       if (stageFilter !== "all" && String(item.stage) !== stageFilter) return false;
+      if (dateFilter !== "all" && String(item.updated || "") !== dateFilter) return false;
       if (q && !handle.toLowerCase().includes(q)) return false;
       return true;
     });
@@ -115,7 +122,8 @@
     const extraH = (extras ? extras.offsetHeight : 0) + (footer ? footer.offsetHeight : 0) + 16;
     const avail = Math.max(ROW_H * 6, window.innerHeight - top - extraH);
     const needed = filtered.length * ROW_H;
-    bodyEl.style.height = Math.min(Math.max(needed, ROW_H), avail) + "px";
+    const fitted = Math.min(needed, Math.floor(avail / ROW_H) * ROW_H) || ROW_H;
+    bodyEl.style.height = fitted + "px";
     canvasEl.style.height = needed + "px";
     paint();
   }
@@ -147,13 +155,15 @@
     const handle = String(item.handle || "").replace(/^@/, "");
     const stage = Number(item.stage) || 0;
     const label = STAGE_LABEL[stage] || String(stage);
-    const date = escapeHtml(item.first_reported || "—");
+    const first = escapeHtml(item.first_reported || "—");
+    const updated = escapeHtml(item.updated || "—");
     const odd = i % 2 === 1 ? " odd" : "";
     return `<div class="sheet-row${odd}" style="height:${ROW_H}px">
       <div class="col-num">${i + 1}</div>
       <div class="handle"><a href="https://x.com/${encodeURIComponent(handle)}" rel="noopener noreferrer">@${escapeHtml(handle)}</a></div>
       <div><span class="badge s${stage}">${label}</span></div>
-      <div class="col-date">${date}</div>
+      <div class="col-date">${first}</div>
+      <div class="col-date">${updated}</div>
     </div>`;
   }
 
@@ -230,6 +240,43 @@
     });
   }
 
+  const dateEl = document.getElementById("date-filter");
+  if (dateEl) {
+    dateEl.addEventListener("change", () => {
+      dateFilter = dateEl.value || "all";
+      if (bodyEl) bodyEl.scrollTop = 0;
+      apply();
+    });
+  }
+
+  function fillDateFilter(rows) {
+    if (!dateEl) return;
+    const dates = [...new Set(rows.map((r) => r.updated).filter(Boolean))].sort().reverse();
+    const current = dateEl.value || "all";
+    dateEl.innerHTML = `<option value="all">전체</option>` + dates.map((d) => `<option value="${escapeHtml(d)}">${escapeHtml(d)}</option>`).join("");
+    dateEl.value = dates.includes(current) ? current : "all";
+    dateFilter = dateEl.value;
+  }
+
+  function renderUpdateLog(index) {
+    const log = document.getElementById("update-log");
+    if (!log) return;
+    const days = Array.isArray(index && index.days) ? index.days : [];
+    if (!days.length) {
+      log.innerHTML = `<li class="u-counts">아직 기록된 업데이트가 없습니다.</li>`;
+      return;
+    }
+    log.innerHTML = days.map((d) => {
+      const date = String(d.date || "");
+      const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0}`;
+      return `<li>
+        <span class="u-date">${escapeHtml(date)}</span>
+        <span class="u-counts">${counts}</span>
+        <span><a href="./updates/${encodeURIComponent(date)}.json">json</a> · <a href="./updates/${encodeURIComponent(date)}.txt">txt</a></span>
+      </li>`;
+    }).join("");
+  }
+
   headBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const key = btn.dataset.sort || "handle";
@@ -237,7 +284,7 @@
         sortDir = sortDir === "asc" ? "desc" : "asc";
       } else {
         sortKey = key;
-        sortDir = key === "stage" || key === "date" ? "desc" : "asc";
+        sortDir = key === "stage" || key === "date" || key === "updated" ? "desc" : "asc";
       }
       headBtns.forEach((b) => {
         b.setAttribute("aria-sort", b.dataset.sort === sortKey ? (sortDir === "asc" ? "ascending" : "descending") : "none");
@@ -291,8 +338,9 @@
     }),
     fetch("./human.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : [])).catch(() => []),
     fetch("./human.txt", { cache: "no-store" }).then((r) => (r.ok ? r.text() : "")).catch(() => ""),
+    fetch("./updates/index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : { dates: [], days: [] })).catch(() => ({ dates: [], days: [] })),
   ])
-    .then(([data, humanJson, humanTxt]) => {
+    .then(([data, humanJson, humanTxt, idx]) => {
       humans = Array.isArray(humanJson) ? humanJson : [];
       const fromTxt = String(humanTxt || "")
         .split(/\s+/)
@@ -310,6 +358,9 @@
         const onlyEx = allRows.length && allRows.every((r) => /^example_/i.test(r.handle || ""));
         exampleBanner.hidden = !onlyEx;
       }
+      updateIndex = idx && typeof idx === "object" ? idx : { dates: [], days: [] };
+      fillDateFilter(allRows);
+      renderUpdateLog(updateIndex);
       renderHumans();
       headBtns.forEach((b) => {
         b.setAttribute("aria-sort", b.dataset.sort === sortKey ? "ascending" : "none");

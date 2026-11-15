@@ -16,7 +16,7 @@
   --stage2: #e2b84b;
   --stage3: #ef6d75;
   --ok: #8fd0a8;
-  --max: 56rem;
+  --max: 62rem;
   --row-h: 24px;
 }
 
@@ -171,12 +171,13 @@ h2 {
 .sheet {
   border: 1px solid var(--line);
   border-radius: 6px;
-  overflow: hidden;
+  overflow: auto hidden;
   background: var(--bg);
 }
 .sheet-head, .sheet-row {
   display: grid;
-  grid-template-columns: 3.2rem minmax(0, 1fr) 5.8rem 7rem;
+  grid-template-columns: 2.8rem minmax(7rem, 1fr) 5.4rem 6.6rem 7.2rem;
+  min-width: 38rem;
   height: var(--row-h);
   line-height: var(--row-h);
   font-size: 0.82rem;
@@ -340,6 +341,44 @@ details.block[open] summary { padding-bottom: 0.25rem; }
   margin-bottom: 0.15rem;
 }
 
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.date-filter select {
+  appearance: none;
+  border: 1px solid var(--line-strong);
+  background: var(--bg-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.84rem;
+  padding: 0.22rem 1.6rem 0.22rem 0.5rem;
+  min-height: 1.9rem;
+  border-radius: 6px;
+  background-image: linear-gradient(45deg, transparent 50%, var(--faint) 50%), linear-gradient(135deg, var(--faint) 50%, transparent 50%);
+  background-position: calc(100% - 12px) 50%, calc(100% - 7px) 50%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.update-log { margin: 0.2rem 0 0; padding: 0; list-style: none; }
+.update-log li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.7rem;
+  align-items: baseline;
+  padding: 0.28rem 0;
+  border-bottom: 1px solid var(--row-line);
+  font-size: 0.84rem;
+  font-variant-numeric: tabular-nums;
+}
+.update-log li:last-child { border-bottom: 0; }
+.update-log .u-date { color: var(--text); font-weight: 650; }
+.update-log .u-counts { color: var(--muted); }
+.update-log a { font-size: 0.8rem; }
+
 footer { margin-top: 0.85rem; color: var(--faint); font-size: 0.78rem; }
 
 code {
@@ -351,11 +390,11 @@ code {
   border: 1px solid var(--line);
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .sheet-head, .sheet-row {
-    grid-template-columns: 2.4rem minmax(0, 1fr) 5.2rem 6.2rem;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     padding: 0 0.3rem;
+    column-gap: 0.25rem;
   }
   .col-date { letter-spacing: -0.03em; }
 }

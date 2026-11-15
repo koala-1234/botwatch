@@ -39,6 +39,12 @@
           <label for="search" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">검색</label>
           <input id="search" type="search" placeholder="아이디 검색" autocomplete="off">
         </div>
+        <div class="date-filter">
+          <label for="date-filter">업데이트</label>
+          <select id="date-filter" aria-label="업데이트 날짜 필터">
+            <option value="all" selected>전체</option>
+          </select>
+        </div>
       </div>
       <div class="sheet" id="sheet">
         <div class="sheet-head" role="row">
@@ -46,6 +52,7 @@
           <div><button type="button" data-sort="handle" aria-sort="none">아이디</button></div>
           <div><button type="button" data-sort="stage" aria-sort="none">단계</button></div>
           <div><button type="button" data-sort="date" aria-sort="none">등록일</button></div>
+          <div><button type="button" data-sort="updated" aria-sort="none">업데이트 날짜</button></div>
         </div>
         <div class="sheet-body" id="sheet-body" tabindex="0">
           <div class="sheet-canvas" id="sheet-canvas">
@@ -66,6 +73,13 @@
     </div>
 
     <div class="extras">
+      <details class="block" id="updates-block">
+        <summary>업데이트 기록</summary>
+        <div class="block-body">
+          <p>날짜별로 추가·삭제·단계 변경과 사람 확인 목록 변화가 있습니다. 다른 그록봇은 <code>updates/index.json</code>을 읽고, 마지막에 처리한 날짜 이후의 파일만 가져가면 됩니다.</p>
+          <ul class="update-log" id="update-log"></ul>
+        </div>
+      </details>
       <details class="block">
         <summary>제보 방법</summary>
         <div class="block-body">
@@ -109,8 +123,9 @@
       <details class="block">
         <summary>다른 그록봇용</summary>
         <div class="block-body">
-          <p>원하는 등급의 파일만 읽으면 됩니다. 텍스트 파일은 한 줄에 아이디 하나입니다. 봇 목록을 읽을 때는 반드시 <code>human.txt</code>도 같이 읽고, 그 아이디는 건너뛰세요.</p>
+          <p>매일 바뀐 것만 보려면 <code>updates/index.json</code>을 읽고, 마지막으로 처리한 날짜 이후의 <code>updates/YYYY-MM-DD.json</code>만 가져가세요. 전체 스냅샷이 필요하면 아래 단계 파일도 있습니다. 어떤 경우든 <code>human.txt</code>와 델타의 <code>human_added</code>에 있는 아이디는 건너뛰세요.</p>
           <ul class="files">
+            <li><a href="./updates/index.json" data-file-url="updates/index.json">{PAGES}/updates/index.json</a> — 날짜 목록(최신순)과 <code>latest</code></li>
             <li><a href="./stage3.txt" data-file-url="stage3.txt">https://koala-1234.github.io/botwatch/stage3.txt</a> — 3단계만</li>
             <li><a href="./ge2.txt" data-file-url="ge2.txt">https://koala-1234.github.io/botwatch/ge2.txt</a> — 2단계 이상</li>
             <li><a href="./stage2.txt" data-file-url="stage2.txt">https://koala-1234.github.io/botwatch/stage2.txt</a> — 2단계만</li>
@@ -122,17 +137,17 @@
           <ul class="prompts">
             <li>
               <span class="prompt-label">3단계만</span>
-              <div class="prompt"><pre id="routine-stage3" data-routine="stage3">매일 아침 https://koala-1234.github.io/botwatch/stage3.txt 을 읽고, 한 줄에 하나인 아이디 중에서 이전에 알려준 적 없는 계정만 알려줘. 같은 주소의 https://koala-1234.github.io/botwatch/human.txt 에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
+              <div class="prompt"><pre id="routine-stage3" data-routine="stage3">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added와 stage_changed 중에서 stage가 3인 계정만 반영하고, removed는 빼. human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
               <div class="actions"><button type="button" data-copy="#routine-stage3">루틴 문장 복사</button></div>
             </li>
             <li>
               <span class="prompt-label">2단계 이상</span>
-              <div class="prompt"><pre id="routine-ge2" data-routine="ge2">매일 아침 https://koala-1234.github.io/botwatch/ge2.txt 을 읽고, 한 줄에 하나인 아이디 중에서 이전에 알려준 적 없는 계정만 알려줘. 이 파일은 2단계 이상(주의·위험)이다. 같은 주소의 https://koala-1234.github.io/botwatch/human.txt 에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
+              <div class="prompt"><pre id="routine-ge2" data-routine="ge2">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added와 stage_changed 중에서 stage가 2 이상인 계정만 반영하고, removed는 빼. human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
               <div class="actions"><button type="button" data-copy="#routine-ge2">루틴 문장 복사</button></div>
             </li>
             <li>
               <span class="prompt-label">전부</span>
-              <div class="prompt"><pre id="routine-all" data-routine="all">매일 아침 https://koala-1234.github.io/botwatch/list.json 을 읽고, 새로 올라온 계정만 단계와 함께 알려줘. 같은 주소의 https://koala-1234.github.io/botwatch/human.txt 에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
+              <div class="prompt"><pre id="routine-all" data-routine="all">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added·removed·stage_changed를 모두 반영하고, human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
               <div class="actions"><button type="button" data-copy="#routine-all">루틴 문장 복사</button></div>
             </li>
           </ul>

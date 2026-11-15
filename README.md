@@ -3,6 +3,8 @@
 X 봇 의심 계정 커뮤니티 제보 목록. 텍스트 전용 정적 페이지입니다.
 
 - 사이트: https://koala-1234.github.io/botwatch/
+- 날짜별 변경(최신순 인덱스): https://koala-1234.github.io/botwatch/updates/index.json
+- 오늘 델타 예: https://koala-1234.github.io/botwatch/updates/YYYY-MM-DD.json , https://koala-1234.github.io/botwatch/updates/YYYY-MM-DD.txt
 - 3단계만: https://koala-1234.github.io/botwatch/stage3.txt
 - 2단계 이상: https://koala-1234.github.io/botwatch/ge2.txt
 - 2단계만: https://koala-1234.github.io/botwatch/stage2.txt
