@@ -87,7 +87,6 @@
 + kalema0703 1
 + kangchu497341 1
 + kengdaica 1
-+ kenmiryam 1
 + kevin9454812333 1
 + khenzarweb3 1
 + kho42712 1
@@ -173,7 +172,6 @@
 + wkdnpe 1
 + yip6ssk 1
 + zenundedu83959 1
-+ Zhao_x_BNB 1
 + Zorvanel 1
 + zxcv987789 1
 + zz1246074 1
@@ -181,4 +179,8 @@ H+ DanCoinInvestor
 H+ unjeon_auto
 M+ tiger18272
 F+ DanCoinInvestor 사람 확인
+F+ kenmiryam 이의제기 누적
 F+ unjeon_auto 사람 확인
+F+ Zhao_x_BNB 이의제기 누적
+A kenmiryam 1 1 excluded
+A Zhao_x_BNB 1 1 excluded

@@ -6,7 +6,7 @@
   "days": [
     {
       "date": "2026-11-15",
-      "added": 178,
+      "added": 176,
       "removed": 0,
       "score_changed": 0,
       "refreshed": 0,
@@ -14,9 +14,9 @@
       "human_removed": 0,
       "mixed_added": 1,
       "mixed_removed": 0,
-      "falsepos_added": 2,
+      "falsepos_added": 4,
       "falsepos_removed": 0,
-      "appeal_changed": 0
+      "appeal_changed": 2
     }
   ]
 }

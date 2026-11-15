@@ -794,15 +794,6 @@
       "updated": "2026-11-15"
     },
     {
-      "handle": "kenmiryam",
-      "id": "64163139",
-      "score": 1,
-      "appeal_score": 0,
-      "detection_count": 1,
-      "first_reported": "2026-11-15",
-      "updated": "2026-11-15"
-    },
-    {
       "handle": "kevin9454812333",
       "id": "1506638189372444673",
       "score": 1,
@@ -1568,15 +1559,6 @@
       "updated": "2026-11-15"
     },
     {
-      "handle": "Zhao_x_BNB",
-      "id": "100108639",
-      "score": 1,
-      "appeal_score": 0,
-      "detection_count": 1,
-      "first_reported": "2026-11-15",
-      "updated": "2026-11-15"
-    },
-    {
       "handle": "Zorvanel",
       "id": "1144819976836136960",
       "score": 1,
@@ -1640,13 +1622,42 @@
       "appeal_score": 0
     },
     {
+      "handle": "kenmiryam",
+      "id": "64163139",
+      "reason": "이의제기 누적",
+      "removed_date": "2026-11-15",
+      "appeal_score": 1
+    },
+    {
       "handle": "unjeon_auto",
       "id": "2021991655860318217",
       "reason": "사람 확인",
       "removed_date": "2026-11-15",
       "appeal_score": 0
+    },
+    {
+      "handle": "Zhao_x_BNB",
+      "id": "100108639",
+      "reason": "이의제기 누적",
+      "removed_date": "2026-11-15",
+      "appeal_score": 1
     }
   ],
   "falsepos_removed": [],
-  "appeal_changed": []
+  "appeal_changed": [
+    {
+      "handle": "kenmiryam",
+      "id": "64163139",
+      "score": 1,
+      "from": 1,
+      "to": "excluded"
+    },
+    {
+      "handle": "Zhao_x_BNB",
+      "id": "100108639",
+      "score": 1,
+      "from": 1,
+      "to": "excluded"
+    }
+  ]
 }
