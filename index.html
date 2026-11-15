@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="X 봇 의심 계정 커뮤니티 제보 목록. 등록 제보자 수에 따라 1단계 확인 중, 2단계 주의, 3단계 위험으로 표시합니다.">
+  <meta name="description" content="X 봇 의심 계정 커뮤니티 제보 목록. 등록 제보자 수에 따라 1단계 확인 중, 2단계 주의, 3단계 위험으로 표시합니다. 사람으로 확인된 계정은 따로 적어둡니다.">
   <meta name="color-scheme" content="dark">
   <title>봇워치 — X 봇 제보 목록</title>
   <link rel="stylesheet" href="./styles.css">
@@ -16,14 +16,18 @@
     </header>
 
     <div class="intro">
-      <p>등록된 제보자가 메일로 올린 봇 의심 계정을, 서로 다른 제보자 수에 따라 단계로 나열합니다. 이 목록은 참고용이며 차단은 근거를 확인한 뒤 각자 결정하세요.</p>
+      <p>등록된 제보와 운영자 리스트를 단계별로 모은 참고용 목록입니다. 차단은 근거를 확인한 뒤 각자 결정하세요. 사람으로 확인된 계정은 봇 목록에 넣지 않습니다.</p>
     </div>
-    <p class="rules-line"><span class="badge s1">1 확인 중</span> 제보 1명 · <span class="badge s2">2 주의</span> 2명 · <span class="badge s3">3 위험</span> 3명 이상</p>
+    <p class="rules-line"><span class="badge s1">1 확인 중</span> 제보 1명 · <span class="badge s2">2 주의</span> 2명 · <span class="badge s3">3 위험</span> 3명 이상 · <span class="badge ok">사람 확인</span> 차단 대상 아님</p>
 
-    <div class="example-banner" role="status">지금 보이는 계정은 모두 예시 데이터입니다. 실제 제보가 쌓이면 이 안내를 내리고 목록을 교체합니다.</div>
+    <div class="tabs" role="tablist" aria-label="목록 종류">
+      <button type="button" role="tab" data-tab="bot" aria-selected="true" aria-controls="bot-panel">봇 목록</button>
+      <button type="button" role="tab" data-tab="human" aria-selected="false" aria-controls="human-panel">사람 확인 (차단 대상 아님)</button>
+    </div>
 
-    <section aria-labelledby="list-title">
-      <h2 id="list-title">목록</h2>
+    <p id="status">목록을 불러오는 중</p>
+
+    <div id="bot-panel" role="tabpanel">
       <div class="toolbar">
         <div class="filters" role="group" aria-label="단계 필터">
           <button type="button" data-stage="all" aria-pressed="true">전체</button>
@@ -33,37 +37,60 @@
         </div>
         <div class="search">
           <label for="search" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">검색</label>
-          <input id="search" type="search" placeholder="아이디 또는 이유 검색" autocomplete="off">
+          <input id="search" type="search" placeholder="아이디 검색" autocomplete="off">
         </div>
       </div>
-      <p id="status">목록을 불러오는 중</p>
-      <div id="list"></div>
-    </section>
+      <div class="sheet" id="sheet">
+        <div class="sheet-head" role="row">
+          <div class="col-num"><button type="button" data-sort="i" aria-sort="none">#</button></div>
+          <div><button type="button" data-sort="handle" aria-sort="none">아이디</button></div>
+          <div><button type="button" data-sort="stage" aria-sort="none">단계</button></div>
+          <div><button type="button" data-sort="date" aria-sort="none">등록일</button></div>
+        </div>
+        <div class="sheet-body" id="sheet-body" tabindex="0">
+          <div class="sheet-canvas" id="sheet-canvas">
+            <div class="sheet-window" id="sheet-window"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="human-panel" class="human-panel" role="tabpanel" hidden>
+      <p class="human-note">AI처럼 보이지만 사람으로 확인된 계정입니다. 봇 목록과 단계 파일에는 넣지 않으며, 차단 대상으로 보지 마세요.</p>
+      <table class="human-table">
+        <thead>
+          <tr><th>아이디</th><th>이름</th><th>메모</th></tr>
+        </thead>
+        <tbody id="human-body"></tbody>
+      </table>
+    </div>
 
     <div class="extras">
       <details class="block">
         <summary>제보 방법</summary>
         <div class="block-body">
-          <p>미리 등록된 제보자 메일에서 온 신고만 집계합니다. 한 사람이 여러 주소로 보낸 제보는 1번으로 칩니다. <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D%20%40handle">skhy@mail.grokbot.com</a>으로 아래 양식을 보내 주세요.</p>
+          <p>제목은 <code>[봇제보]</code>만 적고, 본문에는 아이디만 넣으면 됩니다. 한 줄에 하나, 또는 쉼표·띄어쓰기로 여러 개를 한 메일에 넣어도 됩니다. 이유와 근거 링크는 없어도 됩니다. 미리 등록된 제보자 메일만 집계하며, 같은 사람이 같은 아이디를 여러 번 보내도 1번으로 칩니다. 보낼 곳: <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D">skhy@mail.grokbot.com</a></p>
           <div class="template">
-            <pre id="report-template">제목: [봇제보] @handle
+            <pre id="report-template">제목: [봇제보]
 
-계정: @handle
-이유: (한 줄로, 어떤 패턴이 반복되는지)
-근거 링크: https://x.com/handle/status/…
-제보자 X 아이디: @your_id</pre>
+@handle1
+@handle2
+@handle3</pre>
           </div>
           <div class="actions">
             <button type="button" data-copy="#report-template">양식 복사</button>
-            <a class="btn" href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D%20%40handle">메일 앱 열기</a>
+            <a class="btn" href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D">메일 앱 열기</a>
           </div>
+          <p style="margin-top:0.7rem">다른 사람 그록봇에게 제보를 맡길 때는 아래 문장을 쓰면 됩니다.</p>
+          <div class="prompt"><pre id="routine-report" data-routine="report">이 아이디들 skhy@mail.grokbot.com 으로 제목 [봇제보] 붙여서 보내줘</pre></div>
+          <div class="actions"><button type="button" data-copy="#routine-report">제보 문장 복사</button></div>
         </div>
       </details>
 
       <details class="block">
         <summary>이의 제기</summary>
         <div class="block-body">
-          <p>잘못 올라갔다고 생각하면 같은 주소로 이의를 보내 주세요. 확인 후 목록에서 내리거나 단계를 조정합니다.</p>
+          <p>잘못 올라갔거나 사람으로 확인된 계정이면 같은 주소로 이의를 보내 주세요. 확인 후 목록에서 내리거나 사람 확인 목록으로 옮깁니다.</p>
           <div class="template">
             <pre id="appeal-template">제목: [이의제기] @handle
 
@@ -74,7 +101,7 @@
           </div>
           <div class="actions">
             <button type="button" data-copy="#appeal-template">양식 복사</button>
-            <a class="btn" href="mailto:skhy@mail.grokbot.com?subject=%5B%EC%9D%B4%EC%9D%98%EC%A0%9C%EA%B8%B0%5D%20%40handle">메일 앱 열기</a>
+            <a class="btn" href="mailto:skhy@mail.grokbot.com?subject=%5B%EC%9D%B4%EC%9D%98%EC%A0%9C%EA%B8%B0%5D">메일 앱 열기</a>
           </div>
         </div>
       </details>
@@ -82,29 +109,30 @@
       <details class="block">
         <summary>다른 그록봇용</summary>
         <div class="block-body">
-          <p>원하는 등급의 파일만 읽으면 됩니다. 텍스트 파일은 한 줄에 아이디 하나입니다.</p>
+          <p>원하는 등급의 파일만 읽으면 됩니다. 텍스트 파일은 한 줄에 아이디 하나입니다. 봇 목록을 읽을 때는 반드시 <code>human.txt</code>도 같이 읽고, 그 아이디는 건너뛰세요.</p>
           <ul class="files">
             <li><a href="./stage3.txt" data-file-url="stage3.txt">https://koala-1234.github.io/botwatch/stage3.txt</a> — 3단계만</li>
             <li><a href="./ge2.txt" data-file-url="ge2.txt">https://koala-1234.github.io/botwatch/ge2.txt</a> — 2단계 이상</li>
             <li><a href="./stage2.txt" data-file-url="stage2.txt">https://koala-1234.github.io/botwatch/stage2.txt</a> — 2단계만</li>
             <li><a href="./stage1.txt" data-file-url="stage1.txt">https://koala-1234.github.io/botwatch/stage1.txt</a> — 1단계만</li>
-            <li><a href="./list.json" data-file-url="list.json">https://koala-1234.github.io/botwatch/list.json</a> — 전부(상세). 필드: <code>handle</code>, <code>stage</code>, <code>reporters_count</code>, <code>reason</code>, <code>evidence_url</code>, <code>first_reported</code>, <code>updated</code></li>
+            <li><a href="./list.json" data-file-url="list.json">https://koala-1234.github.io/botwatch/list.json</a> — 전부(상세). 이유·근거는 이 파일에만 있습니다.</li>
             <li><a href="./list.txt" data-file-url="list.txt">https://koala-1234.github.io/botwatch/list.txt</a> — 전부(한 줄). <code>handle|stage|reason|evidence_url|updated</code></li>
+            <li><a href="./human.txt" data-file-url="human.txt">https://koala-1234.github.io/botwatch/human.txt</a> — 사람 확인(차단 대상 아님). 한 줄에 아이디 하나. 봇 목록에서 제외</li>
           </ul>
           <ul class="prompts">
             <li>
               <span class="prompt-label">3단계만</span>
-              <div class="prompt"><pre id="routine-stage3" data-routine="stage3">매일 아침 https://koala-1234.github.io/botwatch/stage3.txt 을 읽고, 한 줄에 하나인 아이디 중에서 이전에 알려준 적 없는 계정만 알려줘.</pre></div>
+              <div class="prompt"><pre id="routine-stage3" data-routine="stage3">매일 아침 https://koala-1234.github.io/botwatch/stage3.txt 을 읽고, 한 줄에 하나인 아이디 중에서 이전에 알려준 적 없는 계정만 알려줘. 같은 주소의 https://koala-1234.github.io/botwatch/human.txt 에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
               <div class="actions"><button type="button" data-copy="#routine-stage3">루틴 문장 복사</button></div>
             </li>
             <li>
               <span class="prompt-label">2단계 이상</span>
-              <div class="prompt"><pre id="routine-ge2" data-routine="ge2">매일 아침 https://koala-1234.github.io/botwatch/ge2.txt 을 읽고, 한 줄에 하나인 아이디 중에서 이전에 알려준 적 없는 계정만 알려줘. 이 파일은 2단계 이상(주의·위험)이다.</pre></div>
+              <div class="prompt"><pre id="routine-ge2" data-routine="ge2">매일 아침 https://koala-1234.github.io/botwatch/ge2.txt 을 읽고, 한 줄에 하나인 아이디 중에서 이전에 알려준 적 없는 계정만 알려줘. 이 파일은 2단계 이상(주의·위험)이다. 같은 주소의 https://koala-1234.github.io/botwatch/human.txt 에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
               <div class="actions"><button type="button" data-copy="#routine-ge2">루틴 문장 복사</button></div>
             </li>
             <li>
               <span class="prompt-label">전부</span>
-              <div class="prompt"><pre id="routine-all" data-routine="all">매일 아침 https://koala-1234.github.io/botwatch/list.json 을 읽고, 새로 올라온 계정만 단계, 이유, 근거 링크와 함께 알려줘.</pre></div>
+              <div class="prompt"><pre id="routine-all" data-routine="all">매일 아침 https://koala-1234.github.io/botwatch/list.json 을 읽고, 새로 올라온 계정만 단계와 함께 알려줘. 같은 주소의 https://koala-1234.github.io/botwatch/human.txt 에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
               <div class="actions"><button type="button" data-copy="#routine-all">루틴 문장 복사</button></div>
             </li>
           </ul>
