@@ -26,6 +26,32 @@
     "updated": "2026-11-15"
   },
   {
+    "handle": "1111kivin",
+    "id": "2069727760273354752",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "hollow+huge: empty bio, 46,653 posts in 143 days (~326/day); burst cadence: 25 posts in 2.15h, gaps as short as 1–8s; mass short replies across many unrelated threads",
+    "evidence_url": "https://x.com/i/status/2121862773001027719",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "hollow+huge: empty bio, 46,653 posts in 143 days (~326/day)",
+      "burst cadence: 25 posts in 2.15h, gaps as short as 1–8s",
+      "mass short replies across many unrelated threads"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121862773001027719",
+      "https://x.com/i/status/2121859942953169015",
+      "https://x.com/i/status/2121856256378064979",
+      "https://x.com/i/status/2121856174375236051",
+      "https://x.com/i/status/2121853249091506422",
+      "https://x.com/i/status/2121853223845916950"
+    ]
+  },
+  {
     "handle": "afterwork2604",
     "id": "2030233275881660416",
     "stage": 1,
@@ -65,6 +91,30 @@
     "updated": "2026-11-15"
   },
   {
+    "handle": "Amber_1Meadow",
+    "id": "910544595024572417",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
+    "evidence_url": "https://x.com/i/status/2120019446014390483",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified",
+      "near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars",
+      "coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2120019446014390483",
+      "https://x.com/i/status/2120017923603567027",
+      "https://x.com/i/status/2120015350876246077",
+      "https://x.com/i/status/2120382570546463132"
+    ]
+  },
+  {
     "handle": "animus_aeternal",
     "id": "1715906727051403264",
     "stage": 1,
@@ -91,6 +141,30 @@
     "updated": "2026-11-15"
   },
   {
+    "handle": "Au_7ra",
+    "id": "818875338415599616",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
+    "evidence_url": "https://x.com/i/status/2120382570546463132",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified",
+      "near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars",
+      "coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2120382570546463132",
+      "https://x.com/i/status/2120019446014390483",
+      "https://x.com/i/status/2120017923603567027",
+      "https://x.com/i/status/2120015350876246077"
+    ]
+  },
+  {
     "handle": "AutumnWind_s",
     "id": "1110255376614727682",
     "stage": 1,
@@ -115,6 +189,30 @@
     "evidence_url": "",
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "Br_illian_t",
+    "id": "3020736464",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
+    "evidence_url": "https://x.com/i/status/2120017923603567027",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified",
+      "near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars",
+      "coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2120017923603567027",
+      "https://x.com/i/status/2120019446014390483",
+      "https://x.com/i/status/2120015350876246077",
+      "https://x.com/i/status/2120382570546463132"
+    ]
   },
   {
     "handle": "bricexeth",
@@ -169,6 +267,60 @@
     "updated": "2026-11-15"
   },
   {
+    "handle": "cleaner_then_u",
+    "id": "2031938402237710336",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "hollow+huge: 180 followers vs 25,155 posts, following 4,356; burst cadence: 25 posts in 0.4h, many 3–12s gaps; almost entirely rapid-fire retweets (20/25 RTs in the sample)",
+    "evidence_url": "https://x.com/i/status/2121857140772270483",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "hollow+huge: 180 followers vs 25,155 posts, following 4,356",
+      "burst cadence: 25 posts in 0.4h, many 3–12s gaps",
+      "almost entirely rapid-fire retweets (20/25 RTs in the sample)"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121857140772270483",
+      "https://x.com/i/status/2121857105657532433",
+      "https://x.com/i/status/2121856924497088719",
+      "https://x.com/i/status/2121856640702087228",
+      "https://x.com/i/status/2121856578991403260",
+      "https://x.com/i/status/2121856566781747255"
+    ]
+  },
+  {
+    "handle": "cleanup2eok",
+    "id": "2106729268147589121",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "new+high volume: 41-day-old account, 5,485 posts (~134/day), AI/부업 promo bio; burst cadence: many 4–14s RT+reply pairs; templated engagement: repeated 팔로워 달성 축하 comments and 리포스트 버스 participation",
+    "evidence_url": "https://x.com/i/status/2121791540888735886",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+high volume: 41-day-old account, 5,485 posts (~134/day), AI/부업 promo bio",
+      "burst cadence: many 4–14s RT+reply pairs",
+      "templated engagement: repeated 팔로워 달성 축하 comments and 리포스트 버스 participation"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121791540888735886",
+      "https://x.com/i/status/2121791522039611619",
+      "https://x.com/i/status/2121747000416993307",
+      "https://x.com/i/status/2121746949322015154",
+      "https://x.com/i/status/2121746916870602897",
+      "https://x.com/i/status/2121746832451920318",
+      "https://x.com/i/status/2121187401955717224",
+      "https://x.com/i/status/2121141661744910795"
+    ]
+  },
+  {
     "handle": "Coin_Scoop",
     "id": "1847108776677216256",
     "stage": 1,
@@ -180,6 +332,32 @@
     "evidence_url": "",
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "daikichiiiiiiii",
+    "id": "2064613019028783104",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "new+huge: 157-day-old account, 34,446 posts (~219/day); burst cadence: 25 posts in 2.2h, gaps of 3–13s; templated engagement: RT then immediate short reply across many threads",
+    "evidence_url": "https://x.com/i/status/2121863288665616855",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+huge: 157-day-old account, 34,446 posts (~219/day)",
+      "burst cadence: 25 posts in 2.2h, gaps of 3–13s",
+      "templated engagement: RT then immediate short reply across many threads"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121863288665616855",
+      "https://x.com/i/status/2121861958651789581",
+      "https://x.com/i/status/2121861915693695256",
+      "https://x.com/i/status/2121861164112208205",
+      "https://x.com/i/status/2121861108634198476",
+      "https://x.com/i/status/2121861031572218114"
+    ]
   },
   {
     "handle": "Doaitts",
@@ -221,6 +399,30 @@
     "updated": "2026-11-15"
   },
   {
+    "handle": "F_9ern",
+    "id": "980711776865083392",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
+    "evidence_url": "https://x.com/i/status/2120383203043418473",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified",
+      "near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars",
+      "coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2120383203043418473",
+      "https://x.com/i/status/2120019446014390483",
+      "https://x.com/i/status/2120017923603567027",
+      "https://x.com/i/status/2120015350876246077"
+    ]
+  },
+  {
     "handle": "Foxtrtjuliabrvo",
     "id": "1459535452009115662",
     "stage": 1,
@@ -232,6 +434,32 @@
     "evidence_url": "",
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "gaudivita",
+    "id": "2079178271296774145",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "new+huge: 117-day-old account, 46,095 posts (~394/day); templated AI-like fiction mill: Korean/Japanese short stories with the same age+setting+conflict formula; burst cadence: engagement RT+short replies with many 3–26s gaps",
+    "evidence_url": "https://x.com/i/status/2121811882529198348",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+huge: 117-day-old account, 46,095 posts (~394/day)",
+      "templated AI-like fiction mill: Korean/Japanese short stories with the same age+setting+conflict formula",
+      "burst cadence: engagement RT+short replies with many 3–26s gaps"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121811882529198348",
+      "https://x.com/i/status/2121808224408265121",
+      "https://x.com/i/status/2121620414938206422",
+      "https://x.com/i/status/2121615744815566993",
+      "https://x.com/i/status/2121615166127456583",
+      "https://x.com/i/status/2121615109110034623"
+    ]
   },
   {
     "handle": "GpaAndy",
@@ -297,6 +525,32 @@
     "evidence_url": "",
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "Insight_sua",
+    "id": "2038769938526060544",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "new+huge: 228-day-old account, 124,629 posts (~547/day); burst cadence: 25 posts in 1.3h, many gaps of 4–11s; templated engagement: RT then a short canned reply across many threads (대단하다 ㄷㄷㄷ, 행복한 일요일 되세요)",
+    "evidence_url": "https://x.com/i/status/2121851188983545952",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+huge: 228-day-old account, 124,629 posts (~547/day)",
+      "burst cadence: 25 posts in 1.3h, many gaps of 4–11s",
+      "templated engagement: RT then a short canned reply across many threads (대단하다 ㄷㄷㄷ, 행복한 일요일 되세요)"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121851188983545952",
+      "https://x.com/i/status/2121832980805222854",
+      "https://x.com/i/status/2121832928040911186",
+      "https://x.com/i/status/2121831909965828515",
+      "https://x.com/i/status/2121831876113654234",
+      "https://x.com/i/status/2121831768680775732"
+    ]
   },
   {
     "handle": "J_ingxi",
@@ -414,6 +668,32 @@
     "evidence_url": "",
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "Lovergunghab",
+    "id": "2099377843411337216",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "new+huge: 61-day-old account, 20,422 posts (~335/day); burst cadence: 25 posts in 0.96h, median gap 9s, 14 gaps under 15s; templated engagement replies (화이팅, 가즈아) plus high-volume fortune-telling content",
+    "evidence_url": "https://x.com/i/status/2121846407980322880",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+huge: 61-day-old account, 20,422 posts (~335/day)",
+      "burst cadence: 25 posts in 0.96h, median gap 9s, 14 gaps under 15s",
+      "templated engagement replies (화이팅, 가즈아) plus high-volume fortune-telling content"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121846407980322880",
+      "https://x.com/i/status/2121845849789796775",
+      "https://x.com/i/status/2121845784199213270",
+      "https://x.com/i/status/2121845765182284002",
+      "https://x.com/i/status/2121845731430707432",
+      "https://x.com/i/status/2121845696248811619"
+    ]
   },
   {
     "handle": "Luceyeon",
@@ -598,6 +878,30 @@
     "updated": "2026-11-15"
   },
   {
+    "handle": "So_p_histicated",
+    "id": "1293221788827213825",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
+    "evidence_url": "https://x.com/i/status/2120015350876246077",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified",
+      "near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars",
+      "coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2120015350876246077",
+      "https://x.com/i/status/2120019446014390483",
+      "https://x.com/i/status/2120017923603567027",
+      "https://x.com/i/status/2120382570546463132"
+    ]
+  },
+  {
     "handle": "SoHeeSanctuary",
     "id": "1164010833908621313",
     "stage": 1,
@@ -663,6 +967,58 @@
     "updated": "2026-11-15"
   },
   {
+    "handle": "TechHyung",
+    "id": "2109185063053393920",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "new+huge: 34-day-old account, 22,263 posts (~655/day); burst cadence: 24 posts in 0.3h, many gaps of 4–18s; templated engagement: RT a post then immediate short reply to the same author, repeated across many unrelated threads",
+    "evidence_url": "https://x.com/i/status/2121862871693086902",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+huge: 34-day-old account, 22,263 posts (~655/day)",
+      "burst cadence: 24 posts in 0.3h, many gaps of 4–18s",
+      "templated engagement: RT a post then immediate short reply to the same author, repeated across many unrelated threads"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121862871693086902",
+      "https://x.com/i/status/2121862833382293584",
+      "https://x.com/i/status/2121862658135822537",
+      "https://x.com/i/status/2121862579505311965",
+      "https://x.com/i/status/2121862359748932084",
+      "https://x.com/i/status/2121862307634676167"
+    ]
+  },
+  {
+    "handle": "TickerMelody",
+    "id": "2022877371548995586",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "new+huge: 272-day-old account, 24,860 posts (~91/day); burst cadence: self-retweeted 13 of its own all-caps posts in ~40s (gaps of 2–3s); templated crypto shill: repeated ALL-CAPS crash/FOMO predictions (ETH THREE DIGITS, BTC $42K, BIG SHORT)",
+    "evidence_url": "https://x.com/i/status/2121836648128446677",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "new+huge: 272-day-old account, 24,860 posts (~91/day)",
+      "burst cadence: self-retweeted 13 of its own all-caps posts in ~40s (gaps of 2–3s)",
+      "templated crypto shill: repeated ALL-CAPS crash/FOMO predictions (ETH THREE DIGITS, BTC $42K, BIG SHORT)"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2121836648128446677",
+      "https://x.com/i/status/2121836244414107714",
+      "https://x.com/i/status/2121830917987860614",
+      "https://x.com/i/status/2121830893375647935",
+      "https://x.com/i/status/2121830866867601709",
+      "https://x.com/i/status/2121830759447269751"
+    ]
+  },
+  {
     "handle": "tradearenalive",
     "id": "2118000875855847424",
     "stage": 1,
@@ -674,6 +1030,30 @@
     "evidence_url": "",
     "first_reported": "2026-11-15",
     "updated": "2026-11-15"
+  },
+  {
+    "handle": "V_0ivid",
+    "id": "2771502382",
+    "stage": 1,
+    "base_stage": 1,
+    "appeal_score": 0,
+    "reporters_count": 0,
+    "source": "그록봇 판정(팔로워/팔로잉 스캔)",
+    "reason": "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user",
+    "evidence_url": "https://x.com/i/status/2120386222594068661",
+    "first_reported": "2026-11-15",
+    "updated": "2026-11-15",
+    "signals": [
+      "handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified",
+      "near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars",
+      "coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user"
+    ],
+    "evidence_urls": [
+      "https://x.com/i/status/2120386222594068661",
+      "https://x.com/i/status/2120019446014390483",
+      "https://x.com/i/status/2120017923603567027",
+      "https://x.com/i/status/2120015350876246077"
+    ]
   },
   {
     "handle": "W_uyin",
