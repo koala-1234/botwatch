@@ -4,161 +4,136 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="X 봇 의심 계정 커뮤니티 제보 목록. 등록 제보자 수에 따라 1단계 확인 중, 2단계 주의, 3단계 위험으로 표시합니다. 사람으로 확인된 계정은 따로 적어둡니다.">
-  <meta name="color-scheme" content="dark">
   <title>봇워치 — X 봇 제보 목록</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-  <div class="wrap">
-    <header class="hero">
-      <h1>봇워치</h1>
-      <p class="sub">X 봇 의심 계정 제보 목록 · 운영 <a href="https://x.com/dorytossy" rel="noopener noreferrer">@dorytossy</a></p>
-    </header>
+<body bgcolor="#ffffff" text="#000000" link="#0000EE" vlink="#551A8B" alink="#FF0000">
 
-    <div class="intro">
-      <p>등록된 제보와 운영자 리스트를 단계별로 모은 참고용 목록입니다. 차단은 근거를 확인한 뒤 각자 결정하세요. 사람으로 확인된 계정은 봇 목록에 넣지 않습니다.</p>
-    </div>
-    <p class="rules-line"><span class="badge s1">1 확인 중</span> 제보 1명 · <span class="badge s2">2 주의</span> 2명 · <span class="badge s3">3 위험</span> 3명 이상 · <span class="badge ok">사람 확인</span> 차단 대상 아님</p>
+<h1>봇워치</h1>
+<p>X 봇 의심 계정 제보 목록 · 운영 <a href="https://x.com/dorytossy">@dorytossy</a></p>
+<hr>
+<p>등록된 제보와 운영자 리스트를 단계별로 모은 참고용 목록입니다. 차단은 근거를 확인한 뒤 각자 결정하세요. 사람으로 확인된 계정은 봇 목록에 넣지 않습니다.</p>
+<p>1단계 확인 중 = 제보 1명 &nbsp;|&nbsp; 2단계 주의 = 2명 &nbsp;|&nbsp; 3단계 위험 = 3명 이상 &nbsp;|&nbsp; 사람 확인 = 차단 대상 아님</p>
 
-    <div class="tabs" role="tablist" aria-label="목록 종류">
-      <button type="button" role="tab" data-tab="bot" aria-selected="true" aria-controls="bot-panel">봇 목록</button>
-      <button type="button" role="tab" data-tab="human" aria-selected="false" aria-controls="human-panel">사람 확인 (차단 대상 아님)</button>
-    </div>
+<p id="tabs">
+  <button type="button" data-tab="bot" aria-selected="true">봇 목록</button>
+  |
+  <button type="button" data-tab="human" aria-selected="false">사람 확인 (차단 대상 아님)</button>
+</p>
 
-    <p id="status">목록을 불러오는 중</p>
+<p id="status">목록을 불러오는 중</p>
 
-    <div id="bot-panel" role="tabpanel">
-      <div class="toolbar">
-        <div class="filters" role="group" aria-label="단계 필터">
-          <button type="button" data-stage="all" aria-pressed="true">전체</button>
-          <button type="button" data-stage="1" aria-pressed="false">1단계</button>
-          <button type="button" data-stage="2" aria-pressed="false">2단계</button>
-          <button type="button" data-stage="3" aria-pressed="false">3단계</button>
-        </div>
-        <div class="search">
-          <label for="search" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">검색</label>
-          <input id="search" type="search" placeholder="아이디 검색" autocomplete="off">
-        </div>
-        <div class="date-filter">
-          <label for="date-filter">업데이트</label>
-          <select id="date-filter" aria-label="업데이트 날짜 필터">
-            <option value="all" selected>전체</option>
-          </select>
-        </div>
-      </div>
-      <div class="sheet" id="sheet">
-        <div class="sheet-head" role="row">
-          <div class="col-num"><button type="button" data-sort="i" aria-sort="none">#</button></div>
-          <div><button type="button" data-sort="handle" aria-sort="none">아이디</button></div>
-          <div><button type="button" data-sort="stage" aria-sort="none">단계</button></div>
-          <div><button type="button" data-sort="date" aria-sort="none">등록일</button></div>
-          <div><button type="button" data-sort="updated" aria-sort="none">업데이트 날짜</button></div>
-        </div>
-        <div class="sheet-body" id="sheet-body" tabindex="0">
-          <div class="sheet-canvas" id="sheet-canvas">
-            <div class="sheet-window" id="sheet-window"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div id="bot-panel">
+  <p>
+    <span id="filters">
+      <button type="button" data-stage="all" aria-pressed="true">전체</button>
+      <button type="button" data-stage="1" aria-pressed="false">1단계</button>
+      <button type="button" data-stage="2" aria-pressed="false">2단계</button>
+      <button type="button" data-stage="3" aria-pressed="false">3단계</button>
+    </span>
+    &nbsp;
+    <label>검색 <input id="search" type="text" size="18" autocomplete="off"></label>
+    &nbsp;
+    <label>업데이트
+      <select id="date-filter">
+        <option value="all" selected>전체</option>
+      </select>
+    </label>
+  </p>
 
-    <div id="human-panel" class="human-panel" role="tabpanel" hidden>
-      <p class="human-note">AI처럼 보이지만 사람으로 확인된 계정입니다. 봇 목록과 단계 파일에는 넣지 않으며, 차단 대상으로 보지 마세요.</p>
-      <table class="human-table">
-        <thead>
-          <tr><th>아이디</th><th>이름</th><th>메모</th></tr>
-        </thead>
-        <tbody id="human-body"></tbody>
-      </table>
-    </div>
+  <table id="sheet" border="1" cellpadding="4" cellspacing="0" width="100%">
+    <thead>
+      <tr bgcolor="#cccccc">
+        <th align="right"><a href="#" data-sort="i">#</a></th>
+        <th align="left"><a href="#" data-sort="handle">아이디</a></th>
+        <th align="left"><a href="#" data-sort="stage">단계</a></th>
+        <th align="left"><a href="#" data-sort="date">등록일</a></th>
+        <th align="left"><a href="#" data-sort="updated">업데이트 날짜</a></th>
+      </tr>
+    </thead>
+    <tbody id="sheet-body">
+      <tr><td colspan="5">목록을 불러오는 중</td></tr>
+    </tbody>
+  </table>
+</div>
 
-    <div class="extras">
-      <details class="block" id="updates-block">
-        <summary>업데이트 기록</summary>
-        <div class="block-body">
-          <p>날짜별로 추가·삭제·단계 변경과 사람 확인 목록 변화가 있습니다. 다른 그록봇은 <code>updates/index.json</code>을 읽고, 마지막에 처리한 날짜 이후의 파일만 가져가면 됩니다.</p>
-          <ul class="update-log" id="update-log"></ul>
-        </div>
-      </details>
-      <details class="block">
-        <summary>제보 방법</summary>
-        <div class="block-body">
-          <p>제목은 <code>[봇제보]</code>만 적고, 본문에는 아이디만 넣으면 됩니다. 한 줄에 하나, 또는 쉼표·띄어쓰기로 여러 개를 한 메일에 넣어도 됩니다. 이유와 근거 링크는 없어도 됩니다. 미리 등록된 제보자 메일만 집계하며, 같은 사람이 같은 아이디를 여러 번 보내도 1번으로 칩니다. 보낼 곳: <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D">skhy@mail.grokbot.com</a></p>
-          <div class="template">
-            <pre id="report-template">제목: [봇제보]
+<div id="human-panel" hidden>
+  <p>AI처럼 보이지만 사람으로 확인된 계정입니다. 봇 목록과 단계 파일에는 넣지 않으며, 차단 대상으로 보지 마세요.</p>
+  <table border="1" cellpadding="4" cellspacing="0">
+    <thead>
+      <tr bgcolor="#cccccc"><th align="left">아이디</th><th align="left">이름</th><th align="left">메모</th></tr>
+    </thead>
+    <tbody id="human-body"></tbody>
+  </table>
+</div>
+
+<hr>
+
+<details>
+  <summary>업데이트 기록</summary>
+  <p>날짜별로 추가·삭제·단계 변경과 사람 확인 목록 변화가 있습니다. 다른 그록봇은 <code>updates/index.json</code>을 읽고, 마지막에 처리한 날짜 이후의 파일만 가져가면 됩니다.</p>
+  <ul id="update-log"></ul>
+</details>
+
+<details>
+  <summary>제보 방법</summary>
+  <p>제목은 <code>[봇제보]</code>만 적고, 본문에는 아이디만 넣으면 됩니다. 한 줄에 하나, 또는 쉼표·띄어쓰기로 여러 개를 한 메일에 넣어도 됩니다. 이유와 근거 링크는 없어도 됩니다. 미리 등록된 제보자 메일만 집계하며, 같은 사람이 같은 아이디를 여러 번 보내도 1번으로 칩니다. 보낼 곳: <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D">skhy@mail.grokbot.com</a></p>
+  <pre id="report-template">제목: [봇제보]
 
 @handle1
 @handle2
 @handle3</pre>
-          </div>
-          <div class="actions">
-            <button type="button" data-copy="#report-template">양식 복사</button>
-            <a class="btn" href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D">메일 앱 열기</a>
-          </div>
-          <p style="margin-top:0.7rem">다른 사람 그록봇에게 제보를 맡길 때는 아래 문장을 쓰면 됩니다.</p>
-          <div class="prompt"><pre id="routine-report" data-routine="report">이 아이디들 skhy@mail.grokbot.com 으로 제목 [봇제보] 붙여서 보내줘</pre></div>
-          <div class="actions"><button type="button" data-copy="#routine-report">제보 문장 복사</button></div>
-        </div>
-      </details>
+  <p>
+    <button type="button" data-copy="#report-template">양식 복사</button>
+    <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D">메일 앱 열기</a>
+  </p>
+  <p>다른 사람 그록봇에게 제보를 맡길 때는 아래 문장을 쓰면 됩니다.</p>
+  <pre id="routine-report" data-routine="report">이 아이디들 skhy@mail.grokbot.com 으로 제목 [봇제보] 붙여서 보내줘</pre>
+  <p><button type="button" data-copy="#routine-report">제보 문장 복사</button></p>
+</details>
 
-      <details class="block">
-        <summary>이의 제기</summary>
-        <div class="block-body">
-          <p>잘못 올라갔거나 사람으로 확인된 계정이면 같은 주소로 이의를 보내 주세요. 확인 후 목록에서 내리거나 사람 확인 목록으로 옮깁니다.</p>
-          <div class="template">
-            <pre id="appeal-template">제목: [이의제기] @handle
+<details>
+  <summary>이의 제기</summary>
+  <p>잘못 올라갔거나 사람으로 확인된 계정이면 같은 주소로 이의를 보내 주세요. 확인 후 목록에서 내리거나 사람 확인 목록으로 옮깁니다.</p>
+  <pre id="appeal-template">제목: [이의제기] @handle
 
 계정: @handle
 이유: (왜 목록에서 내려야 하는지)
 근거 링크: (있다면)
 연락용 X 아이디: @your_id</pre>
-          </div>
-          <div class="actions">
-            <button type="button" data-copy="#appeal-template">양식 복사</button>
-            <a class="btn" href="mailto:skhy@mail.grokbot.com?subject=%5B%EC%9D%B4%EC%9D%98%EC%A0%9C%EA%B8%B0%5D">메일 앱 열기</a>
-          </div>
-        </div>
-      </details>
+  <p>
+    <button type="button" data-copy="#appeal-template">양식 복사</button>
+    <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EC%9D%B4%EC%9D%98%EC%A0%9C%EA%B8%B0%5D">메일 앱 열기</a>
+  </p>
+</details>
 
-      <details class="block">
-        <summary>다른 그록봇용</summary>
-        <div class="block-body">
-          <p>매일 바뀐 것만 보려면 <code>updates/index.json</code>을 읽고, 마지막으로 처리한 날짜 이후의 <code>updates/YYYY-MM-DD.json</code>만 가져가세요. 전체 스냅샷이 필요하면 아래 단계 파일도 있습니다. 어떤 경우든 <code>human.txt</code>와 델타의 <code>human_added</code>에 있는 아이디는 건너뛰세요.</p>
-          <ul class="files">
-            <li><a href="./updates/index.json" data-file-url="updates/index.json">{PAGES}/updates/index.json</a> — 날짜 목록(최신순)과 <code>latest</code></li>
-            <li><a href="./stage3.txt" data-file-url="stage3.txt">https://koala-1234.github.io/botwatch/stage3.txt</a> — 3단계만</li>
-            <li><a href="./ge2.txt" data-file-url="ge2.txt">https://koala-1234.github.io/botwatch/ge2.txt</a> — 2단계 이상</li>
-            <li><a href="./stage2.txt" data-file-url="stage2.txt">https://koala-1234.github.io/botwatch/stage2.txt</a> — 2단계만</li>
-            <li><a href="./stage1.txt" data-file-url="stage1.txt">https://koala-1234.github.io/botwatch/stage1.txt</a> — 1단계만</li>
-            <li><a href="./list.json" data-file-url="list.json">https://koala-1234.github.io/botwatch/list.json</a> — 전부(상세). 이유·근거는 이 파일에만 있습니다.</li>
-            <li><a href="./list.txt" data-file-url="list.txt">https://koala-1234.github.io/botwatch/list.txt</a> — 전부(한 줄). <code>handle|stage|reason|evidence_url|updated</code></li>
-            <li><a href="./human.txt" data-file-url="human.txt">https://koala-1234.github.io/botwatch/human.txt</a> — 사람 확인(차단 대상 아님). 한 줄에 아이디 하나. 봇 목록에서 제외</li>
-          </ul>
-          <ul class="prompts">
-            <li>
-              <span class="prompt-label">3단계만</span>
-              <div class="prompt"><pre id="routine-stage3" data-routine="stage3">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added와 stage_changed 중에서 stage가 3인 계정만 반영하고, removed는 빼. human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
-              <div class="actions"><button type="button" data-copy="#routine-stage3">루틴 문장 복사</button></div>
-            </li>
-            <li>
-              <span class="prompt-label">2단계 이상</span>
-              <div class="prompt"><pre id="routine-ge2" data-routine="ge2">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added와 stage_changed 중에서 stage가 2 이상인 계정만 반영하고, removed는 빼. human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
-              <div class="actions"><button type="button" data-copy="#routine-ge2">루틴 문장 복사</button></div>
-            </li>
-            <li>
-              <span class="prompt-label">전부</span>
-              <div class="prompt"><pre id="routine-all" data-routine="all">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added·removed·stage_changed를 모두 반영하고, human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre></div>
-              <div class="actions"><button type="button" data-copy="#routine-all">루틴 문장 복사</button></div>
-            </li>
-          </ul>
-        </div>
-      </details>
-    </div>
+<details>
+  <summary>다른 그록봇용</summary>
+  <p>매일 바뀐 것만 보려면 <code>updates/index.json</code>을 읽고, 마지막으로 처리한 날짜 이후의 <code>updates/YYYY-MM-DD.json</code>만 가져가세요. 전체 스냅샷이 필요하면 아래 단계 파일도 있습니다. 어떤 경우든 <code>human.txt</code>와 델타의 <code>human_added</code>에 있는 아이디는 건너뛰세요.</p>
+  <ul>
+    <li><a href="./updates/index.json" data-file-url="updates/index.json">https://koala-1234.github.io/botwatch/updates/index.json</a> — 날짜 목록(최신순)과 <code>latest</code></li>
+    <li><a href="./stage3.txt" data-file-url="stage3.txt">https://koala-1234.github.io/botwatch/stage3.txt</a> — 3단계만</li>
+    <li><a href="./ge2.txt" data-file-url="ge2.txt">https://koala-1234.github.io/botwatch/ge2.txt</a> — 2단계 이상</li>
+    <li><a href="./stage2.txt" data-file-url="stage2.txt">https://koala-1234.github.io/botwatch/stage2.txt</a> — 2단계만</li>
+    <li><a href="./stage1.txt" data-file-url="stage1.txt">https://koala-1234.github.io/botwatch/stage1.txt</a> — 1단계만</li>
+    <li><a href="./list.json" data-file-url="list.json">https://koala-1234.github.io/botwatch/list.json</a> — 전부(상세). 이유·근거는 이 파일에만 있습니다.</li>
+    <li><a href="./list.txt" data-file-url="list.txt">https://koala-1234.github.io/botwatch/list.txt</a> — 전부(한 줄). <code>handle|stage|reason|evidence_url|updated</code></li>
+    <li><a href="./human.txt" data-file-url="human.txt">https://koala-1234.github.io/botwatch/human.txt</a> — 사람 확인(차단 대상 아님). 한 줄에 아이디 하나. 봇 목록에서 제외</li>
+  </ul>
+  <p><b>3단계만</b></p>
+  <pre id="routine-stage3" data-routine="stage3">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added와 stage_changed 중에서 stage가 3인 계정만 반영하고, removed는 빼. human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre>
+  <p><button type="button" data-copy="#routine-stage3">루틴 문장 복사</button></p>
+  <p><b>2단계 이상</b></p>
+  <pre id="routine-ge2" data-routine="ge2">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added와 stage_changed 중에서 stage가 2 이상인 계정만 반영하고, removed는 빼. human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre>
+  <p><button type="button" data-copy="#routine-ge2">루틴 문장 복사</button></p>
+  <p><b>전부</b></p>
+  <pre id="routine-all" data-routine="all">매일 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와. added·removed·stage_changed를 모두 반영하고, human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.</pre>
+  <p><button type="button" data-copy="#routine-all">루틴 문장 복사</button></p>
+</details>
 
-    <footer>
-      운영 <a href="https://x.com/dorytossy" rel="noopener noreferrer">@dorytossy</a> · 제보 <a href="mailto:skhy@mail.grokbot.com">skhy@mail.grokbot.com</a>
-    </footer>
-  </div>
-  <script src="./app.js"></script>
+<hr>
+<p>운영 <a href="https://x.com/dorytossy">@dorytossy</a> · 제보 <a href="mailto:skhy@mail.grokbot.com">skhy@mail.grokbot.com</a></p>
+
+<script src="./app.js"></script>
 </body>
 </html>
