@@ -1,6 +1,7 @@
 (() => {
   const PAGES_BASE = "https://koala-1234.github.io/botwatch";
-  const STAGE_LABEL = { 1: "1 확인 중", 2: "2 주의", 3: "3 위험" };
+  const STAGE_LABEL = { 1: "1 운영자 확인", 2: "2 제보 3명+", 3: "3 확인 중" };
+  const STAGE_COLOR = { 1: "#990000", 2: "#666600", 3: "#555555" };
   const SORT_LABEL = { i: "#", handle: "아이디", stage: "단계", date: "등록일", updated: "업데이트 날짜" };
 
   const statusEl = document.getElementById("status");
@@ -22,9 +23,10 @@
   let query = "";
   let dateFilter = "all";
   let updateIndex = { dates: [], days: [] };
-  let sortKey = "handle";
+  let sortKey = "stage";
   let sortDir = "asc";
   let tab = "bot";
+  let enhanced = false;
 
   function listBase() {
     const host = location.hostname;
@@ -54,16 +56,36 @@
   function routineText(base, kind) {
     const lead = `매일 ${base}/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와.`;
     const skip = `human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.`;
-    if (kind === "stage3") {
-      return `${lead} added와 stage_changed 중에서 stage가 3인 계정만 반영하고, removed는 빼. ${skip}`;
+    if (kind === "stage1") {
+      return `${lead} added와 stage_changed 중에서 stage가 1인 계정만 반영하고, removed는 빼. ${skip}`;
     }
-    if (kind === "ge2") {
-      return `${lead} added와 stage_changed 중에서 stage가 2 이상인 계정만 반영하고, removed는 빼. ${skip}`;
+    if (kind === "le2") {
+      return `${lead} added와 stage_changed 중에서 stage가 1 또는 2인 계정만 반영하고, removed는 빼. ${skip}`;
     }
     if (kind === "report") {
       return `이 아이디들 skhy@mail.grokbot.com 으로 제목 [봇제보] 붙여서 보내줘`;
     }
     return `${lead} added·removed·stage_changed를 모두 반영하고, ${skip}`;
+  }
+
+  function rowsFromTable() {
+    if (!bodyEl) return [];
+    return [...bodyEl.querySelectorAll("tr[data-handle]")].map((tr, i) => ({
+      handle: tr.getAttribute("data-handle") || "",
+      stage: Number(tr.getAttribute("data-stage")) || 0,
+      first_reported: tr.getAttribute("data-first") || "",
+      updated: tr.getAttribute("data-updated") || "",
+      _i: i,
+    }));
+  }
+
+  function humansFromTable() {
+    if (!humanBody) return [];
+    return [...humanBody.querySelectorAll("tr[data-handle]")].map((tr) => ({
+      handle: tr.getAttribute("data-handle") || "",
+      name: (tr.children[1] && tr.children[1].textContent) || "",
+      note: (tr.children[2] && tr.children[2].textContent) || "",
+    }));
   }
 
   function cmp(a, b, key) {
@@ -90,6 +112,7 @@
   }
 
   function apply() {
+    if (!enhanced && !allRows.length) return;
     const t0 = performance.now();
     const q = query.trim().toLowerCase().replace(/^@/, "");
     filtered = allRows.filter((item) => {
@@ -112,15 +135,13 @@
   }
 
   function paint() {
-    if (!bodyEl) return;
+    if (!bodyEl || !enhanced) return;
     if (!filtered.length) {
       bodyEl.innerHTML = `<tr><td colspan="5">해당하는 계정이 없습니다.</td></tr>`;
       return;
     }
     let html = "";
-    for (let i = 0; i < filtered.length; i++) {
-      html += rowHtml(filtered[i], i);
-    }
+    for (let i = 0; i < filtered.length; i++) html += rowHtml(filtered[i], i);
     bodyEl.innerHTML = html;
   }
 
@@ -131,10 +152,11 @@
     const first = escapeHtml(item.first_reported || "—");
     const updated = escapeHtml(item.updated || "—");
     const bg = i % 2 === 1 ? ` bgcolor="#f0f0f0"` : "";
-    let stageCell = escapeHtml(label);
-    if (stage === 3) stageCell = `<font color="#990000">${stageCell}</font>`;
-    else if (stage === 2) stageCell = `<font color="#666600">${stageCell}</font>`;
-    return `<tr${bg}>
+    const color = STAGE_COLOR[stage];
+    const stageCell = color
+      ? `<font color="${color}">${escapeHtml(label)}</font>`
+      : escapeHtml(label);
+    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-stage="${stage}" data-first="${first}" data-updated="${updated}">
       <td align="right">${i + 1}</td>
       <td><a href="https://x.com/${encodeURIComponent(handle)}">@${escapeHtml(handle)}</a></td>
       <td>${stageCell}</td>
@@ -144,12 +166,11 @@
   }
 
   function recordPerf(t0, visible) {
-    const ms = performance.now() - t0;
     window.__botwatch = {
       count: allRows.length,
       shown: filtered.length,
       visible,
-      lastPaintMs: Math.round(ms * 100) / 100,
+      lastPaintMs: Math.round((performance.now() - t0) * 100) / 100,
     };
   }
 
@@ -166,8 +187,7 @@
       const key = b.dataset.sort;
       const label = SORT_LABEL[key] || key;
       const on = key === sortKey;
-      const mark = on ? (sortDir === "asc" ? " ▲" : " ▼") : "";
-      b.textContent = label + mark;
+      b.textContent = label + (on ? (sortDir === "asc" ? " ▲" : " ▼") : "");
       b.setAttribute("aria-sort", on ? (sortDir === "asc" ? "ascending" : "descending") : "none");
     });
   }
@@ -185,15 +205,11 @@
   }
 
   function renderHumans() {
-    if (!humanBody) return;
-    if (!humans.length) {
-      humanBody.innerHTML = `<tr><td colspan="3">확인된 계정이 없습니다.</td></tr>`;
-      return;
-    }
+    if (!humanBody || !humans.length) return;
     humanBody.innerHTML = humans
       .map((h) => {
         const handle = String(h.handle || "").replace(/^@/, "");
-        return `<tr>
+        return `<tr data-handle="${escapeHtml(handle)}">
           <td><a href="https://x.com/${encodeURIComponent(handle)}">@${escapeHtml(handle)}</a></td>
           <td>${escapeHtml(h.name || "")}</td>
           <td>${escapeHtml(h.note || "")}</td>
@@ -215,22 +231,28 @@
     const log = document.getElementById("update-log");
     if (!log) return;
     const days = Array.isArray(index && index.days) ? index.days : [];
-    if (!days.length) {
-      log.innerHTML = `<li>아직 기록된 업데이트가 없습니다.</li>`;
-      return;
-    }
+    if (!days.length) return;
     log.innerHTML = days
       .map((d) => {
         const date = String(d.date || "");
         const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0}`;
-        return `<li>
-          <b>${escapeHtml(date)}</b>
-          — ${counts}
-          — <a href="./updates/${encodeURIComponent(date)}.json">json</a>,
-          <a href="./updates/${encodeURIComponent(date)}.txt">txt</a>
-        </li>`;
+        return `<li><b>${escapeHtml(date)}</b> — ${counts} — <a href="./updates/${encodeURIComponent(date)}.json">json</a>, <a href="./updates/${encodeURIComponent(date)}.txt">txt</a></li>`;
       })
       .join("");
+  }
+
+  function enhanceFromDom() {
+    const baked = rowsFromTable();
+    if (!baked.length) return false;
+    allRows = baked;
+    if (!humans.length) humans = humansFromTable();
+    humanSet = new Set(humans.map((h) => String(h.handle || "").replace(/^@/, "").toLowerCase()));
+    allRows = allRows.filter((item) => !humanSet.has(String(item.handle || "").replace(/^@/, "").toLowerCase()));
+    enhanced = true;
+    fillDateFilter(allRows);
+    updateSortMarks();
+    apply();
+    return true;
   }
 
   filterBtns.forEach((btn) => {
@@ -251,7 +273,6 @@
       apply();
     });
   }
-
   if (dateEl) {
     dateEl.addEventListener("change", () => {
       dateFilter = dateEl.value || "all";
@@ -263,11 +284,10 @@
     btn.addEventListener("click", (ev) => {
       ev.preventDefault();
       const key = btn.dataset.sort || "handle";
-      if (sortKey === key) {
-        sortDir = sortDir === "asc" ? "desc" : "asc";
-      } else {
+      if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc";
+      else {
         sortKey = key;
-        sortDir = key === "stage" || key === "date" || key === "updated" ? "desc" : "asc";
+        sortDir = key === "date" || key === "updated" ? "desc" : "asc";
       }
       updateSortMarks();
       apply();
@@ -291,43 +311,41 @@
   });
 
   fillBotUrls();
-
   const tLoad = performance.now();
+  enhanceFromDom();
+
   Promise.all([
-    fetch("./list.json", { cache: "no-store" }).then((r) => {
-      if (!r.ok) throw new Error("목록을 불러오지 못했습니다.");
-      return r.json();
-    }),
+    fetch("./list.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     fetch("./human.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : [])).catch(() => []),
     fetch("./human.txt", { cache: "no-store" }).then((r) => (r.ok ? r.text() : "")).catch(() => ""),
-    fetch("./updates/index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : { dates: [], days: [] })).catch(() => ({ dates: [], days: [] })),
-  ])
-    .then(([data, humanJson, humanTxt, idx]) => {
-      humans = Array.isArray(humanJson) ? humanJson : [];
-      const fromTxt = String(humanTxt || "")
-        .split(/\s+/)
-        .map((s) => s.replace(/^@/, "").trim())
-        .filter(Boolean);
-      humanSet = new Set([
-        ...humans.map((h) => String(h.handle || "").replace(/^@/, "").toLowerCase()),
-        ...fromTxt.map((h) => h.toLowerCase()),
-      ]);
-      const raw = Array.isArray(data) ? data : [];
-      allRows = raw
+    fetch("./updates/index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+  ]).then(([data, humanJson, humanTxt, idx]) => {
+    const fromTxt = String(humanTxt || "").split(/\s+/).map((s) => s.replace(/^@/, "").trim()).filter(Boolean);
+    if (Array.isArray(humanJson) && humanJson.length) humans = humanJson;
+    humanSet = new Set([
+      ...humans.map((h) => String(h.handle || "").replace(/^@/, "").toLowerCase()),
+      ...fromTxt.map((h) => h.toLowerCase()),
+    ]);
+    if (Array.isArray(data) && data.length) {
+      allRows = data
         .filter((item) => !humanSet.has(String(item.handle || "").replace(/^@/, "").toLowerCase()))
         .map((item, i) => Object.assign({ _i: i }, item));
-      updateIndex = idx && typeof idx === "object" ? idx : { dates: [], days: [] };
-      fillDateFilter(allRows);
+      enhanced = true;
+    }
+    if (idx && typeof idx === "object") {
+      updateIndex = idx;
       renderUpdateLog(updateIndex);
-      renderHumans();
+    }
+    if (humans.length) renderHumans();
+    if (allRows.length) {
+      fillDateFilter(allRows);
       updateSortMarks();
       apply();
-      window.__botwatch = Object.assign(window.__botwatch || {}, {
-        loadMs: Math.round((performance.now() - tLoad) * 100) / 100,
-      });
-    })
-    .catch((err) => {
-      if (bodyEl) bodyEl.innerHTML = `<tr><td colspan="5">${escapeHtml(err.message || "목록을 불러오지 못했습니다.")}</td></tr>`;
-      if (statusEl) statusEl.textContent = "불러오기 실패";
+    }
+    window.__botwatch = Object.assign(window.__botwatch || {}, {
+      loadMs: Math.round((performance.now() - tLoad) * 100) / 100,
     });
+  }).catch(() => {
+    // Keep the baked table as-is if extra files fail.
+  });
 })();
