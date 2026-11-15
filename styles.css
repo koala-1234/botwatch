@@ -19,10 +19,16 @@ button[aria-pressed="true"],
 button[aria-selected="true"] { font-weight: bold; }
 
 
-pre {
+pre, code {
   font-family: "Courier New", Courier, monospace;
   font-size: 14px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
+}
+pre {
   white-space: pre-wrap;
+  overflow-x: auto;
 }
 
 .table-wrap {
