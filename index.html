@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="X 봇 의심 계정 커뮤니티 제보 목록. 등록 제보자 수에 따라 1단계 확인 중, 2단계 주의, 3단계 위험으로 표시합니다.">
+  <meta name="color-scheme" content="dark">
+  <title>봇워치 — X 봇 제보 목록</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <p class="kicker">Community list</p>
+      <h1>봇워치</h1>
+      <p class="sub">X 봇 의심 계정 제보 목록 · 운영 <a href="https://x.com/dorytossy" rel="noopener noreferrer">@dorytossy</a></p>
+    </header>
+
+    <div class="example-banner" role="status">
+      지금 보이는 세 계정은 모두 예시 데이터입니다. 실제 제보가 쌓이면 이 안내를 내리고 목록을 교체합니다.
+    </div>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">소개</h2>
+      <p>여러 사람이 봇으로 의심하는 X 계정을 한곳에 모아 보는 공개 목록입니다. 제보는 미리 등록된 제보자가 그록봇 메일로 보내고, 서로 다른 제보자 수에 따라 단계가 올라갑니다.</p>
+      <p>이 목록은 참고용입니다. 차단 여부는 각자 근거를 확인한 뒤 스스로 결정하세요.</p>
+    </section>
+
+    <section aria-labelledby="rules-title">
+      <h2 id="rules-title">단계 기준</h2>
+      <ul class="rules">
+        <li><span class="badge s1">1단계 확인 중</span> <strong>등록 제보자 1명.</strong> 접수는 되었지만 아직 교차 확인이 없습니다. 목록에는 “확인 중”으로 표시합니다.</li>
+        <li><span class="badge s2">2단계 주의</span> <strong>서로 다른 등록 제보자 2명.</strong> 아이디와 근거를 함께 보여 줍니다.</li>
+        <li><span class="badge s3">3단계 위험</span> <strong>서로 다른 등록 제보자 3명 이상.</strong> 차단을 권장하는 공유 목록입니다. 그래도 차단은 본인 판단입니다.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="list-title">
+      <h2 id="list-title">목록</h2>
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="단계 필터">
+          <button type="button" data-stage="all" aria-pressed="true">전체</button>
+          <button type="button" data-stage="1" aria-pressed="false">1단계</button>
+          <button type="button" data-stage="2" aria-pressed="false">2단계</button>
+          <button type="button" data-stage="3" aria-pressed="false">3단계</button>
+        </div>
+        <div class="search">
+          <label class="visually-hidden" for="search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">검색</label>
+          <input id="search" type="search" placeholder="아이디 또는 이유 검색" autocomplete="off">
+        </div>
+      </div>
+      <p id="status">목록을 불러오는 중</p>
+      <div id="list"></div>
+    </section>
+
+    <section aria-labelledby="report-title">
+      <h2 id="report-title">제보 방법</h2>
+      <p>미리 등록된 제보자 메일에서 온 신고만 집계합니다. 한 사람이 여러 주소로 보낸 제보는 1번으로 칩니다. 아래 양식 그대로 <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D%20%40handle">skhy@mail.grokbot.com</a>에 보내 주세요.</p>
+      <div class="template">
+        <pre id="report-template">제목: [봇제보] @handle
+
+계정: @handle
+이유: (한 줄로, 어떤 패턴이 반복되는지)
+근거 링크: https://x.com/handle/status/…
+제보자 X 아이디: @your_id</pre>
+      </div>
+      <div class="actions">
+        <button type="button" data-copy="#report-template">양식 복사</button>
+        <a class="btn" href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D%20%40handle">메일 앱 열기</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="appeal-title">
+      <h2 id="appeal-title">이의 제기 방법</h2>
+      <p>잘못 올라갔다고 생각하면 같은 주소로 이의를 보내 주세요. 확인 후 목록에서 내리거나 단계를 조정합니다.</p>
+      <div class="template">
+        <pre id="appeal-template">제목: [이의제기] @handle
+
+계정: @handle
+이유: (왜 목록에서 내려야 하는지)
+근거 링크: (있다면)
+연락용 X 아이디: @your_id</pre>
+      </div>
+      <div class="actions">
+        <button type="button" data-copy="#appeal-template">양식 복사</button>
+        <a class="btn" href="mailto:skhy@mail.grokbot.com?subject=%5B%EC%9D%B4%EC%9D%98%EC%A0%9C%EA%B8%B0%5D%20%40handle">메일 앱 열기</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="caution-title">
+      <h2 id="caution-title">차단은 각자의 선택입니다</h2>
+      <div class="note">
+        <p style="margin:0">이 목록에 올랐다는 이유만으로 바로 차단할 필요는 없습니다. 근거 게시물을 직접 보고, 필요한 경우에만 차단하거나 신고하세요. 대량 자동 차단은 계정 제한으로 이어질 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="bot-title">
+      <h2 id="bot-title">다른 그록봇용</h2>
+      <p>사람용 페이지와 같은 데이터를 기계가 읽기 쉬운 파일로도 올려 둡니다. 주소만 알면 다른 그록봇이 단계를 그대로 읽을 수 있습니다.</p>
+      <ul class="files">
+        <li><a id="json-url" href="./list.json">list.json</a> — 계정 배열. 필드: <code>handle</code>, <code>stage</code>, <code>reporters_count</code>, <code>reason</code>, <code>evidence_url</code>, <code>first_reported</code>, <code>updated</code></li>
+        <li><a id="txt-url" href="./list.txt">list.txt</a> — 한 줄에 하나. 형식: <code>handle|stage|reason|evidence_url|updated</code></li>
+      </ul>
+      <p>자기 그록봇에 아래 문장을 루틴으로 넣어 두면 됩니다. 데이터 주소는 <a href="https://koala-1234.github.io/botwatch/list.json">https://koala-1234.github.io/botwatch/list.json</a> 입니다.</p>
+      <div class="prompt">
+        <pre id="routine-prompt">매일 아침 https://koala-1234.github.io/botwatch/list.json 을 읽고 stage 3인 계정 중 새로 올라온 것만 알려줘. 알려줄 때는 아이디, 이유, 근거 링크를 함께 적어줘.</pre>
+      </div>
+      <div class="actions">
+        <button type="button" data-copy="#routine-prompt">루틴 문장 복사</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>운영 <a href="https://x.com/dorytossy" rel="noopener noreferrer">@dorytossy</a> · 제보 <a href="mailto:skhy@mail.grokbot.com">skhy@mail.grokbot.com</a> · 텍스트 전용 정적 페이지</p>
+    </footer>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
