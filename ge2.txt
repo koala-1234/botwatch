@@ -1,0 +1,2 @@
+example_bot_3
+example_bot_2
