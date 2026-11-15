@@ -1,8 +1,6 @@
 (() => {
   const PAGES_BASE = "https://koala-1234.github.io/botwatch";
-  const STAGE_LABEL = { 1: "1단계", 2: "2단계", 3: "3단계", 4: "4단계", 5: "5단계" };
-  const STAGE_COLOR = { 1: "#990000", 2: "#884400", 3: "#666600", 4: "#555555", 5: "#777777" };
-  const SORT_LABEL = { i: "#", handle: "아이디", stage: "단계", score: "점수", appeal: "이의 점수", date: "등록일", updated: "업데이트 날짜" };
+    const SORT_LABEL = { i: "#", handle: "아이디", score: "점수", date: "등록일", updated: "업데이트 날짜", appeal: "이의 점수" };
 
   const statusEl = document.getElementById("status");
   const searchEl = document.getElementById("search");
@@ -23,7 +21,7 @@
   let humans = [];
   let humanSet = new Set();
   let filtered = [];
-  let stageFilter = "all";
+  let minScore = "all";
   let query = "";
   let dateFilter = "all";
   let updateIndex = { dates: [], days: [] };
@@ -59,27 +57,21 @@
 
   function routineText(base, kind) {
     const lead = `매일 ${base}/updates/index.json 을 읽고, 내가 마지막으로 처리한 날짜 이후의 항목만 updates/{날짜}.json 으로 가져와.`;
-    const skip = `human_added와 human.txt에 있는 아이디는 사람으로 확인된 계정이니 건너뛰어.`;
-    if (kind === "stage1") {
-      return `${lead} added와 stage_changed 중에서 stage가 1인 계정만 반영하고, removed는 빼. ${skip}`;
-    }
-    if (kind === "le2") {
-      return `${lead} added와 stage_changed 중에서 stage가 1 또는 2인 계정만 반영하고, removed는 빼. ${skip}`;
-    }
-    if (kind === "le3") {
-      return `${lead} added와 stage_changed 중에서 stage가 1, 2 또는 3인 계정만 반영하고, removed는 빼. ${skip}`;
+    const skip = `human_added와 human.txt, falsepos.txt에 있는 아이디는 건너뛰어.`;
+    const threshold = { allfile: 1, score2: 2, score3: 3, score5: 5 }[kind];
+    if (threshold) {
+      return `${lead} added와 score_changed 중에서 score가 ${threshold} 이상인 계정만 반영하고, removed는 빼. ${skip}`;
     }
     if (kind === "report") {
       return `이 아이디들 skhy@mail.grokbot.com 으로 제목 [봇제보] 붙여서 보내줘`;
     }
-    return `${lead} added·removed·stage_changed·refreshed를 모두 반영하고, ${skip}`;
+    return `${lead} added·removed·score_changed·refreshed를 모두 반영하고, ${skip}`;
   }
 
   function rowsFromTable() {
     if (!bodyEl) return [];
     return [...bodyEl.querySelectorAll("tr[data-handle]")].map((tr, i) => ({
       handle: tr.getAttribute("data-handle") || "",
-      stage: Number(tr.getAttribute("data-stage")) || 0,
       score: Number(tr.getAttribute("data-score")) || 0,
       appeal_score: Number(tr.getAttribute("data-appeal")) || 0,
       first_reported: tr.getAttribute("data-first") || "",
@@ -105,12 +97,9 @@
     } else if (key === "handle") {
       av = String(a.handle || "").toLowerCase();
       bv = String(b.handle || "").toLowerCase();
-    } else if (key === "stage") {
-      av = Number(a.stage) || 0;
-      bv = Number(b.stage) || 0;
     } else if (key === "score") {
-      av = Number(a.score != null ? a.score : (a.stage ? 6 - Number(a.stage) : 0)) || 0;
-      bv = Number(b.score != null ? b.score : (b.stage ? 6 - Number(b.stage) : 0)) || 0;
+      av = Number(a.score) || 0;
+      bv = Number(b.score) || 0;
     } else if (key === "updated") {
       av = a.updated || "";
       bv = b.updated || "";
@@ -133,7 +122,7 @@
     filtered = allRows.filter((item) => {
       const handle = String(item.handle || "").replace(/^@/, "");
       if (humanSet.has(handle.toLowerCase())) return false;
-      if (stageFilter !== "all" && String(item.stage) !== stageFilter) return false;
+      if (minScore !== "all" && (Number(item.score) || 0) < Number(minScore)) return false;
       if (dateFilter !== "all" && String(item.updated || "") !== dateFilter) return false;
       if (q && !handle.toLowerCase().includes(q)) return false;
       return true;
@@ -152,7 +141,7 @@
   function paint() {
     if (!bodyEl || !enhanced) return;
     if (!filtered.length) {
-      bodyEl.innerHTML = `<tr><td colspan="7">해당하는 계정이 없습니다.</td></tr>`;
+      bodyEl.innerHTML = `<tr><td colspan="6">해당하는 계정이 없습니다.</td></tr>`;
       return;
     }
     let html = "";
@@ -162,25 +151,18 @@
 
   function rowHtml(item, i) {
     const handle = String(item.handle || "").replace(/^@/, "");
-    const stage = Number(item.stage) || 0;
-    const label = STAGE_LABEL[stage] || String(stage);
     const first = escapeHtml(item.first_reported || "—");
     const updated = escapeHtml(item.updated || "—");
     const bg = i % 2 === 1 ? ` bgcolor="#f0f0f0"` : "";
-    const color = STAGE_COLOR[stage];
-    const stageCell = color
-      ? `<font color="${color}">${escapeHtml(label)}</font>`
-      : escapeHtml(label);
-    const points = Number(item.score != null ? item.score : (stage ? 6 - stage : 0)) || 0;
+    const points = Number(item.score) || 0;
     const appeal = Number(item.appeal_score) || 0;
-    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-stage="${stage}" data-score="${points}" data-appeal="${appeal}" data-first="${first}" data-updated="${updated}">
+    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-score="${points}" data-appeal="${appeal}" data-first="${first}" data-updated="${updated}">
       <td align="right">${i + 1}</td>
       <td><a href="https://x.com/${encodeURIComponent(handle)}">@${escapeHtml(handle)}</a></td>
-      <td>${stageCell}</td>
       <td align="right">${points}</td>
-      <td align="right">${appeal}</td>
       <td>${first}</td>
       <td>${updated}</td>
+      <td align="right">${appeal}</td>
     </tr>`;
   }
 
@@ -262,7 +244,7 @@
     log.innerHTML = days
       .map((d) => {
         const date = String(d.date || "");
-        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 재탐지 ${d.refreshed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 혼합 +${d.mixed_added || 0} / −${d.mixed_removed || 0} · 오탐 +${d.falsepos_added || 0} / −${d.falsepos_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
+        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 점수변경 ${d.score_changed || 0} · 재탐지 ${d.refreshed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 혼합 +${d.mixed_added || 0} / −${d.mixed_removed || 0} · 오탐 +${d.falsepos_added || 0} / −${d.falsepos_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
         return `<li><b>${escapeHtml(date)}</b> — ${counts} — <a href="./updates/${encodeURIComponent(date)}.json">json</a>, <a href="./updates/${encodeURIComponent(date)}.txt">txt</a></li>`;
       })
       .join("");
@@ -284,7 +266,7 @@
 
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      stageFilter = btn.dataset.stage || "all";
+      minScore = btn.dataset.minScore || "all";
       filterBtns.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
       apply();
     });
