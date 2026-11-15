@@ -5,13 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="X 봇 의심 계정 커뮤니티 제보 목록. 1단계는 운영자 확인, 2단계는 제보 3명 이상, 3단계는 제보 접수(확인 중)입니다. 사람으로 확인된 계정은 따로 적어둡니다.">
   <title>봇워치 — X 봇 제보 목록</title>
-  <link rel="stylesheet" href="./styles.css?v=20261115155942">
+  <link rel="stylesheet" href="./styles.css?v=20261115160539">
 </head>
 <body bgcolor="#ffffff" text="#000000" link="#0000EE" vlink="#551A8B" alink="#FF0000">
 
 <h1>봇워치</h1>
 <p>X 봇 의심 계정 제보 목록 · 운영 <a href="https://x.com/dorytossy">@dorytossy</a></p>
 <hr>
+<!--BOTWATCH_HOWTO_START-->
+<h2>사용법</h2>
+<ol>
+  <li>
+    <p><b>가져가는 법</b> (제일 중요)</p>
+    <p>
+      <a href="./le2.txt">le2.txt</a> = 차단 권장 (1~2단계) &nbsp;|&nbsp;
+      <a href="./stage1.txt">stage1.txt</a> = 운영자 확인만 &nbsp;|&nbsp;
+      <a href="./list.json">list.json</a> = 전체 &nbsp;|&nbsp;
+      <a href="./human.txt">human.txt</a> = 사람이니 건너뛰기 &nbsp;|&nbsp;
+      <a href="./updates/index.json">updates/index.json</a> = 날짜별 변경분
+    </p>
+    <pre id="howto-fetch">매일 아침 https://koala-1234.github.io/botwatch/updates/index.json 을 읽고 지난번 이후 날짜의 변경분만 가져와서, 1~2단계 추가된 계정을 알려줘. human.txt에 있는 계정은 빼고.</pre>
+    <p><button type="button" data-copy="#howto-fetch">문장 복사</button></p>
+  </li>
+  <li>
+    <p><b>신고하는 법</b></p>
+    <p>제보: <a href="mailto:skhy@mail.grokbot.com?subject=%5B%EB%B4%87%EC%A0%9C%EB%B3%B4%5D">skhy@mail.grokbot.com</a>, 제목 <code>[봇제보]</code>, 본문은 아이디만 (한 줄에 하나).</p>
+    <p>이의: 제목 <code>[이의제기] @handle</code>. 서로 다른 제보자 3명 → 2단계. 이의 1점마다 한 단계 완화, 5점 이상이면 잠금.</p>
+  </li>
+</ol>
+<!--BOTWATCH_HOWTO_END-->
 <p>등록된 제보와 운영자 리스트를 단계별로 모은 참고용 목록입니다. 숫자가 작을수록 확실합니다. 차단은 근거를 확인한 뒤 각자 결정하세요. 사람으로 확인된 계정은 봇 목록에 넣지 않습니다. 이 표는 자바스크립트 없이도 보입니다.</p>
 <p>1단계 운영자 확인 = 가장 확실, 차단 권장 &nbsp;|&nbsp; 2단계 제보 3명 이상 = 차단 권장 &nbsp;|&nbsp; 3단계 확인 중 = 제보 1~2명 &nbsp;|&nbsp; 이의 1점마다 한 단계 완화, 5점이면 보류/제외 &nbsp;|&nbsp; 사람 확인 = 차단 대상 아님</p>
 
@@ -602,6 +624,6 @@
 <hr>
 <p>운영 <a href="https://x.com/dorytossy">@dorytossy</a> · 제보 <a href="mailto:skhy@mail.grokbot.com">skhy@mail.grokbot.com</a></p>
 
-<script src="./app.js?v=20261115155942"></script>
+<script src="./app.js?v=20261115160539"></script>
 </body>
 </html>
