@@ -13,6 +13,7 @@ X 봇 의심 계정 커뮤니티 제보 목록. 텍스트 전용 정적 페이�
 - 전부(한 줄): https://koala-1234.github.io/botwatch/list.txt
 - 사람 확인(차단 대상 아님): https://koala-1234.github.io/botwatch/human.txt
 - 제보: skhy@mail.grokbot.com , 제목 `[봇제보]`, 본문은 아이디만
+- 이의 제기: 제목 `[이의제기] @handle`. 등록된 제보자 한 명당 1점. 1점마다 단계가 한 칸 내려가고, 5점이면 보류/제외(운영자가 ledger에서 직접 복구).
 - 운영: [@dorytossy](https://x.com/dorytossy)
 
 이 저장소에는 공개 페이지 파일만 들어 있습니다. 제보 장부와 화이트리스트 원본은 포함하지 않습니다.

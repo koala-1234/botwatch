@@ -2,7 +2,7 @@
   const PAGES_BASE = "https://koala-1234.github.io/botwatch";
   const STAGE_LABEL = { 1: "1 운영자 확인", 2: "2 제보 3명+", 3: "3 확인 중" };
   const STAGE_COLOR = { 1: "#990000", 2: "#666600", 3: "#555555" };
-  const SORT_LABEL = { i: "#", handle: "아이디", stage: "단계", date: "등록일", updated: "업데이트 날짜" };
+  const SORT_LABEL = { i: "#", handle: "아이디", stage: "단계", appeal: "이의 점수", date: "등록일", updated: "업데이트 날짜" };
 
   const statusEl = document.getElementById("status");
   const searchEl = document.getElementById("search");
@@ -73,6 +73,7 @@
     return [...bodyEl.querySelectorAll("tr[data-handle]")].map((tr, i) => ({
       handle: tr.getAttribute("data-handle") || "",
       stage: Number(tr.getAttribute("data-stage")) || 0,
+      appeal_score: Number(tr.getAttribute("data-appeal")) || 0,
       first_reported: tr.getAttribute("data-first") || "",
       updated: tr.getAttribute("data-updated") || "",
       _i: i,
@@ -102,6 +103,9 @@
     } else if (key === "updated") {
       av = a.updated || "";
       bv = b.updated || "";
+    } else if (key === "appeal") {
+      av = Number(a.appeal_score) || 0;
+      bv = Number(b.appeal_score) || 0;
     } else {
       av = a.first_reported || "";
       bv = b.first_reported || "";
@@ -137,7 +141,7 @@
   function paint() {
     if (!bodyEl || !enhanced) return;
     if (!filtered.length) {
-      bodyEl.innerHTML = `<tr><td colspan="5">해당하는 계정이 없습니다.</td></tr>`;
+      bodyEl.innerHTML = `<tr><td colspan="6">해당하는 계정이 없습니다.</td></tr>`;
       return;
     }
     let html = "";
@@ -156,10 +160,12 @@
     const stageCell = color
       ? `<font color="${color}">${escapeHtml(label)}</font>`
       : escapeHtml(label);
-    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-stage="${stage}" data-first="${first}" data-updated="${updated}">
+    const score = Number(item.appeal_score) || 0;
+    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-stage="${stage}" data-appeal="${score}" data-first="${first}" data-updated="${updated}">
       <td align="right">${i + 1}</td>
       <td><a href="https://x.com/${encodeURIComponent(handle)}">@${escapeHtml(handle)}</a></td>
       <td>${stageCell}</td>
+      <td align="right">${score}</td>
       <td>${first}</td>
       <td>${updated}</td>
     </tr>`;
@@ -235,7 +241,7 @@
     log.innerHTML = days
       .map((d) => {
         const date = String(d.date || "");
-        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0}`;
+        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 단계변경 ${d.stage_changed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
         return `<li><b>${escapeHtml(date)}</b> — ${counts} — <a href="./updates/${encodeURIComponent(date)}.json">json</a>, <a href="./updates/${encodeURIComponent(date)}.txt">txt</a></li>`;
       })
       .join("");
