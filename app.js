@@ -1,6 +1,6 @@
 (() => {
   const PAGES_BASE = "https://koala-1234.github.io/botwatch";
-  const STAGE_LABEL = { 1: "1 운영자 확인", 2: "2 제보 3명+", 3: "3 확인 중" };
+  const STAGE_LABEL = { 1: "1 그록봇 판정", 2: "2 제보 3명+", 3: "3 확인 중" };
   const STAGE_COLOR = { 1: "#990000", 2: "#666600", 3: "#555555" };
   const SORT_LABEL = { i: "#", handle: "아이디", stage: "단계", appeal: "이의 점수", date: "등록일", updated: "업데이트 날짜" };
 
