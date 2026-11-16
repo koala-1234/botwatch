@@ -1,5 +1,12 @@
 [
   {
+    "handle": "1111kivin",
+    "id": "2069727760273354752",
+    "reason": "사람 확인",
+    "removed_date": "2026-11-16",
+    "appeal_score": 0
+  },
+  {
     "handle": "DanCoinInvestor",
     "id": "1232095395657875456",
     "reason": "사람 확인",
@@ -7,24 +14,10 @@
     "appeal_score": 0
   },
   {
-    "handle": "kenmiryam",
-    "id": "64163139",
-    "reason": "이의제기 누적",
-    "removed_date": "2026-11-15",
-    "appeal_score": 1
-  },
-  {
     "handle": "unjeon_auto",
     "id": "2021991655860318217",
     "reason": "사람 확인",
     "removed_date": "2026-11-15",
     "appeal_score": 0
-  },
-  {
-    "handle": "Zhao_x_BNB",
-    "id": "100108639",
-    "reason": "이의제기 누적",
-    "removed_date": "2026-11-15",
-    "appeal_score": 1
   }
 ]

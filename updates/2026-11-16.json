@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-16",
+  "added": [],
+  "removed": [
+    {
+      "handle": "1111kivin",
+      "id": "2069727760273354752",
+      "score": 1
+    }
+  ],
+  "score_changed": [],
+  "refreshed": [],
+  "human_added": [
+    {
+      "handle": "1111kivin",
+      "id": "2069727760273354752",
+      "name": "",
+      "note": "사용자가 직접 아는 사람으로 확인"
+    }
+  ],
+  "human_removed": [],
+  "mixed_added": [],
+  "mixed_removed": [],
+  "falsepos_added": [
+    {
+      "handle": "1111kivin",
+      "id": "2069727760273354752",
+      "reason": "사람 확인",
+      "removed_date": "2026-11-16",
+      "appeal_score": 0
+    }
+  ],
+  "falsepos_removed": [
+    {
+      "handle": "kenmiryam",
+      "id": "64163139",
+      "reason": "이의제기 누적",
+      "removed_date": "2026-11-15",
+      "appeal_score": 1
+    },
+    {
+      "handle": "Zhao_x_BNB",
+      "id": "100108639",
+      "reason": "이의제기 누적",
+      "removed_date": "2026-11-15",
+      "appeal_score": 1
+    }
+  ],
+  "pending_added": [
+    {
+      "handle": "kenmiryam",
+      "id": "64163139",
+      "score": 0,
+      "appeal_score": 1,
+      "updated": "2026-11-15"
+    },
+    {
+      "handle": "Zhao_x_BNB",
+      "id": "100108639",
+      "score": 0,
+      "appeal_score": 1,
+      "updated": "2026-11-15"
+    }
+  ],
+  "pending_removed": [],
+  "appeal_changed": [
+    {
+      "handle": "kenmiryam",
+      "id": "64163139",
+      "score": 1,
+      "from": null,
+      "to": "excluded"
+    },
+    {
+      "handle": "Zhao_x_BNB",
+      "id": "100108639",
+      "score": 1,
+      "from": null,
+      "to": "excluded"
+    }
+  ]
+}

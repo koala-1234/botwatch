@@ -11,6 +11,8 @@
   const humanPanel = document.getElementById("human-panel");
   const humanBody = document.getElementById("human-body");
   const falseposPanel = document.getElementById("falsepos-panel");
+  const pendingPanel = document.getElementById("pending-panel");
+  const pendingBody = document.getElementById("pending-body");
   const mixedPanel = document.getElementById("mixed-panel");
   const falseposBody = document.getElementById("falsepos-body");
   const mixedBody = document.getElementById("mixed-body");
@@ -199,12 +201,16 @@
     if (botPanel) botPanel.hidden = tab !== "bot";
     if (humanPanel) humanPanel.hidden = tab !== "human";
     if (falseposPanel) falseposPanel.hidden = tab !== "falsepos";
+    if (pendingPanel) pendingPanel.hidden = tab !== "pending";
     if (mixedPanel) mixedPanel.hidden = tab !== "mixed";
     if (tab === "human") {
       if (statusEl) statusEl.textContent = `사람 확인 ${humans.length}명 (차단 대상 아님)`;
     } else if (tab === "falsepos") {
       const n = falseposBody ? falseposBody.querySelectorAll("tr[data-handle]").length : 0;
-      if (statusEl) statusEl.textContent = `오탐 ${n}건`;
+      if (statusEl) statusEl.textContent = `영구 오탐 ${n}건`;
+    } else if (tab === "pending") {
+      const n = pendingBody ? pendingBody.querySelectorAll("tr[data-handle]").length : 0;
+      if (statusEl) statusEl.textContent = `이의 반영 중 ${n}건 (새 제보가 오면 다시 오를 수 있음)`;
     } else if (tab === "mixed") {
       const n = mixedBody ? mixedBody.querySelectorAll("tr[data-handle]").length : 0;
       if (statusEl) statusEl.textContent = `혼합 계정 ${n}건`;
@@ -244,7 +250,7 @@
     log.innerHTML = days
       .map((d) => {
         const date = String(d.date || "");
-        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 점수변경 ${d.score_changed || 0} · 재탐지 ${d.refreshed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 혼합 +${d.mixed_added || 0} / −${d.mixed_removed || 0} · 오탐 +${d.falsepos_added || 0} / −${d.falsepos_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
+        const counts = `추가 ${d.added || 0} · 삭제 ${d.removed || 0} · 점수변경 ${d.score_changed || 0} · 재탐지 ${d.refreshed || 0} · 사람 확인 +${d.human_added || 0} / −${d.human_removed || 0} · 혼합 +${d.mixed_added || 0} / −${d.mixed_removed || 0} · 이의 반영 중 +${d.pending_added || 0} / −${d.pending_removed || 0} · 영구 오탐 +${d.falsepos_added || 0} / −${d.falsepos_removed || 0} · 이의변경 ${d.appeal_changed || 0}`;
         return `<li><b>${escapeHtml(date)}</b> — ${counts} — <a href="./updates/${encodeURIComponent(date)}.json">json</a>, <a href="./updates/${encodeURIComponent(date)}.txt">txt</a></li>`;
       })
       .join("");

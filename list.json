@@ -82,31 +82,6 @@
     }
   },
   {
-    "handle": "1111kivin",
-    "id": "2069727760273354752",
-    "appeal_score": 0,
-    "reporters_count": 1,
-    "score": 1,
-    "reason": "hollow+huge: empty bio, 46,653 posts in 143 days (~326/day); burst cadence: 25 posts in 2.15h, gaps as short as 1–8s; mass short replies across many unrelated threads",
-    "evidence_url": "https://x.com/i/status/2121862773001027719",
-    "detection_count": 1,
-    "first_reported": "2026-11-15",
-    "updated": "2026-11-15",
-    "signals": [
-      "hollow+huge: empty bio, 46,653 posts in 143 days (~326/day)",
-      "burst cadence: 25 posts in 2.15h, gaps as short as 1–8s",
-      "mass short replies across many unrelated threads"
-    ],
-    "evidence_urls": [
-      "https://x.com/i/status/2121862773001027719",
-      "https://x.com/i/status/2121859942953169015",
-      "https://x.com/i/status/2121856256378064979",
-      "https://x.com/i/status/2121856174375236051",
-      "https://x.com/i/status/2121853249091506422",
-      "https://x.com/i/status/2121853223845916950"
-    ]
-  },
-  {
     "handle": "357mmagnum",
     "id": "2747945260",
     "appeal_score": 0,

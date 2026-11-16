@@ -1,0 +1,10 @@
+# botwatch-delta 2026-11-16
+- 1111kivin 1
+H+ 1111kivin
+F+ 1111kivin 사람 확인
+F- kenmiryam
+F- Zhao_x_BNB
+P+ kenmiryam 0
+P+ Zhao_x_BNB 0
+A kenmiryam 1 None excluded
+A Zhao_x_BNB 1 None excluded
