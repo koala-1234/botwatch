@@ -12,6 +12,30 @@
     "updated": "2026-11-17"
   },
   {
+    "handle": "1Sonweb3",
+    "id": "931006792795959296",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "zETH 경매 홍보 답글·추천 링크 있으나 대화형, 60초 미만 5/24. 본인이 베트남인이며 봇 아니라고 한국어로 해명하는 답글 있음.",
+    "evidence_url": "https://x.com/1Sonweb3",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
+    "handle": "aminam006",
+    "id": "1476839466702712832",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "GM/감사 인사 답글 위주, 60초 미만 13/24이나 개인 대화체·이름 호칭. 사람 품앗이 가능성.",
+    "evidence_url": "https://x.com/aminam006",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
     "handle": "Arifx0001",
     "id": "1934776670554345473",
     "appeal_score": 0,
@@ -115,6 +139,18 @@
     "score": 1,
     "reason": "최근 25개 중 21개가 답글. 11.6분 동안 간격 21/24가 60초 미만(중앙값 19초, 최소 1초). / 인사 템플릿 10회: \"Good morning Queen\",\"Good morning Heller\",\"Have a good day\",\"Good writing sir\",\"Happy birthday brother\".",
     "evidence_url": "https://x.com/Hasan_NFTOX/status/2121858533230825510",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
+    "handle": "hugg4452",
+    "id": "1918188916290842624",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "'Hello','Win','Hi' 한 단어 답글 반복+12/24 60초 미만이나 품앗이(인게이지먼트 그룹)형 사람 가능성. web3 엄격 기준 보류.",
+    "evidence_url": "https://x.com/hugg4452",
     "detection_count": 1,
     "first_reported": "2026-11-17",
     "updated": "2026-11-17"
@@ -288,6 +324,18 @@
     "updated": "2026-11-17"
   },
   {
+    "handle": "sansan_sansannn",
+    "id": "2045743578505203712",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "210일 계정, 짧은 일반론 답글(영·베) 템플릿 느낌이나 60초 미만 8/24(중앙값 64초). 폭주 약해 보류.",
+    "evidence_url": "https://x.com/sansan_sansannn",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
     "handle": "ShuvoKumar3709",
     "id": "1913088346861252608",
     "appeal_score": 0,
@@ -331,6 +379,18 @@
     "score": 1,
     "reason": "최근 25개 중 24개가 답글. 13.2분 동안 간격 23/24가 60초 미만(중앙값 32초). / 무관한 스레드에 짧은 참여 템플릿을 20~35초 간격으로 연속 투하(\"looks stunning from up there\",\"it's all about capabilities\",\"big tech runs everything\").",
     "evidence_url": "https://x.com/TheCryptoBlade/status/2121615445270974570",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
+    "handle": "TobyNMT",
+    "id": "1543570961227988992",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "베트남어 생활 답글이 문맥에 맞고 길며 간격 중앙값 92초, 60초 미만 2/24. 폭주·템플릿 약함.",
+    "evidence_url": "https://x.com/TobyNMT",
     "detection_count": 1,
     "first_reported": "2026-11-17",
     "updated": "2026-11-17"
