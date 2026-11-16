@@ -5,6 +5,7 @@
 + dimka_eth 1
 + GujilRuipa 1
 + ha_inh24324 1
++ haeunfi 1
 + Hasan_NFTOX 1
 + HVnS42442600 1
 + IParvel56536 1
@@ -23,5 +24,6 @@
 + VaveylaCrypto 1
 + Yosefphr 1
 + ZayanXBT 1
+~ Kevin_wisdom_ 1 2
 A kenmiryam 1 None excluded
 A Zhao_x_BNB 1 None excluded
