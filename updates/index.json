@@ -8,9 +8,9 @@
   "days": [
     {
       "date": "2026-11-17",
-      "added": 24,
+      "added": 25,
       "removed": 0,
-      "score_changed": 0,
+      "score_changed": 1,
       "refreshed": 0,
       "human_added": 0,
       "human_removed": 0,
