@@ -1,5 +1,17 @@
 [
   {
+    "handle": "0xMiladx0",
+    "id": "1616021704869924867",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "최근 25개 중 23개 답글, 13/24가 60초 미만(최소 28초). 한국어·중국어·영어 정치/경제/코인 스레드에 정제된 LLM식 훈계 답글('~겠죠','~것 같습니다') 연속.",
+    "evidence_url": "https://x.com/0xMiladx0",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
     "handle": "Arifx0001",
     "id": "1934776670554345473",
     "appeal_score": 0,
@@ -24,6 +36,18 @@
     "updated": "2026-11-17"
   },
   {
+    "handle": "BTC_Perksia",
+    "id": "1644790822192451584",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "최근 25개 전부 답글, 16.7분 동안 22/24가 60초 미만(중앙값 32초). 원글 키워드만 뽑아 붙인 듯한 2~4단어 자동 답글('Black hole ring','Micron Stock Buy','TermiX 에이전트 경제').",
+    "evidence_url": "https://x.com/BTC_Perksia",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
     "handle": "chinn4life",
     "id": "2115233600308400128",
     "appeal_score": 0,
@@ -43,6 +67,18 @@
     "score": 1,
     "reason": "최근 25개 전부 답글. 25.4분 동안 간격 22/24가 60초 미만(중앙값 11초, 최소 6초). / 인사 템플릿 23회: \"Happy sunday Quinn/Farzad/Loki\",\"Good morning Zsoma/fren\",\"gmgm Nobita\". 이전 스캔 보류분 @Rizvi_On_X에도 인사 템플릿을 달음.",
     "evidence_url": "https://x.com/dimka_eth/status/2121890459219886204",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
+    "handle": "dreamxbtt",
+    "id": "1863157982814711808",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "최근 25개 전부 답글, 간격 12/24가 60초 미만(최소 17초). 영어·한국어·중국어로 바뀌는 한 줄 LLM 격언형 답글('Security first, profits can wait.','기계 속도에 대응할 탐지도 중요하네요.').",
+    "evidence_url": "https://x.com/dreamxbtt",
     "detection_count": 1,
     "first_reported": "2026-11-17",
     "updated": "2026-11-17"
@@ -156,6 +192,30 @@
     "updated": "2026-11-17"
   },
   {
+    "handle": "lynoronchain",
+    "id": "1644785173614170112",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "최근 25개 중 24개 답글, 19/24가 60초 미만(중앙값 43초). 짧은 LLM 상투 문장('privacy deserves a bigger place in Web3','transparency needs evidence, not just announcements').",
+    "evidence_url": "https://x.com/lynoronchain",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
+    "handle": "mahatab365",
+    "id": "1506686195191128064",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "최근 25개 전부 답글, 25.6분 동안 21/24가 60초 미만(중앙값 37초). 'imo'로 끝나는 LLM 상투 답글이 프로젝트 스레드마다 반복.",
+    "evidence_url": "https://x.com/mahatab365",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
     "handle": "Milonsa87650356",
     "id": "1562288710976020481",
     "appeal_score": 0,
@@ -163,6 +223,18 @@
     "score": 1,
     "reason": "24개 간격 중 22개 60초 미만(중앙값 9초), 문장이 중간에 잘린 템플릿 영어 답글('that 25 percent jump is a pretty'), 바이오·게시물 에어드롭 홍보",
     "evidence_url": "https://x.com/Milonsa87650356/status/2122328004114444761",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
+    "handle": "Mrcryptoo1",
+    "id": "1392925466445615112",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "최근 25개 전부 답글, 16.9분 동안 23/24가 60초 미만(중앙값 35초). 'the X is impressive it ... in the web3 ecosystem' 구두점 없는 동일 템플릿 반복.",
+    "evidence_url": "https://x.com/Mrcryptoo1",
     "detection_count": 1,
     "first_reported": "2026-11-17",
     "updated": "2026-11-17"
@@ -211,6 +283,18 @@
     "score": 1,
     "reason": "최근 25개 중 22개가 답글. 간격 13/24가 60초 미만(중앙값 57초, 최소 12초). / 반복 인사 템플릿 7회(\"Good morning fam\",\"Good morning\",\"Gm gm R2D2\")와 프로젝트 인용 홍보 글이 섞임.",
     "evidence_url": "https://x.com/i/status/2121878006386028826",
+    "detection_count": 1,
+    "first_reported": "2026-11-17",
+    "updated": "2026-11-17"
+  },
+  {
+    "handle": "ShuvoKumar3709",
+    "id": "1913088346861252608",
+    "appeal_score": 0,
+    "reporters_count": 1,
+    "score": 1,
+    "reason": "최근 25개 전부 답글, 9.8분 동안 24개 간격 중 23개 60초 미만(중앙값 22초). 무관한 web3 스레드에 짧은 템플릿 맞장구('this is gonna change the game','for sure').",
+    "evidence_url": "https://x.com/ShuvoKumar3709",
     "detection_count": 1,
     "first_reported": "2026-11-17",
     "updated": "2026-11-17"
@@ -303,8 +387,8 @@
     "handle": "Kevin_wisdom_",
     "id": "1987212180358610944",
     "appeal_score": 0,
-    "reporters_count": 2,
-    "score": 2,
+    "reporters_count": 1,
+    "score": 1,
     "reason": "텔레그램 리딩방 유도 홍보, 스레드마다 같은 '프로필 확인' 유도 답글",
     "evidence_url": "https://x.com/Kevin_wisdom_/status/2122161187727319132",
     "detection_count": 1,

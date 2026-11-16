@@ -2,6 +2,15 @@
   "date": "2026-11-17",
   "added": [
     {
+      "handle": "0xMiladx0",
+      "id": "1616021704869924867",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    {
       "handle": "Arifx0001",
       "id": "1934776670554345473",
       "score": 1,
@@ -20,6 +29,15 @@
       "updated": "2026-11-17"
     },
     {
+      "handle": "BTC_Perksia",
+      "id": "1644790822192451584",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    {
       "handle": "chinn4life",
       "id": "2115233600308400128",
       "score": 1,
@@ -31,6 +49,15 @@
     {
       "handle": "dimka_eth",
       "id": "1632734305003642888",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    {
+      "handle": "dreamxbtt",
+      "id": "1863157982814711808",
       "score": 1,
       "appeal_score": 0,
       "detection_count": 1,
@@ -128,8 +155,35 @@
       "updated": "2026-11-17"
     },
     {
+      "handle": "lynoronchain",
+      "id": "1644785173614170112",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    {
+      "handle": "mahatab365",
+      "id": "1506686195191128064",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    {
       "handle": "Milonsa87650356",
       "id": "1562288710976020481",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    {
+      "handle": "Mrcryptoo1",
+      "id": "1392925466445615112",
       "score": 1,
       "appeal_score": 0,
       "detection_count": 1,
@@ -166,6 +220,15 @@
     {
       "handle": "sajib1006",
       "id": "1836788087076311040",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    {
+      "handle": "ShuvoKumar3709",
+      "id": "1913088346861252608",
       "score": 1,
       "appeal_score": 0,
       "detection_count": 1,
@@ -228,16 +291,7 @@
     }
   ],
   "removed": [],
-  "score_changed": [
-    {
-      "handle": "Kevin_wisdom_",
-      "id": "1987212180358610944",
-      "from": 1,
-      "to": 2,
-      "updated": "2026-11-16",
-      "detection_count": 1
-    }
-  ],
+  "score_changed": [],
   "refreshed": [],
   "human_added": [],
   "human_removed": [],
