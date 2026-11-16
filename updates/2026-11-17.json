@@ -56,6 +56,15 @@
       "updated": "2026-11-17"
     },
     {
+      "handle": "haeunfi",
+      "id": "1428356046259515396",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 0,
+      "first_reported": "2026-11-16",
+      "updated": "2026-11-16"
+    },
+    {
       "handle": "Hasan_NFTOX",
       "id": "1978094657608224768",
       "score": 1,
@@ -219,7 +228,16 @@
     }
   ],
   "removed": [],
-  "score_changed": [],
+  "score_changed": [
+    {
+      "handle": "Kevin_wisdom_",
+      "id": "1987212180358610944",
+      "from": 1,
+      "to": 2,
+      "updated": "2026-11-16",
+      "detection_count": 1
+    }
+  ],
   "refreshed": [],
   "human_added": [],
   "human_removed": [],
