@@ -1,6 +1,16 @@
 {
   "date": "2026-11-16",
-  "added": [],
+  "added": [
+    {
+      "handle": "Kevin_wisdom_",
+      "id": "1987212180358610944",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-16",
+      "updated": "2026-11-16"
+    }
+  ],
   "removed": [
     {
       "handle": "1111kivin",
