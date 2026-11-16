@@ -288,11 +288,23 @@
     "updated": "2026-11-17"
   },
   {
-    "handle": "Kevin_wisdom_",
-    "id": "1987212180358610944",
+    "handle": "haeunfi",
+    "id": "1428356046259515396",
     "appeal_score": 0,
     "reporters_count": 1,
     "score": 1,
+    "reason": "",
+    "evidence_url": "",
+    "detection_count": 0,
+    "first_reported": "2026-11-16",
+    "updated": "2026-11-16"
+  },
+  {
+    "handle": "Kevin_wisdom_",
+    "id": "1987212180358610944",
+    "appeal_score": 0,
+    "reporters_count": 2,
+    "score": 2,
     "reason": "텔레그램 리딩방 유도 홍보, 스레드마다 같은 '프로필 확인' 유도 답글",
     "evidence_url": "https://x.com/Kevin_wisdom_/status/2122161187727319132",
     "detection_count": 1,
