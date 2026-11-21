@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-22",
+  "added": [],
+  "removed": [],
+  "score_changed": [],
+  "refreshed": [],
+  "human_added": [],
+  "human_removed": [],
+  "mixed_added": [
+    {
+      "handle": "tcku",
+      "id": "17475858",
+      "name": "tcku",
+      "added": "2026-11-22"
+    }
+  ],
+  "mixed_removed": [],
+  "falsepos_added": [],
+  "falsepos_removed": [],
+  "pending_added": [],
+  "pending_removed": [],
+  "appeal_changed": [
+    {
+      "handle": "kenmiryam",
+      "id": "64163139",
+      "score": 1,
+      "from": null,
+      "to": "excluded"
+    },
+    {
+      "handle": "Zhao_x_BNB",
+      "id": "100108639",
+      "score": 1,
+      "from": null,
+      "to": "excluded"
+    }
+  ]
+}
