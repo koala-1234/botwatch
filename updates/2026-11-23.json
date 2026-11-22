@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-23",
+  "added": [
+    {
+      "handle": "Btcnumbersmfsr",
+      "id": "2116859857626394624",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "handle": "Ji_min2103",
+      "id": "1995334995867762688",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "handle": "Maya_E_T_H",
+      "id": "901085636593045504",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "handle": "my_lagom_house",
+      "id": "1761020871769260032",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "handle": "seoncrypto",
+      "id": "2122659121707077632",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "handle": "sgchssdd",
+      "id": "1953814659774939136",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "handle": "sgchxxbb",
+      "id": "1784351484936699904",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-23",
+      "updated": "2026-11-23"
+    }
+  ],
+  "removed": [],
+  "score_changed": [],
+  "refreshed": [],
+  "human_added": [],
+  "human_removed": [],
+  "mixed_added": [],
+  "mixed_removed": [],
+  "falsepos_added": [],
+  "falsepos_removed": [],
+  "pending_added": [],
+  "pending_removed": [],
+  "appeal_changed": [
+    {
+      "handle": "kenmiryam",
+      "id": "64163139",
+      "score": 1,
+      "from": null,
+      "to": "excluded"
+    },
+    {
+      "handle": "Zhao_x_BNB",
+      "id": "100108639",
+      "score": 1,
+      "from": null,
+      "to": "excluded"
+    }
+  ]
+}

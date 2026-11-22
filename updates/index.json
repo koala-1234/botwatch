@@ -1,12 +1,29 @@
 {
-  "latest": "2026-11-22",
+  "latest": "2026-11-23",
   "dates": [
+    "2026-11-23",
     "2026-11-22",
     "2026-11-17",
     "2026-11-16",
     "2026-11-15"
   ],
   "days": [
+    {
+      "date": "2026-11-23",
+      "added": 7,
+      "removed": 0,
+      "score_changed": 0,
+      "refreshed": 0,
+      "human_added": 0,
+      "human_removed": 0,
+      "mixed_added": 0,
+      "mixed_removed": 0,
+      "falsepos_added": 0,
+      "falsepos_removed": 0,
+      "pending_added": 0,
+      "pending_removed": 0,
+      "appeal_changed": 2
+    },
     {
       "date": "2026-11-22",
       "added": 44,
