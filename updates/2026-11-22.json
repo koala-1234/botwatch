@@ -1,6 +1,403 @@
 {
   "date": "2026-11-22",
-  "added": [],
+  "added": [
+    {
+      "handle": "0xKai_90",
+      "id": "266046288",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "AfrozWeb3",
+      "id": "1799884161379119104",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "AInvestor_11",
+      "id": "1637365584315969536",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Akbar_web3",
+      "id": "1507154100818907136",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Alifa__",
+      "id": "1262501348752404482",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "AmaraAlluring",
+      "id": "1772613714136420352",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Arushi06972628",
+      "id": "1011816833081532416",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "AtlasAlphaFi",
+      "id": "1292295106054123521",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "aykutzf",
+      "id": "1555574190723551232",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "benzhou327",
+      "id": "517206806",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "CalistaBeautyu",
+      "id": "1874773605835214848",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "CryptoStarLigh1",
+      "id": "1499090056602083343",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "darklord1368",
+      "id": "1752337560725082112",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "dorky_eth",
+      "id": "1856382920262586368",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "duy85657631",
+      "id": "1380928424550694916",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "h0sn_m",
+      "id": "1651635466830061580",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "halvingjobs",
+      "id": "1728213147595718656",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Headmetax",
+      "id": "1345024395362840576",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Heyy_Alvi",
+      "id": "1460983239955279875",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Jdjoy321",
+      "id": "1506979884140167169",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "KontonNFT",
+      "id": "1590319546241531905",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Krypto_knocks",
+      "id": "1568222193456398336",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "lugeweb3",
+      "id": "1462873559168999425",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "MaralOM1",
+      "id": "1613290607451033614",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "mh_mredul2002",
+      "id": "2028456219787337728",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "moricrypto1",
+      "id": "952849248869023744",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "myself3a",
+      "id": "1772560929290670080",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Nadinedinae",
+      "id": "1836846615862067200",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "nexadex",
+      "id": "176834385",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "nftmufettisi",
+      "id": "851707964",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Pearl0Shimmer",
+      "id": "1305573818614910981",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Pengo_0x0x",
+      "id": "1931120918182678528",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "REDUYAN120k",
+      "id": "1822258136943603712",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "ROXMAN_Web3",
+      "id": "1799116342811045888",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Shuvando",
+      "id": "1688315122815754240",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Soma__On",
+      "id": "1937342917762514944",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "sozdetrader",
+      "id": "1297411796446457856",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "StarlightDiary_",
+      "id": "1853691559876931584",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "StoicBlisss",
+      "id": "1756293630950809600",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "theHaneth",
+      "id": "1380460183688769537",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "Valerthse",
+      "id": "2713778054",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "VelvetSky_io",
+      "id": "1875081745776918528",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "VTOMANGL",
+      "id": "1296626995678203904",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "handle": "WebsterBri73166",
+      "id": "1900253023227801600",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-22",
+      "updated": "2026-11-22"
+    }
+  ],
   "removed": [],
   "score_changed": [],
   "refreshed": [],
