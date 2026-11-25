@@ -1,0 +1,17 @@
+# botwatch-delta 2026-11-26
+- benzhou327 1
+- h0sn_m 1
+- mh_mredul2002 1
+- nftmufettisi 1
+- Shuvando 1
+- 1Sonweb3 1
+- TobyNMT 1
+M+ 1Sonweb3
+M+ benzhou327
+M+ nftmufettisi
+M+ TobyNMT
+F+ h0sn_m 사용자 재검토 2026-11-26: 강한 신호 부족
+F+ mh_mredul2002 사용자 재검토 2026-11-26: 강한 신호 부족
+F+ Shuvando 사용자 재검토 2026-11-26: 강한 신호 부족
+A kenmiryam 1 None excluded
+A Zhao_x_BNB 1 None excluded

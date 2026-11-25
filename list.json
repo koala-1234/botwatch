@@ -192,18 +192,6 @@
     "updated": "2026-11-22"
   },
   {
-    "handle": "benzhou327",
-    "id": "517206806",
-    "appeal_score": 0,
-    "reporters_count": 1,
-    "score": 1,
-    "reason": "중국어·영어·일본어 답글 위주, 간격은 넓은 편.",
-    "evidence_url": "https://x.com/benzhou327/status/2124427361156518005",
-    "detection_count": 1,
-    "first_reported": "2026-11-22",
-    "updated": "2026-11-22"
-  },
-  {
     "handle": "CalistaBeautyu",
     "id": "1874773605835214848",
     "appeal_score": 0,
@@ -259,18 +247,6 @@
     "score": 1,
     "reason": "최근 25개 중 24개 답글, 39.5분 동안 짧은 영문 일반론 맞장구. 7개가 약 1분 간격.",
     "evidence_url": "https://x.com/duy85657631/status/2124514243680903460",
-    "detection_count": 1,
-    "first_reported": "2026-11-22",
-    "updated": "2026-11-22"
-  },
-  {
-    "handle": "h0sn_m",
-    "id": "1651635466830061580",
-    "appeal_score": 0,
-    "reporters_count": 1,
-    "score": 1,
-    "reason": "최근 25개 중 18개 답글·8개 RT, 영어·페르시아어 등 짧은 다국어 맞장구. 폭주는 약함.",
-    "evidence_url": "https://x.com/h0sn_m/status/2124481214623158704",
     "detection_count": 1,
     "first_reported": "2026-11-22",
     "updated": "2026-11-22"
@@ -372,18 +348,6 @@
     "updated": "2026-11-22"
   },
   {
-    "handle": "mh_mredul2002",
-    "id": "2028456219787337728",
-    "appeal_score": 0,
-    "reporters_count": 1,
-    "score": 1,
-    "reason": "영어·중국어·일본어 등 다국어 답글·RT 혼합. 간격은 넓은 편.",
-    "evidence_url": "https://x.com/mh_mredul2002/status/2121196204692525062",
-    "detection_count": 1,
-    "first_reported": "2026-11-22",
-    "updated": "2026-11-22"
-  },
-  {
     "handle": "moricrypto1",
     "id": "952849248869023744",
     "appeal_score": 0,
@@ -432,18 +396,6 @@
     "updated": "2026-11-22"
   },
   {
-    "handle": "nftmufettisi",
-    "id": "851707964",
-    "appeal_score": 0,
-    "reporters_count": 1,
-    "score": 1,
-    "reason": "최근 25개 중 23개 답글, 짧은 답글 위주. 60초 미만은 3/24로 폭주는 약함.",
-    "evidence_url": "https://x.com/nftmufettisi/status/2124513481638678603",
-    "detection_count": 1,
-    "first_reported": "2026-11-22",
-    "updated": "2026-11-22"
-  },
-  {
     "handle": "Pearl0Shimmer",
     "id": "1305573818614910981",
     "appeal_score": 0,
@@ -487,18 +439,6 @@
     "score": 1,
     "reason": "최근 25개 중 16개 답글, 9/24가 60초 미만(최소 10초).",
     "evidence_url": "https://x.com/ROXMAN_Web3/status/2110839117936509203",
-    "detection_count": 1,
-    "first_reported": "2026-11-22",
-    "updated": "2026-11-22"
-  },
-  {
-    "handle": "Shuvando",
-    "id": "1688315122815754240",
-    "appeal_score": 0,
-    "reporters_count": 1,
-    "score": 1,
-    "reason": "최근 25개 중 16개 답글, 간격은 넓은 편. 짧은 맞장구가 섞여 있음.",
-    "evidence_url": "https://x.com/Shuvando/status/2124499984758566954",
     "detection_count": 1,
     "first_reported": "2026-11-22",
     "updated": "2026-11-22"
@@ -624,24 +564,12 @@
     "updated": "2026-11-17"
   },
   {
-    "handle": "1Sonweb3",
-    "id": "931006792795959296",
-    "appeal_score": 0,
-    "reporters_count": 1,
-    "score": 1,
-    "reason": "zETH 경매 홍보 답글·추천 링크 있으나 대화형, 60초 미만 5/24. 본인이 베트남인이며 봇 아니라고 한국어로 해명하는 답글 있음.",
-    "evidence_url": "https://x.com/1Sonweb3",
-    "detection_count": 1,
-    "first_reported": "2026-11-17",
-    "updated": "2026-11-17"
-  },
-  {
     "handle": "aminam006",
     "id": "1476839466702712832",
     "appeal_score": 0,
     "reporters_count": 1,
     "score": 1,
-    "reason": "GM/감사 인사 답글 위주, 60초 미만 13/24이나 개인 대화체·이름 호칭. 사람 품앗이 가능성.",
+    "reason": "2026-11-26 재확인: 최근 글 25개가 전부 답글이고, GM 인사·짧은 맞장구가 반복되며 간격 24개 중 15개가 60초 미만(중앙값 48초)이다. 이름 호칭은 있으나 등재 기준을 충족한다.",
     "evidence_url": "https://x.com/aminam006",
     "detection_count": 1,
     "first_reported": "2026-11-17",
@@ -761,7 +689,7 @@
     "appeal_score": 0,
     "reporters_count": 1,
     "score": 1,
-    "reason": "'Hello','Win','Hi' 한 단어 답글 반복+12/24 60초 미만이나 품앗이(인게이지먼트 그룹)형 사람 가능성.",
+    "reason": "2026-11-26 재확인: 최근 답글 25개 중 23개가 Hi/Win/Get/True 등 한 단어이고, 간격 24개 중 19개가 60초 미만(중앙값 17초)이며 sorsa premium 홍보 링크 원글도 있다.",
     "evidence_url": "https://x.com/hugg4452",
     "detection_count": 1,
     "first_reported": "2026-11-17",
@@ -941,7 +869,7 @@
     "appeal_score": 0,
     "reporters_count": 1,
     "score": 1,
-    "reason": "210일 계정, 짧은 일반론 답글(영·베) 템플릿 느낌이나 60초 미만 8/24(중앙값 64초).",
+    "reason": "2026-11-26 재확인: 최근 글 25개가 전부 답글이고, 영어 일반론·칭찬형 템플릿이 약 1분 간격으로 이어진다. 60초 미만은 7/24로 약하지만 템플릿 신호는 강하다.",
     "evidence_url": "https://x.com/sansan_sansannn",
     "detection_count": 1,
     "first_reported": "2026-11-17",
@@ -991,18 +919,6 @@
     "score": 1,
     "reason": "최근 25개 중 24개가 답글. 13.2분 동안 간격 23/24가 60초 미만(중앙값 32초). / 무관한 스레드에 짧은 참여 템플릿을 20~35초 간격으로 연속 투하(\"looks stunning from up there\",\"it's all about capabilities\",\"big tech runs everything\").",
     "evidence_url": "https://x.com/TheCryptoBlade/status/2121615445270974570",
-    "detection_count": 1,
-    "first_reported": "2026-11-17",
-    "updated": "2026-11-17"
-  },
-  {
-    "handle": "TobyNMT",
-    "id": "1543570961227988992",
-    "appeal_score": 0,
-    "reporters_count": 1,
-    "score": 1,
-    "reason": "베트남어 생활 답글이 문맥에 맞고 길며 간격 중앙값 92초, 60초 미만 2/24. 폭주·템플릿 약함.",
-    "evidence_url": "https://x.com/TobyNMT",
     "detection_count": 1,
     "first_reported": "2026-11-17",
     "updated": "2026-11-17"

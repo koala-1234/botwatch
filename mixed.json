@@ -1,5 +1,26 @@
 [
   {
+    "handle": "1Sonweb3",
+    "id": "931006792795959296",
+    "name": "Sơn",
+    "added": "2026-11-26",
+    "reason": "베트남어 일상 대화와 본인 해명이 있는 사람 글이 있다. 다만 같은 세션에 영어 상투어 답글과 경직된 한국어 답글이 섞이고, 2026-11-26 재확인 시 60초 미만 간격이 13/24로 늘었다."
+  },
+  {
+    "handle": "benzhou327",
+    "id": "517206806",
+    "name": "𝕏. ALLIN 𝕏.",
+    "added": "2026-11-26",
+    "reason": "2012년 가입 계정으로 중국어 시사·생활 댓글은 사람 글이다. 다만 $DRGX 초대 링크 홍보가 섞여 있고, 답글 간격은 넓은 편이다."
+  },
+  {
+    "handle": "nftmufettisi",
+    "id": "851707964",
+    "name": "mufettis 🐋",
+    "added": "2026-11-26",
+    "reason": "2012년 가입의 고팔로워 계정으로 터키어 원글은 사람 창작자 글이다. 다만 짧은 영어 일반론 답글이 많고, 60초 미만 간격은 3/24로 폭주는 약하다."
+  },
+  {
     "handle": "tcku",
     "id": "17475858",
     "name": "tcku",
@@ -12,5 +33,12 @@
     "name": "Ryan Ryu",
     "added": "2026-11-15",
     "reason": "burst replies <60s x43 in 43h; short reaction replies; auto-posted thread batches 7 in 2s / 8 in 5s; bio 'pipeline'; but human conversations/typos"
+  },
+  {
+    "handle": "TobyNMT",
+    "id": "1543570961227988992",
+    "name": "Toby",
+    "added": "2026-11-26",
+    "reason": "베트남어 생활 답글은 문맥에 맞는 사람 글이다. 다만 같은 시간대에 영어 일반론 답글이 섞이고, 약 2분 간격으로 한 시간에 25개를 올렸다."
   }
 ]
