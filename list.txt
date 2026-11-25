@@ -56,12 +56,12 @@ Arifx0001|1|최근 25개 전부 답글. 3.7분 동안 간격 23/24가 60초 미�
 atiqur2904|1|최근 25개 전부 답글. 8.4분 동안 간격 24개 중 22개가 60초 미만(중앙값 16초, 최소 5초). / 무관한 스레드에 영어 LLM 상투 답글: "Real usage is the strongest signal, but retention and sustainable economics will separate lasting products from temporary traction." 중국어 스포츠 댓글과 영어 템플릿이 섞임. / 약 292/일(775일·22만 게시). web3라도 폭주+템플릿이 분명함.|https://x.com/i/status/2121891711773557071|2026-11-17
 BTC_Perksia|1|최근 25개 전부 답글, 16.7분 동안 22/24가 60초 미만(중앙값 32초). 원글 키워드만 뽑아 붙인 듯한 2~4단어 자동 답글('Black hole ring','Micron Stock Buy','TermiX 에이전트 경제').|https://x.com/BTC_Perksia|2026-11-17
 chinn4life|1|신규+폭주: 2026-10-28 개설(17일), 게시 3,779개(약 222/일) / 최근 25개 전부 영어 답글. 'Congratulations on reaching 2K', 'Doing nothing is already a full-time job. Wishing you a peaceful day off!' 같은 LLM 상투어 / 한국어권 계정(@sangminyu3, @roki0224 등)을 포함해 무관한 스레드에 템플릿 영어 답글. 32분 동안 중앙값 간격 74초|https://x.com/i/status/2121879889829880040|2026-11-17
-dimka_eth|1|최근 25개 전부 답글. 25.4분 동안 간격 22/24가 60초 미만(중앙값 11초, 최소 6초). / 인사 템플릿 23회: "Happy sunday Quinn/Farzad/Loki","Good morning Zsoma/fren","gmgm Nobita". 이전 스캔 보류분 @Rizvi_On_X에도 인사 템플릿을 달음.|https://x.com/dimka_eth/status/2121890459219886204|2026-11-17
+dimka_eth|1|최근 25개 전부 답글. 25.4분 동안 간격 22/24가 60초 미만(중앙값 11초, 최소 6초). / 인사 템플릿 23회: "Happy sunday Quinn/Farzad/Loki","Good morning Zsoma/fren","gmgm Nobita". 다른 계정 @Rizvi_On_X에도 인사 템플릿을 달음.|https://x.com/dimka_eth/status/2121890459219886204|2026-11-17
 dreamxbtt|1|최근 25개 전부 답글, 간격 12/24가 60초 미만(최소 17초). 영어·한국어·중국어로 바뀌는 한 줄 LLM 격언형 답글('Security first, profits can wait.','기계 속도에 대응할 탐지도 중요하네요.').|https://x.com/dreamxbtt|2026-11-17
 GujilRuipa|1|최근 25개 중 24개가 답글. 42.6분 동안 간격 23/24가 60초 미만(중앙값 11초, 최소 4초). / LLM 템플릿 6회: "great point about real actions shaping AI development", "really interesting approach to maximizing yield opportunities here", "hope your weekend is going really well too".|https://x.com/GujilRuipa/status/2121856729835315694|2026-11-17
 ha_inh24324|1|대량 게시: 2024-03-09 개설(980일), 게시 127,917개(약 130.5/일), 팔로잉 24,191 / 최근 25개 전부 답글, 23분 동안 중앙값 간격 39초, 24개 간격 중 20개가 60초 미만 / 대상 언어에 맞춰 영어·한국어·베트남어·우르두어·터키어·중국어·인도네시아어로 바뀌는 짧은 참여 답글. 바이오가 온체인/알파 수익화(web3)라 더 엄격히 봤지만 폭주+다국어 템플릿이 뚜렷|https://x.com/i/status/2121879960524935381|2026-11-17
 Hasan_NFTOX|1|최근 25개 중 21개가 답글. 11.6분 동안 간격 21/24가 60초 미만(중앙값 19초, 최소 1초). / 인사 템플릿 10회: "Good morning Queen","Good morning Heller","Have a good day","Good writing sir","Happy birthday brother".|https://x.com/Hasan_NFTOX/status/2121858533230825510|2026-11-17
-hugg4452|1|'Hello','Win','Hi' 한 단어 답글 반복+12/24 60초 미만이나 품앗이(인게이지먼트 그룹)형 사람 가능성. web3 엄격 기준 보류.|https://x.com/hugg4452|2026-11-17
+hugg4452|1|'Hello','Win','Hi' 한 단어 답글 반복+12/24 60초 미만이나 품앗이(인게이지먼트 그룹)형 사람 가능성.|https://x.com/hugg4452|2026-11-17
 HVnS42442600|1|최근 25개 전부 답글. 16.2분 동안 간격 23/24가 60초 미만(중앙값 40초, 최소 36초 — 간격이 매우 규칙적). / LLM 상투 6회 이상, 문장 끝에 already/though를 반복: "Your concept for AI decision-making with human feedback is truly innovative.","That's an interesting concept but execution matters greatly always though.","...is indeed an underappreciat|https://x.com/HVnS42442600/status/2121891520676827272|2026-11-17
 IParvel56536|1|최근 25개 중 24개가 답글. 간격 14/24가 60초 미만(중앙값 55초). / 격언형 LLM 템플릿: "Small acts of kindness are never wasted", "Protect your position, not your ego.", "Security awareness keeps systems stronger". 같은 목록 @lugeweb3에도 답글.|https://x.com/i/status/2121854295389900884|2026-11-17
 Japchu1|1|2026-11-11 개설 신규 계정, 30분 간격(:01~:05, :32~:34) 배치로 원글 1개+답글 2~3개 자동 게시, 모든 답글을 자사 마케팅/AI 자동화 홍보로 끌고 가는 LLM 상투 문체|https://x.com/Japchu1/status/2122344607048778115|2026-11-17
@@ -76,7 +76,7 @@ Nascan23|1|신규+폭주: 2026-10-06 개설(39일), 게시 26,114개(약 670/일
 reduansheikh11|1|최근 25개 중 22개가 답글. 간격 21/24가 60초 미만(중앙값 8초, 최소 6초). / LLM 상투 6회 이상: "Frictionless cross-chain bridging removes a huge bottleneck...","Solid execution. Focusing on core protocol resilience over temporary hype always wins in the long run.","The ecosystem grant program is a strategic move to bootstrap n|https://x.com/reduansheikh11/status/2121784497809305828|2026-11-17
 ReLifeNoMad|1|2026-11-16 개설 하루 만에 180개 게시, 26분 동안 24개 간격 중 19개 60초 미만(중앙값 34초), 한국 투자 계정마다 같은 어투의 LLM 분석 답글|https://x.com/ReLifeNoMad/status/2122324049384939827|2026-11-17
 sajib1006|1|최근 25개 중 22개가 답글. 간격 13/24가 60초 미만(중앙값 57초, 최소 12초). / 반복 인사 템플릿 7회("Good morning fam","Good morning","Gm gm R2D2")와 프로젝트 인용 홍보 글이 섞임.|https://x.com/i/status/2121878006386028826|2026-11-17
-sansan_sansannn|1|210일 계정, 짧은 일반론 답글(영·베) 템플릿 느낌이나 60초 미만 8/24(중앙값 64초). 폭주 약해 보류.|https://x.com/sansan_sansannn|2026-11-17
+sansan_sansannn|1|210일 계정, 짧은 일반론 답글(영·베) 템플릿 느낌이나 60초 미만 8/24(중앙값 64초).|https://x.com/sansan_sansannn|2026-11-17
 ShuvoKumar3709|1|최근 25개 전부 답글, 9.8분 동안 24개 간격 중 23개 60초 미만(중앙값 22초). 무관한 web3 스레드에 짧은 템플릿 맞장구('this is gonna change the game','for sure').|https://x.com/ShuvoKumar3709|2026-11-17
 strive750|1|최근 25개 전부 답글. 간격 15/24가 60초 미만(중앙값 48초). / 인사 템플릿 20회: "Good morning Victoria/Neha/Fam","GM TINA","GM Friend","Happy Sunday raj","Good night Bala".|https://x.com/strive750/status/2121750350440927387|2026-11-17
 thai_salem9x|1|신규+폭주: 2026-08-27 개설(79일), 게시 31,003개(약 392/일). 팔로워 11,880 ≈ 팔로잉 11,836, 좋아요는 1,075개뿐(빈약한 참여 대비 게시량) / 최근 25개 전부 답글, 20분 동안 중앙값 간격 60초, 최소 1초, 15초 미만 4개·60초 미만 12개 / 영어·베트남어·중국어 짧은 템플릿 참여 답글이 무관한 스레드에 반복 ('I’d chase these golden ribbons anywhere', 'Looks fierce, but who calms the market?')|https://x.com/i/status/2121879601211465765|2026-11-17
@@ -85,180 +85,180 @@ TobyNMT|1|베트남어 생활 답글이 문맥에 맞고 길며 간격 중앙값
 VaveylaCrypto|1|최근 25개 중 22개가 답글. 간격 17/24가 60초 미만(중앙값 24초, 최소 4초). / 소문자 짧은 참여 템플릿+인사("gmm","buyers need to show up","plain language, strict limits makes sense","execution matters more than payout").|https://x.com/VaveylaCrypto/status/2121892114418356552|2026-11-17
 Yosefphr|1|최근 25개 전부 답글. 간격 21/24가 60초 미만(중앙값 20초). / 소문자 LLM 말투 반복: "still chewing on it", "happy to be convinced otherwise", "wonder how ZERU ages in a year, curious how it ages".|https://x.com/i/status/2121891890203136393|2026-11-17
 ZayanXBT|1|최근 25개 전부 답글. 15.3분 동안 간격 20/24가 60초 미만(중앙값 35초). / 인사 템플릿 반복: "Have a great weekend"(복수), "Good morning! Let's give our best today!","Let's make today another great one!".|https://x.com/ZayanXBT/status/2121734123035435446|2026-11-17
-haeunfi|1|||2026-11-16
+haeunfi|1|봇 의심 신호로 등재된 계정입니다.||2026-11-16
 Kevin_wisdom_|1|텔레그램 리딩방 유도 홍보, 스레드마다 같은 '프로필 확인' 유도 답글|https://x.com/Kevin_wisdom_/status/2122161187727319132|2026-11-16
 0xALTF4|1|KR post replied with English LLM platitude: 'day 6 recaps keep you accountable, keep going'; burst cadence: 25 English replies in 4 minutes, median gap 10s, 23 gaps under 15s, across many unrelated threads; templated English one-liners aimed at Korean and other accounts|https://x.com/i/status/2121229132831080834|2026-11-15
-0xbenz95|1|||2026-11-15
-0xfrigg|1|||2026-11-15
+0xbenz95|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+0xfrigg|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
 0xVioletorg|1|KR post replied with English LLM-ish line: 'that vertical spike is exactly why the editing headaches are worth it'; new+huge: 163-day-old account, 19,465 posts (~119/day); templated English engagement replies ('Gm fren', 'gnight legend', 'hits different') every ~1–2 minutes across many threads|https://x.com/i/status/2120949746982629846|2026-11-15
-357mmagnum|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-5423962511k|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+357mmagnum|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+5423962511k|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
 A_Dev46|1|new+huge: 123-day-old account, 91,023 posts (~740/day); burst cadence: 25 posts in 0.32h, median gap 24s, many 3–16s gaps; templated engagement: rapid RT plus canned greetings (good morning, religious chants) across many threads|https://x.com/i/status/2121701619985437137|2026-11-15
-aaaaaaa04504587|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-abri31083837|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-afterwork2604|1|||2026-11-15
-AhRinAurora|1|||2026-11-15
-Akb115957892263|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-alexbmpye|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-alexxaaaa56|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-alxmoist|1|||2026-11-15
+aaaaaaa04504587|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+abri31083837|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+afterwork2604|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+AhRinAurora|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Akb115957892263|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+alexbmpye|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+alexxaaaa56|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+alxmoist|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
 Amber_1Meadow|1|handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user|https://x.com/i/status/2120019446014390483|2026-11-15
-angelhan070119|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-animus_aeternal|1|||2026-11-15
-aprilrives|1|||2026-11-15
+angelhan070119|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+animus_aeternal|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+aprilrives|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
 Au_7ra|1|handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user|https://x.com/i/status/2120382570546463132|2026-11-15
-AutumnWind_s|1|||2026-11-15
-BiHon41810|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+AutumnWind_s|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+BiHon41810|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
 billyfscd|1|self-admitted AI: bio says 'AI執事のビリーでございます' (AI butler Billy); burst cadence: 25 literary replies in 0.51h, median gap 60s (20 gaps of 20–90s); templated LLM copy in Japanese/Korean/Spanish across many unrelated threads, including a Korean platitude on NathanYJLee's post; new+huge: 78-day-old account, 8,277 posts (~106/day)|https://x.com/i/status/2121118616888467687|2026-11-15
-BitWolf84|1|||2026-11-15
+BitWolf84|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
 Br_illian_t|1|handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user|https://x.com/i/status/2120017923603567027|2026-11-15
-bricexeth|1|||2026-11-15
-Bufenge7|1|||2026-11-15
-Bura888087|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-c1nW0n|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-C_angmang|1|||2026-11-15
-CameronNN0921|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-ChaeWonCanvas|1|||2026-11-15
-CharlyePis42576|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+bricexeth|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Bufenge7|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Bura888087|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+c1nW0n|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+C_angmang|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+CameronNN0921|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+ChaeWonCanvas|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+CharlyePis42576|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
 CihunSol|1|KR post replied with English LLM platitude plus a fake personal anecdote: 'Spot on about Jensen’s handshake deals; I’ve seen similar informal pacts crumble...'; burst cadence: 25 English replies in 2.01h, median gap 41s, 22 gaps of 20–90s; extreme template: many replies start with 'Spot on,' then invent 'we've been tracking/running into the same...' stories on unrelated topics|https://x.com/i/status/2121683407138914534|2026-11-15
-cirrpodu|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+cirrpodu|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
 cleaner_then_u|1|hollow+huge: 180 followers vs 25,155 posts, following 4,356; burst cadence: 25 posts in 0.4h, many 3–12s gaps; almost entirely rapid-fire retweets (20/25 RTs in the sample)|https://x.com/i/status/2121857140772270483|2026-11-15
 cleanup2eok|1|new+high volume: 41-day-old account, 5,485 posts (~134/day), AI/부업 promo bio; burst cadence: many 4–14s RT+reply pairs; templated engagement: repeated 팔로워 달성 축하 comments and 리포스트 버스 participation|https://x.com/i/status/2121791540888735886|2026-11-15
-Coin_Scoop|1|||2026-11-15
+Coin_Scoop|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
 Crypto_KR_J|1|new+huge: 173-day-old account, 51,841 posts (~300/day); bio includes 'AI썰'; burst cadence: 25 posts in 0.78h, median gap 12s, 13 gaps under 15s, RT-then-short-reply pattern; templated AI-style short fiction posted as a two-part thread at the exact same second (07:00:01)|https://x.com/i/status/2121497542982803587|2026-11-15
 cryptomontage02|1|KR posts replied with textbook English LLM platitudes: 'That's a really interesting point about the potential impact of chip restrictions... It's definitely something to keep an eye on' and 'This is an interesting development from Tesla. I'm curious to see how...'; burst cadence: 25 English replies in 1.18h, median gap 47s, 13 gaps of 20–90s; templated 'Gm fam / Good morning brother' engagement replies across many threads; 43,496 posts|https://x.com/i/status/2121470359484645514|2026-11-15
 daikichiiiiiiii|1|new+huge: 157-day-old account, 34,446 posts (~219/day); burst cadence: 25 posts in 2.2h, gaps of 3–13s; templated engagement: RT then immediate short reply across many threads|https://x.com/i/status/2121863288665616855|2026-11-15
-dani89006|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-devidchikev9jo|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-dianepson639|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Doaitts|1|||2026-11-15
-DriftLog_|1|||2026-11-15
-dubaijae|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-DungBui288544|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-elliss58537|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Ember_web3|1|||2026-11-15
+dani89006|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+devidchikev9jo|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+dianepson639|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Doaitts|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+DriftLog_|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+dubaijae|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+DungBui288544|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+elliss58537|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Ember_web3|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
 F_9ern|1|handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user|https://x.com/i/status/2120383203043418473|2026-11-15
-famafk154829|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-fig_it_outt|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Foxtrtjuliabrvo|1|||2026-11-15
-gagaga25851935|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+famafk154829|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+fig_it_outt|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Foxtrtjuliabrvo|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+gagaga25851935|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
 gaudivita|1|new+huge: 117-day-old account, 46,095 posts (~394/day); templated AI-like fiction mill: Korean/Japanese short stories with the same age+setting+conflict formula; burst cadence: engagement RT+short replies with many 3–26s gaps|https://x.com/i/status/2121811882529198348|2026-11-15
-golaesul298972|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-GpaAndy|1|||2026-11-15
-Guy1093196|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Gwenssllyo|1|||2026-11-15
-h3502596558209|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-H_anmoxrh|1|||2026-11-15
-hanayamajpk|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-hanhand4h3|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-hasibs00|1|||2026-11-15
-hhyi8u|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-hjk777196857|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-holywater22|1|||2026-11-15
-hyyyyn7j6|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+golaesul298972|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+GpaAndy|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Guy1093196|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Gwenssllyo|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+h3502596558209|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+H_anmoxrh|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+hanayamajpk|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+hanhand4h3|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+hasibs00|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+hhyi8u|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+hjk777196857|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+holywater22|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+hyyyyn7j6|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
 Insight_sua|1|new+huge: 228-day-old account, 124,629 posts (~547/day); burst cadence: 25 posts in 1.3h, many gaps of 4–11s; templated engagement: RT then a short canned reply across many threads (대단하다 ㄷㄷㄷ, 행복한 일요일 되세요)|https://x.com/i/status/2121851188983545952|2026-11-15
-ixusuwu|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-J_ingxi|1|||2026-11-15
-jaein65699429|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Jason1205wu|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Jeong111234|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Jet10dudu|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-JohnSmithw7nh|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-JosRxg6d|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-js1220000|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-JuanCarlosicd2|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Juanpalaciogs|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-JYmpcq|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-kai86675557|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-KaiserRough|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-kalema0703|1|||2026-11-15
-kangchu497341|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-kengdaica|1|||2026-11-15
-kevin9454812333|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-khenzarweb3|1|||2026-11-15
-kho42712|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-kimi884455|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-KongJian_s|1|||2026-11-15
-KryptoNahed|1|||2026-11-15
-kyejin396373|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-LaboNft|1|||2026-11-15
-ledro414242|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-lied1387067|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-liqibear|1|||2026-11-15
-Lkk464837695043|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Lorenhilhklhlhk|1|||2026-11-15
+ixusuwu|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+J_ingxi|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+jaein65699429|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Jason1205wu|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Jeong111234|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Jet10dudu|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+JohnSmithw7nh|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+JosRxg6d|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+js1220000|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+JuanCarlosicd2|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Juanpalaciogs|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+JYmpcq|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+kai86675557|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+KaiserRough|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+kalema0703|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+kangchu497341|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+kengdaica|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+kevin9454812333|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+khenzarweb3|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+kho42712|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+kimi884455|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+KongJian_s|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+KryptoNahed|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+kyejin396373|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+LaboNft|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+ledro414242|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+lied1387067|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+liqibear|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Lkk464837695043|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Lorenhilhklhlhk|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
 Lovergunghab|1|new+huge: 61-day-old account, 20,422 posts (~335/day); burst cadence: 25 posts in 0.96h, median gap 9s, 14 gaps under 15s; templated engagement replies (화이팅, 가즈아) plus high-volume fortune-telling content|https://x.com/i/status/2121846407980322880|2026-11-15
-lucas1zdo|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Luceyeon|1|||2026-11-15
-m2ibsh|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Magnux000|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-maheshi3w|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-marie_camb82529|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-martinog5p|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Maxmax6mxo|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-MGmndt|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Micah8259773569|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Mineif2f|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-minjun229588|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-mitro64659|1|||2026-11-15
-Momaneeee112264|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-morethanme8|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Murua65389473|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-MustafaAryy50|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-naras77354357|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Nayiaj8c|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-neterdalsmith|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Neu2dm|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-nka36691|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-nyua381921|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-OVGNFT|1|||2026-11-15
-OwiB4jaMYC87749|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Pachecoom|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-pauline_hq|1|||2026-11-15
-pfhggghh|1|||2026-11-15
-Poppy12063708|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-privado123ya|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-pulsescale_io|1|||2026-11-15
-Quantview_trade|1|||2026-11-15
-RahulRa42915984|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Rajagvkz|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-RenatoLaguza|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-renrens44z|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-RK36726899|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Sahara46392690|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-sameer2goSameer|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-sandairon3fxa|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-SarahAhmedwt18|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-sdfgwexx|1|||2026-11-15
-sdiklke|1|||2026-11-15
-Sejfktigofmhkm|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Shahed_web|1|||2026-11-15
-shaisidw|1|||2026-11-15
-shuaishuai0401|1|||2026-11-15
-sio72136136555|1|||2026-11-15
-siuww1505|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-SlowRoamer|1|||2026-11-15
+lucas1zdo|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Luceyeon|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+m2ibsh|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Magnux000|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+maheshi3w|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+marie_camb82529|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+martinog5p|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Maxmax6mxo|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+MGmndt|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Micah8259773569|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Mineif2f|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+minjun229588|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+mitro64659|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Momaneeee112264|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+morethanme8|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Murua65389473|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+MustafaAryy50|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+naras77354357|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Nayiaj8c|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+neterdalsmith|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Neu2dm|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+nka36691|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+nyua381921|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+OVGNFT|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+OwiB4jaMYC87749|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Pachecoom|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+pauline_hq|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+pfhggghh|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Poppy12063708|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+privado123ya|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+pulsescale_io|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Quantview_trade|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+RahulRa42915984|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Rajagvkz|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+RenatoLaguza|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+renrens44z|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+RK36726899|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Sahara46392690|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+sameer2goSameer|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+sandairon3fxa|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+SarahAhmedwt18|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+sdfgwexx|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+sdiklke|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Sejfktigofmhkm|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Shahed_web|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+shaisidw|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+shuaishuai0401|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+sio72136136555|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+siuww1505|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+SlowRoamer|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
 So_p_histicated|1|handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user|https://x.com/i/status/2120015350876246077|2026-11-15
-SoHeeSanctuary|1|||2026-11-15
-Sonisaurabh9|1|||2026-11-15
-soorjinwoo|1|||2026-11-15
-soykarovargas|1|||2026-11-15
-Spicenet_kr|1|||2026-11-15
-ssu04340093|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-sukkiri17171|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Tank67089263|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+SoHeeSanctuary|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Sonisaurabh9|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+soorjinwoo|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+soykarovargas|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+Spicenet_kr|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+ssu04340093|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+sukkiri17171|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Tank67089263|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
 TechHyung|1|new+huge: 34-day-old account, 22,263 posts (~655/day); burst cadence: 24 posts in 0.3h, many gaps of 4–18s; templated engagement: RT a post then immediate short reply to the same author, repeated across many unrelated threads|https://x.com/i/status/2121862871693086902|2026-11-15
 TickerMelody|1|new+huge: 272-day-old account, 24,860 posts (~91/day); burst cadence: self-retweeted 13 of its own all-caps posts in ~40s (gaps of 2–3s); templated crypto shill: repeated ALL-CAPS crash/FOMO predictions (ETH THREE DIGITS, BTC $42K, BIG SHORT)|https://x.com/i/status/2121836648128446677|2026-11-15
-tradearenalive|1|||2026-11-15
-typa10982|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-u8JXe5BGta29661|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Ultrama63450066|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+tradearenalive|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+typa10982|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+u8JXe5BGta29661|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Ultrama63450066|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
 V_0ivid|1|handle cluster: underscore/digit handles, poetic 2–4 character Korean display names, all Blue-verified; near-identical hollow metadata: 32–50 posts, 36–56 followers, 69–145 following, many empty or platitude bios, lookalike recently replaced avatars; coordinated posting: ceramic/cup-themed posts within hours of each other on 2026-11-10 and 2026-11-11; recently followed the user|https://x.com/i/status/2120386222594068661|2026-11-15
-W_uyin|1|||2026-11-15
-wilsonAckrd|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-wkdnpe|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-yip6ssk|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-zenundedu83959|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-Zorvanel|1|||2026-11-15
-zxcv987789|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
-zz1246074|1||https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+W_uyin|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+wilsonAckrd|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+wkdnpe|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+yip6ssk|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+zenundedu83959|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+Zorvanel|1|봇 의심 신호로 등재된 계정입니다.||2026-11-15
+zxcv987789|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15
+zz1246074|1|봇 의심 신호로 등재된 계정입니다.|https://x.com/nyse_min/status/2121480819714015336|2026-11-15

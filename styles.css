@@ -36,4 +36,9 @@ pre {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-#sheet { min-width: 36em; }
+#sheet { min-width: 52em; }
+td.reason {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 40em;
+}

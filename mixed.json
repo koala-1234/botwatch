@@ -3,12 +3,14 @@
     "handle": "tcku",
     "id": "17475858",
     "name": "tcku",
-    "added": "2026-11-22"
+    "added": "2026-11-22",
+    "reason": "2026-11-21 금융 계정 답글이 LLM 상투어+템플릿. 한국어 답글 다수가 '~것 같아요'로 끝남. 영어는 'From where I sit in Asia'(전체 검색 1회), 'What stands out from Asia', 'Feels like/Feels more like' 구조로 Reuters/WSJmarkets/HedgieMarkets 등에 오후엔 약 20-35분 간격. 다만 2008년 계정·본인확인 배지, 2023년 호치민 일상/성경 구절/가족 언급 등 사람 글이 있고, 2026-11 오클랜드 출장 원글(당일 Red Bull Up The Mast 영상 등)과 짧은 사람 답글이 섞여 있음. 사진 역검색에서 동일 원본(스톡/타인 게시)은 확인되지 않음."
   },
   {
     "handle": "tiger18272",
     "id": "1914285902266007552",
     "name": "Ryan Ryu",
-    "added": "2026-11-15"
+    "added": "2026-11-15",
+    "reason": "burst replies <60s x43 in 43h; short reaction replies; auto-posted thread batches 7 in 2s / 8 in 5s; bio 'pipeline'; but human conversations/typos"
   }
 ]

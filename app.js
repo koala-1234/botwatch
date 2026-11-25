@@ -1,6 +1,6 @@
 (() => {
   const PAGES_BASE = "https://koala-1234.github.io/botwatch";
-    const SORT_LABEL = { i: "#", handle: "아이디", score: "점수", date: "등록일", updated: "업데이트 날짜", appeal: "이의 점수" };
+    const SORT_LABEL = { i: "#", handle: "아이디", score: "점수", date: "등록일", updated: "업데이트 날짜", appeal: "이의 점수", reason: "사유" };
 
   const statusEl = document.getElementById("status");
   const searchEl = document.getElementById("search");
@@ -78,6 +78,7 @@
       appeal_score: Number(tr.getAttribute("data-appeal")) || 0,
       first_reported: tr.getAttribute("data-first") || "",
       updated: tr.getAttribute("data-updated") || "",
+      reason: tr.getAttribute("data-reason") || "",
       _i: i,
     }));
   }
@@ -108,6 +109,9 @@
     } else if (key === "appeal") {
       av = Number(a.appeal_score) || 0;
       bv = Number(b.appeal_score) || 0;
+    } else if (key === "reason") {
+      av = String(a.reason || "");
+      bv = String(b.reason || "");
     } else {
       av = a.first_reported || "";
       bv = b.first_reported || "";
@@ -126,7 +130,7 @@
       if (humanSet.has(handle.toLowerCase())) return false;
       if (minScore !== "all" && (Number(item.score) || 0) < Number(minScore)) return false;
       if (dateFilter !== "all" && String(item.updated || "") !== dateFilter) return false;
-      if (q && !handle.toLowerCase().includes(q)) return false;
+      if (q && !handle.toLowerCase().includes(q) && !String(item.reason || "").toLowerCase().includes(q)) return false;
       return true;
     });
     const dir = sortDir === "desc" ? -1 : 1;
@@ -143,7 +147,7 @@
   function paint() {
     if (!bodyEl || !enhanced) return;
     if (!filtered.length) {
-      bodyEl.innerHTML = `<tr><td colspan="6">해당하는 계정이 없습니다.</td></tr>`;
+      bodyEl.innerHTML = `<tr><td colspan="7">해당하는 계정이 없습니다.</td></tr>`;
       return;
     }
     let html = "";
@@ -155,16 +159,18 @@
     const handle = String(item.handle || "").replace(/^@/, "");
     const first = escapeHtml(item.first_reported || "—");
     const updated = escapeHtml(item.updated || "—");
+    const reason = escapeHtml(item.reason || "");
     const bg = i % 2 === 1 ? ` bgcolor="#f0f0f0"` : "";
     const points = Number(item.score) || 0;
     const appeal = Number(item.appeal_score) || 0;
-    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-score="${points}" data-appeal="${appeal}" data-first="${first}" data-updated="${updated}">
+    return `<tr${bg} data-handle="${escapeHtml(handle)}" data-score="${points}" data-appeal="${appeal}" data-first="${first}" data-updated="${updated}" data-reason="${reason}">
       <td align="right">${i + 1}</td>
       <td><a href="https://x.com/${encodeURIComponent(handle)}">@${escapeHtml(handle)}</a></td>
       <td align="right">${points}</td>
       <td>${first}</td>
       <td>${updated}</td>
       <td align="right">${appeal}</td>
+      <td class="reason">${reason}</td>
     </tr>`;
   }
 
