@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-27",
+  "added": [
+    {
+      "handle": "jakehlacy",
+      "id": "43161730",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-27",
+      "updated": "2026-11-27"
+    }
+  ],
+  "removed": [],
+  "score_changed": [],
+  "refreshed": [],
+  "human_added": [],
+  "human_removed": [],
+  "mixed_added": [],
+  "mixed_removed": [],
+  "falsepos_added": [],
+  "falsepos_removed": [],
+  "pending_added": [],
+  "pending_removed": [],
+  "appeal_changed": [
+    {
+      "handle": "kenmiryam",
+      "id": "64163139",
+      "score": 1,
+      "from": null,
+      "to": "excluded"
+    },
+    {
+      "handle": "Zhao_x_BNB",
+      "id": "100108639",
+      "score": 1,
+      "from": null,
+      "to": "excluded"
+    }
+  ]
+}
