@@ -9,6 +9,15 @@
       "detection_count": 1,
       "first_reported": "2026-11-27",
       "updated": "2026-11-27"
+    },
+    {
+      "handle": "wntlrsjrnf1",
+      "id": "2125827872099348480",
+      "score": 1,
+      "appeal_score": 0,
+      "detection_count": 1,
+      "first_reported": "2026-11-27",
+      "updated": "2026-11-27"
     }
   ],
   "removed": [],
